@@ -1,0 +1,1154 @@
+/*TITRES*/
+#kiwiki h1 {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  margin: 0 0 0.5rem;
+  padding: 0 10px;
+  border-bottom: 1px solid #ccc;
+}
+#kiwiki h2 {
+  font-size: 1.8em;
+  margin: 0.5em 0;
+  padding: 0 10px;
+  border-bottom: 1px solid #ccc;
+  line-height: 1.5;
+}
+#kiwiki h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 0.7em;
+  padding: 0 10px;
+}
+/*STRUCTURE*/
+#kiwiki #dokuwiki__site {
+  min-height: calc(100vh);
+  margin-bottom: -30px;
+  background-color: var(--kiwiki-body-bg);
+  justify-content: space-between;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#kiwiki #dokuwiki__top {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: var(--kiwiki-body-color);
+}
+
+#kiwiki #dokuwiki__top .wrapper {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0;
+}
+
+/*LOGIN*/
+#kiwiki h1#connexion {
+  text-align: center;
+}
+
+#kiwiki h1#connexion + .level1 {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+#kiwiki #dw__login fieldset {
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+  box-shadow: #1e293b0a 0 2px 4px 0;
+  border: 1px solid #62697629;
+  background: var(--kiwiki-white, #fff);
+  border-radius: 4px;
+  padding: 30px;
+}
+
+#kiwiki #dw__login fieldset,
+#kiwiki #dw__resendpwd fieldset,
+#kiwiki #dw__register fieldset {
+  padding-bottom: 30px;
+}
+
+#kiwiki #dw__login p {
+  font-size: 0.75rem;
+}
+
+#kiwiki #dw__login label.block select,
+#kiwiki #dw__login label.block input.edit {
+  width: 100%;
+}
+
+#kiwiki #dw__login button {
+  padding: 15px 30px;
+}
+
+#kiwiki #dw__login label.block {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#kiwiki #dw__login label[for="remember__me"] {
+  margin-left: 0;
+  text-align: left;
+  margin-bottom: 1.4em;
+}
+
+#kiwiki #autorisation_refusee,
+#kiwiki #autorisation_refusee + .level1 {
+  background-color: rgba(255, 0, 0, 0.4);
+  text-align: center;
+  margin: 0;
+  padding: 15px 30px 0;
+  border-radius: 8px 8px 0 0;
+}
+
+#kiwiki #autorisation_refusee + .level1 {
+  padding: 0 30px 15px;
+  border-radius: 0 0 8px 8px;
+}
+
+#kiwiki #autorisation_refusee + .level1 p {
+  margin: 0;
+}
+
+/*HEADER*/
+
+#kiwiki #dokuwiki__header {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+  background-color: var(--kiwiki-white);
+  box-shadow: inset 0 -1px 0 0 #62697629;
+  padding: 0 20px;
+  margin: 0 0 10px;
+}
+
+#kiwiki #dokuwiki__header > .dokuwiki__header__wrapper {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  padding: 0;
+}
+
+#kiwiki #dokuwiki__header > .dokuwiki__header__wrapper a.wikilogo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  text-decoration: none;
+}
+
+#kiwiki #dokuwiki__header > .dokuwiki__header__wrapper .wikilogo img {
+  max-height: 60px;
+  margin: 10px 0;
+  width: auto;
+}
+#kiwiki #dokuwiki__header > .dokuwiki__header__wrapper a.wikilogo > div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: var(--kiwiki-body-color);
+}
+#kiwiki
+  #dokuwiki__header
+  > .dokuwiki__header__wrapper
+  a.wikilogo
+  > div
+  > .claim {
+  font-size: 15px;
+}
+
+#kiwiki #dokuwiki__site > .group {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+#kiwiki form.search {
+  min-width: 400px;
+}
+#kiwiki form.search .no {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 15px;
+}
+
+#kiwiki form.search .no button[type="submit"] {
+  background-color: transparent;
+  color: var(--kiwiki-body-color);
+  border: 1px solid #62697629;
+}
+
+#kiwiki form.search .no button[type="submit"]:hover {
+  background-color: var(--kiwiki-btn-hover-bg);
+  color: var(--kiwiki-white);
+}
+
+#dokuwiki__site > .group {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/*MENU*/
+#kiwiki nav.tools {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+#kiwiki nav.tools > div > strong {
+  pointer-events: none;
+}
+#kiwiki nav.tools > div {
+  position: relative;
+  cursor: pointer;
+}
+#kiwiki nav.tools > div > strong svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--kiwiki-body-color);
+  transition: all 0.2s ease-in-out;
+}
+#kiwiki nav.tools > div:hover > strong svg {
+  fill: var(--kiwiki-btn-hover-bg);
+  transform: scale(1.1);
+}
+#kiwiki nav.tools > div > ul {
+  min-width: 250px;
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem #00000026;
+  border: 1px solid #62697629;
+  border-radius: 4px;
+  padding: 0;
+  overflow: hidden;
+  right: 0;
+}
+#kiwiki nav.tools > div#dokuwiki__pagetools > ul {
+  right: -52px;
+}
+
+#kiwiki nav.tools > div.active > ul {
+  display: block;
+}
+
+#kiwiki nav.tools > div > ul > li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+#kiwiki nav.tools > div > ul > li a:hover {
+  background-color: #f8f8f8;
+}
+
+#kiwiki nav.tools > div > ul > li#sitemenu {
+  padding: 10px 20px;
+  background-color: var(--kiwiki-body-color);
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+}
+#kiwiki nav.tools > div > ul > li#sitemenu a:hover {
+  background-color: transparent;
+}
+
+#kiwiki nav.tools #sitemenu .icon {
+  fill: var(--kiwiki-white);
+}
+
+#kiwiki nav.tools > div > ul > li#sitemenu a:hover .icon {
+  fill: var(--kiwiki-btn-hover-bg);
+}
+
+#kiwiki #dokuwiki__usertools .user {
+  padding: 10px 20px;
+  background-color: var(--kiwiki-body-color);
+  color: var(--kiwiki-white);
+  font-size: 0.8rem;
+}
+
+#kiwiki nav.tools > div > ul > li.action.logout a {
+  color: #f00;
+}
+
+/*CONTENT*/
+#kiwiki #dokuwiki__site div.no {
+  display: flex;
+}
+#kiwiki #dokuwiki__site #dokuwiki__top #dokuwiki__content__wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  justify-content: center;
+}
+
+#kiwiki #dokuwiki__content {
+  float: initial;
+  margin: 0;
+  padding: 0;
+  display: block;
+  min-width: 300px;
+  width: 100%;
+}
+/*
+#dokuwiki__aside + #dokuwiki__content {
+  width: 80%;
+}*/
+
+#kiwiki #dokuwiki__site.mode_login #dokuwiki__content,
+#kiwiki #dokuwiki__site.mode_denied #dokuwiki__content {
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+#kiwiki #dokuwiki__content > div {
+  margin: 0;
+}
+
+#kiwiki #dokuwiki__content > .group {
+  display: block;
+  box-shadow: #1e293b0a 0 2px 4px 0;
+  border: 1px solid #62697629;
+  background: var(--kiwiki-white, #fff);
+  border-radius: 4px;
+  padding: 30px 60px;
+}
+
+/*BREADCRUMBS*/
+#kiwiki .breadcrumbs {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*ASIDE*/
+
+#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside {
+  width: 20%;
+  min-width: 300px;
+  float: initial;
+  margin: 0;
+}
+
+#kiwiki
+  #dokuwiki__site
+  #dokuwiki__content__wrapper
+  #dokuwiki__aside
+  .dokuwiki__aside_wrapper {
+  position: sticky;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#kiwiki
+  #dokuwiki__site
+  #dokuwiki__content__wrapper
+  #dokuwiki__aside
+  .dokuwiki__aside__block,
+#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside #dw__toc {
+  float: none;
+  position: relative;
+  padding: 15px;
+  width: initial;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: #1e293b0a 0 2px 4px 0;
+  border: 1px solid #62697629;
+  background: var(--kiwiki-white, #fff);
+}
+
+#kiwiki #dokuwiki__aside .dokuwiki__aside_wrapper .back + #dw__toc {
+  border-top: none;
+}
+
+.toc > li.level1 > .li {
+  font-weight: 700;
+}
+
+#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside h3 {
+  padding: 0 0.5em 0.2em;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+#kiwiki #dokuwiki__aside ul {
+  padding: 0;
+  margin: 0;
+}
+#kiwiki #dokuwiki__aside ul li {
+  list-style: none;
+  padding: 0 10px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+#kiwiki #dokuwiki__aside ul li a,
+#kiwiki #dokuwiki__aside ul li a:visited {
+  text-decoration: none;
+  color: var(--kiwiki-body-color);
+}
+
+#kiwiki #dokuwiki__aside ul li a:hover {
+  text-decoration: underline;
+  color: var(--kiwiki-btn-hover-bg);
+}
+/* EDIT THIS BUTTON */
+#kiwiki .edit-this {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 0.2;
+}
+#kiwiki .edit-this:hover {
+  opacity: 1;
+}
+
+#kiwiki .edit-this svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--kiwiki-body-color);
+}
+
+/*BUTTONS*/
+#kiwiki button,
+#kiwiki .ui-dialog .ui-dialog-buttonpane button {
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  color: var(--kiwiki-white);
+  background-color: var(--kiwiki-btn-bg);
+  border: 1px solid var(--kiwiki-btn-bg);
+  padding: 5px 10px;
+  transition: all 0.2s ease-in-out;
+  margin: 0 4px;
+  background-image: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#kiwiki .secedit button,
+#kiwiki .editBox #tool__bar button {
+  color: var(--kiwiki-grey-300);
+  background-color: transparent;
+  border: 1px solid var(--kiwiki-grey-300);
+}
+#kiwiki .editBox #tool__bar button {
+  filter: grayscale(1);
+}
+
+#kiwiki button:hover,
+#kiwiki .ui-dialog .ui-dialog-buttonpane button:hover {
+  color: var(--kiwiki-white);
+  background-color: var(--kiwiki-btn-hover-bg);
+}
+
+#kiwiki fieldset {
+  width: 100%;
+}
+
+/*popup*/
+#kiwiki .ui-widget-overlay {
+  background: var(--kiwiki-grey-800);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+#kiwiki .ui-widget-header {
+  background: var(--kiwiki-btn-bg);
+  border: none;
+  color: var(--kiwiki-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.05rem;
+  padding: 0.4em 0 0.4em 1em;
+}
+#kiwiki .ui-widget-header:before,
+#kiwiki .ui-widget-header:after {
+  display: none;
+}
+
+#kiwiki .ui-dialog .ui-dialog-titlebar-close {
+  position: relative;
+}
+
+#kiwiki .ui-dialog .ui-dialog-titlebar-close {
+  position: relative;
+}
+
+#kiwiki .ui-dialog .ui-dialog-titlebar-close .ui-icon {
+  filter: brightness(5);
+}
+#kiwiki .ui-dialog .ui-dialog-buttonpane {
+  border-color: var(--kiwiki-grey-200);
+}
+
+/*TEXT INPUT*/
+#kiwiki select,
+#kiwiki input.edit,
+#kiwiki .ui-widget input,
+#kiwiki .ui-widget select,
+#kiwiki .ui-widget textarea,
+#kiwiki textarea.edit {
+  width: 100%;
+  height: 2rem;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #62697629;
+  transition: all 0.2s ease-out;
+  font-size: 14px;
+  margin: 0;
+  color: #000;
+}
+
+#kiwiki input.edit:focus,
+#kiwiki select.edit:focus {
+  color: var(--kiwiki-grey-800);
+  background-color: #fff;
+  border-color: #90b5e2;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #206bc440;
+}
+
+/*CODE*/
+#kiwiki pre {
+  word-wrap: normal;
+  direction: ltr;
+  unicode-bidi: bidi-override;
+  text-align: left;
+  position: relative;
+  padding: 1.5rem 1rem 1rem;
+  overflow: visible;
+  font-size: 0.9rem;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  line-height: 1.25rem;
+  -moz-tab-size: 3;
+  -o-tab-size: 3;
+  tab-size: 3;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  background: var(--kiwiki-body-bg);
+  /*border: 1px solid var(--kiwiki-grey-300);*/
+  -webkit-font-smoothing: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+#kiwiki pre:before {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  content: "code";
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 900;
+  color: var(--kiwiki-grey-300);
+}
+#kiwiki pre:hover {
+  box-shadow: 0 0 5px var(--kiwiki-grey-300);
+}
+/*SECTION EDIT*/
+#kiwiki div[class*="level"] {
+  padding: 10px;
+}
+#kiwiki .secedit {
+  float: initial;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  /*border-top:1px solid rgba(98,105,118,.16);*/
+}
+
+#kiwiki .secedit button {
+  position: relative;
+  top: -15px;
+  right: -5px;
+}
+
+#kiwiki div.section_highlight {
+  background: var(--kiwiki-grey-100);
+  border-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 10px;
+}
+
+/*PROFILE*/
+#kiwiki label.block {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-weight: bold;
+}
+
+#kiwiki label.block select,
+#kiwiki label.block input.edit {
+  width: 80%;
+}
+
+#kiwiki .qq-upload-button {
+  cursor: inherit !important;
+
+  direction: inherit !important;
+}
+
+#kiwiki .qq-upload-button input {
+  font-family: inherit !important;
+
+  font-size: 1em !important;
+
+  margin: inherit !important;
+
+  opacity: 1 !important;
+
+  padding: inherit !important;
+
+  position: static !important;
+}
+
+/*edit*/
+#kiwiki .editBar .summary label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#kiwiki .editBar .summary {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  gap: 15px;
+}
+
+/*qsearch*/
+#kiwiki form.search div.ajax_qsearch {
+  position: absolute;
+  top: 60px;
+  left: -15px;
+  max-width: 1300px;
+  width: 100%;
+  padding: 15px 0 15px 15px;
+  border: 1px solid var(--kiwiki-grey-400);
+  background-color: var(--kiwiki-body-bg);
+  color: var(--kiwiki-body-color);
+  outline: 0;
+  box-shadow: 0 0 15px var(--kiwiki-grey-400);
+  border-radius: 5px;
+  height: 400px;
+  overflow: hidden scroll;
+}
+#kiwiki form.search div.ajax_qsearch::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+#kiwiki form.search div.ajax_qsearch::-webkit-scrollbar-thumb {
+  background-color: var(--kiwiki-grey-700);
+  outline: 1px solid var(--kiwiki-grey-700);
+  width: 1em;
+  border-radius: 1em;
+}
+#kiwiki form.search div.ajax_qsearch::-webkit-scrollbar-track {
+  background-color: var(--kiwiki-grey-200);
+  border-style: solid;
+  border-radius: 1em;
+  border-width: 1px;
+  border-color: var(--kiwiki-grey-200);
+}
+
+/*other*/
+#kiwiki #dokuwiki__content > .other-pages {
+  margin-top: 15px;
+}
+#kiwiki #dokuwiki__content > .other,
+#kiwiki #dokuwiki__content > .other ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+#dokuwiki__content > .other * {
+  list-style-type: none;
+  font-size: 12px;
+  margin: 0 5px;
+  padding: 0;
+  text-decoration: none;
+}
+/*GOTOP*/
+#kiwiki #gotop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+#kiwiki #gotop .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--kiwiki-btn-bg);
+  transition: all 0.2s ease-in-out;
+}
+#kiwiki #gotop svg {
+  fill: var(--kiwiki-white);
+  position: relative;
+  top: 0;
+  transition: all 0.25s ease-in-out;
+}
+#kiwiki #gotop .icon:hover {
+  background-color: var(--kiwiki-btn-hover-bg);
+}
+#kiwiki #gotop .icon:hover svg {
+  top: -6px;
+}
+
+/*REVISIONS*/
+#kiwiki #dokuwiki__site .changes div.no {
+  flex-wrap: nowrap;
+  gap: 15px;
+  justify-content: space-between;
+  position: relative;
+}
+#kiwiki .changes .changeType {
+  width: 25%;
+}
+#kiwiki .changes .changeType > .quickselect {
+  position: sticky;
+  top: 20px;
+}
+#kiwiki .changes ul {
+  width: 75%;
+}
+#kiwiki .changes ul > li > div.li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  align-items: center;
+  border-bottom: 1px solid var(--kiwiki-grey-200);
+  padding: 15px 0;
+}
+#kiwiki .changes ul > li > div.li * {
+  padding: 2px 4px;
+  display: inline-block;
+}
+
+#kiwiki .changes ul > li > div.li .date {
+  order: 1;
+}
+#kiwiki .changes ul > li > div.li .sum {
+  width: 60%;
+  font-size: 12px;
+  order: 2;
+}
+#kiwiki .changes ul > li > div.li .sizechange {
+  width: 10%;
+  text-align: center;
+  order: 3;
+}
+#kiwiki .changes ul > li > div.li *:nth-child(3) {
+  width: 4%;
+  text-align: center;
+  order: 4;
+}
+#kiwiki .changes ul > li > div.li *:nth-child(4) {
+  width: 4%;
+  text-align: center;
+  order: 5;
+}
+
+#kiwiki .changes ul > li > div.li:before {
+  content: "";
+  display: block;
+  width: 100%;
+  order: 6;
+}
+
+#kiwiki .changes ul > li > div.li > img {
+  width: 4%;
+  height: auto;
+  order: 7;
+}
+#kiwiki .changes ul > li > div.li .wikilink1,
+#kiwiki .changes ul > li > div.li .wikilink2 {
+  width: 90%;
+  order: 8;
+  text-align: left;
+}
+
+#kiwiki .changes ul > li > div.li .user {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  order: 9;
+}
+
+#kiwiki #page__revisions.changes div.no {
+  flex-wrap: wrap;
+}
+#kiwiki #page__revisions.changes ul {
+  width: 100%;
+  order: 1;
+}
+#kiwiki #page__revisions.changes div.no > button {
+  order: 2;
+}
+#kiwiki form.changes ul li span,
+#kiwiki form.changes ul li a {
+  line-break: anywhere;
+}
+/*DIFF*/
+#kiwiki .diffoptions {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--kiwiki-grey-200);
+}
+#kiwiki .diffoptions > form,
+#kiwiki .diffoptions > p {
+  width: 50%;
+}
+#kiwiki .diffoptions > p {
+  margin: 0;
+  text-align: right;
+}
+#kiwiki .diffoptions .quickselect {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#kiwiki .diffoptions .quickselect span {
+  font-size: 12px;
+}
+#kiwiki .diffnav {
+  vertical-align: middle;
+}
+#kiwiki .diffnav > form {
+  display: inline-block;
+  width: 80%;
+  margin: 0;
+}
+#kiwiki .diffnav > a {
+  width: 10%;
+  margin: 0;
+  text-decoration: none;
+}
+
+#kiwiki .diffnav > a:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--kiwiki-grey-200);
+  padding: 7px 0 6px;
+  margin: 0 2px;
+}
+
+#kiwiki table.diff th {
+  font-size: 12px;
+}
+
+/*INDEX MODE*/
+#kiwiki .mode_index #dokuwiki__content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#kiwiki #index__tree {
+  text-align: left;
+}
+
+#kiwiki #index__tree > ul > li {
+  padding: 5px 0;
+}
+
+#kiwiki #index__tree a {
+  text-decoration: none;
+}
+#kiwiki #index__tree li.open ul {
+  padding-left: 20px;
+}
+
+/*SEARCH MODE*/
+#kiwiki .mode_search #dokuwiki__content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#kiwiki .mode_search .search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  border: 0;
+}
+
+#kiwiki .mode_search .search-form input[name="q"] {
+  width: 75%;
+  height: 2rem;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #62697629;
+  transition: all 0.2s ease-out;
+  font-size: 14px;
+  margin: 0;
+  color: #000;
+}
+
+#kiwiki .mode_search .search-form .advancedOptions {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+#kiwiki .mode_search .search-form .toggleAssistant {
+  order: 3;
+  width: 95%;
+  background-color: transparent;
+  color: var(--kiwiki-body-color);
+  border: 1px solid #62697629;
+}
+
+#kiwiki .search_quickhits {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#kiwiki .search_quickhits li {
+  width: 100%;
+  margin: 5px 0;
+}
+#kiwiki .search_fulltextresult .search_results {
+  text-align: left;
+}
+
+/*TABS*/
+
+#kiwiki .tabs > ul li a,
+#kiwiki ul.tabs li strong,
+#kiwiki ul.tabs li a {
+  background-color: transparent;
+  color: var(--kiwiki-grey-400);
+  border: 1px solid var(--kiwiki-grey-300);
+  border-radius: 0;
+  position: relative;
+  z-index: 0;
+  text-decoration: none;
+}
+#kiwiki ul.tabs li strong,
+#kiwiki ul.tabs li.active a {
+  background-color: var(--kiwiki-body-bg);
+  color: var(--kiwiki-body-color);
+}
+#kiwiki .tabs > ul:after,
+#kiwiki ul.tabs:after {
+  z-index: 9;
+}
+#kiwiki ul.tabs li:first-child * {
+  margin: 0;
+  border-radius: 4px 0 0;
+}
+#kiwiki .panelHeader {
+  background: none;
+  border: 1px solid var(--kiwiki-grey-300);
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+}
+/*FILE MANAGER*/
+#kiwiki #dokuwiki__site #dokuwiki__top.mode_media #dokuwiki__content__wrapper {
+  width: 90%;
+  max-width: 100%;
+}
+
+#kiwiki #mediamanager__page {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 70px;
+}
+#kiwiki #mediamanager__page > h1 {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  border: none;
+}
+#kiwiki #mediamanager__page .panel.namespaces {
+  padding: 15px;
+  width: 20%;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: #1e293b0a 0 2px 4px 0;
+  border: 1px solid #62697629;
+  background: var(--kiwiki-white, #fff);
+}
+
+#kiwiki #mediamanager__page .panel.namespaces h2 {
+  padding: 0 0.5em 0.2em;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0;
+  background: none;
+  border: none;
+}
+
+#kiwiki #mediamanager__page .panel.filelist {
+  padding: 0 20px;
+  display: block;
+  width: 60%;
+}
+
+#kiwiki #mediamanager__page .panel.file .panelHeader {
+  border-left: 1px solid var(--kiwiki-grey-300);
+  border-right: 1px solid var(--kiwiki-grey-300);
+  border-radius: 0;
+  margin: 0;
+  padding: 20px;
+}
+#kiwiki #mediamanager__page .panel.file .panelHeader h3 {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+#kiwiki #mediamanager__page .panel.file .panelContent {
+  border: 1px solid var(--kiwiki-grey-300);
+  border-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 4px 4px;
+  padding-bottom: 20px;
+}
+
+#kiwiki #mediamanager__page .panel.filelist ul.thumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+#kiwiki #mediamanager__page .panel.filelist .thumbs li {
+  width: 150px;
+  background-color: transparent;
+  cursor: pointer;
+}
+#kiwiki #mediamanager__page .panel.filelist .thumbs li:hover {
+  background-color: var(--kiwiki-grey-200);
+}
+#kiwiki #mediamanager__page .panel.filelist .thumbs li dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+#kiwiki #mediamanager__page .panel.filelist .thumbs li dl > * {
+  width: 100%;
+}
+#kiwiki #mediamanager__page .panel.filelist .thumbs li dl > dt {
+  display: flex;
+  justify-content: center;
+}
+
+#kiwiki #mediamanager__page .file ul.actions {
+  display: flex;
+  margin: 15px 0;
+}
+
+#kiwiki #mediamanager__page .file dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  font-size: 12px;
+  justify-content: center;
+}
+#kiwiki #mediamanager__page .file dl > dt,
+#kiwiki #mediamanager__page .file dl > dd {
+  width: 48%;
+  padding: 2px;
+}
+#kiwiki #mediamanager__page .file dl:last-child {
+  gap: 5px;
+}
+#kiwiki #mediamanager__page .file dl:last-child > * {
+  width: fit-content;
+  background-color: transparent;
+}
+
+/*FOOTER*/
+
+#kiwiki #dokuwiki__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--kiwiki-body-color);
+}
+
+/*MISC*/
+#kiwiki .JSpopup {
+  border: 1px solid __border__;
+}
+
+#kiwiki div.ui-admin {
+  display: flex;
+  flex-direction: column;
+}

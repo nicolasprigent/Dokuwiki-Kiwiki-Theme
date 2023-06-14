@@ -1,0 +1,215 @@
+/**
+ * This file provides style changes for small screens.
+ */
+
+@media only screen and (min-width: 951px) {
+  #kiwiki nav.tools > div#open-search {
+    display: none;
+  }
+}
+@media only screen and (max-width: 950px) {
+  #kiwiki h1 {
+    font-size: 1.9rem;
+  }
+  #kiwiki h2 {
+    font-size: 1.6rem;
+  }
+  #kiwiki h3 {
+    font-size: 1.3em;
+  }
+  #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper #dw__search {
+    order: 3;
+    min-width: initial;
+    padding-bottom: 10px;
+    display: none;
+    width: 100%;
+  }
+  #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper #dw__search.open {
+    display: inline;
+  }
+  #kiwiki #dokuwiki__header {
+    padding: 0 5px;
+    margin: 0;
+  }
+  #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper .group {
+    order: 1;
+  }
+  #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper nav {
+    order: 2;
+  }
+
+  #kiwiki .breadcrumbs {
+    margin: 15px auto;
+  }
+  #kiwiki
+    #dokuwiki__site
+    #dokuwiki__content__wrapper
+    #dokuwiki__aside
+    .dokuwiki__aside_wrapper {
+    gap: 0;
+  }
+  #kiwiki #dokuwiki__site #dokuwiki__top #dokuwiki__content__wrapper {
+    position: relative;
+  }
+
+  #kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside {
+    width: 100%;
+    float: none;
+    margin-bottom: 1.4em;
+    order: 1;
+    position: sticky;
+    top: 0;
+    z-index: 8;
+    margin: 0;
+  }
+  #kiwiki
+    #dokuwiki__site
+    #dokuwiki__content__wrapper
+    #dokuwiki__aside
+    .dokuwiki__aside__block,
+  #kiwiki
+    #dokuwiki__site
+    #dokuwiki__content__wrapper
+    #dokuwiki__aside
+    #dw__toc {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  #kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside h3 {
+    font-size: 18px;
+    padding: 10px 5px;
+    text-transform: uppercase;
+  }
+  #kiwiki
+    #dokuwiki__site
+    #dokuwiki__content__wrapper
+    #dokuwiki__aside
+    .kiwiki-main-menu
+    h3 {
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  #kiwiki
+    #dokuwiki__site
+    #dokuwiki__content__wrapper
+    #dokuwiki__aside
+    .kiwiki-main-menu
+    h3:hover {
+    background-color: var(--kiwiki-btn-hover-bg);
+    color: var(--kiwiki-white);
+  }
+
+  #kiwiki
+    #dokuwiki__site
+    #dokuwiki__content__wrapper
+    #dokuwiki__aside
+    .kiwiki-main-menu
+    h3:after {
+    content: "+";
+    float: right;
+    margin: 0 0.2em;
+  }
+  #kiwiki
+    #dokuwiki__site
+    #dokuwiki__content__wrapper
+    #dokuwiki__aside
+    .kiwiki-main-menu.open
+    h3:after {
+    content: "−";
+  }
+  #kiwiki
+    #dokuwiki__site
+    #dokuwiki__content__wrapper
+    #dokuwiki__aside
+    .kiwiki-main-menu
+    h3
+    + ul,
+  #kiwiki
+    #dokuwiki__site
+    #dokuwiki__content__wrapper
+    #dokuwiki__aside
+    #dw__toc {
+    display: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #kiwiki
+    #dokuwiki__site
+    #dokuwiki__content__wrapper
+    #dokuwiki__aside
+    .kiwiki-main-menu.open
+    h3
+    + ul,
+  #kiwiki
+    #dokuwiki__site
+    #dokuwiki__content__wrapper
+    #dokuwiki__aside
+    .kiwiki-main-menu.open
+    + #dw__toc {
+    display: initial;
+  }
+
+  #kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside > div {
+    margin: 0;
+  }
+
+  #kiwiki #dokuwiki__content {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    order: 2;
+  }
+  #kiwiki #dokuwiki__site #dokuwiki__content__wrapper {
+    width: 100%;
+    max-width: initial;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #kiwiki #dokuwiki__content > .group {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  #kiwiki #dokuwiki__content ul {
+    padding: 0 0 0 20px;
+  }
+  #kiwiki [dir="rtl"] .hasSidebar #dokuwiki__content > div {
+    margin-right: 0;
+  }
+
+  #kiwiki #dokuwiki__header .a11y.skip,
+  #kiwiki #dokuwiki__aside hr.a11y {
+    left: auto !important;
+    top: auto !important;
+    width: auto !important;
+    height: auto !important;
+    position: static !important;
+  }
+
+  #kiwiki [dir="rtl"] #dokuwiki__header .a11y.skip,
+  #kiwiki [dir="rtl"] #dokuwiki__aside hr.a11y {
+    right: auto !important;
+    left: 1em !important;
+  }
+
+  #kiwiki .tools {
+    text-align: left;
+  }
+
+  #kiwiki [dir="rtl"] .tools {
+    text-align: right;
+  }
+  #kiwiki #dokuwiki__content > .other,
+  #kiwiki #dokuwiki__content > .other ul {
+    flex-wrap: wrap;
+  }
+} /* /@media */

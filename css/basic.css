@@ -1,0 +1,102 @@
+/*:root {
+  --kiwiki-black: #000000;
+  --kiwiki-white: #ffffff;
+  --kiwiki-grey: #475569;
+  --kiwiki-grey-dark: #1e293b;
+  --kiwiki-grey-100: #f1f5f9;
+  --kiwiki-grey-200: #e2e8f0;
+  --kiwiki-grey-300: #cbd5e1;
+  --kiwiki-grey-400: #94a3b8;
+  --kiwiki-grey-500: #64748b;
+  --kiwiki-grey-600: #475569;
+  --kiwiki-grey-700: #334155;
+  --kiwiki-grey-800: #1e293b;
+  --kiwiki-grey-900: #0f172a;
+  --kiwiki-body-color: #1e293b;
+  --kiwiki-body-bg: #f5f7fd;
+  --kiwiki-btn-bg: #1a569d;
+  --kiwiki-btn-hover-bg: #1e77e1;
+  --kiwiki-btn-border-color: #185093;
+}*/
+
+body {
+  --kiwiki-black: __kiwiki_color_black__;
+  --kiwiki-white: __kiwiki_color_white__;
+  --kiwiki-grey: __kiwiki_color_grey__;
+  --kiwiki-grey-dark: __kiwiki_color_grey_dark__;
+  --kiwiki-grey-100: __kiwiki_color_grey_100__;
+  --kiwiki-grey-200: __kiwiki_color_grey_200__;
+  --kiwiki-grey-300: __kiwiki_color_grey_300__;
+  --kiwiki-grey-400: __kiwiki_color_grey_400__;
+  --kiwiki-grey-500: __kiwiki_color_grey_500__;
+  --kiwiki-grey-600: __kiwiki_color_grey_600__;
+  --kiwiki-grey-700: __kiwiki_color_grey_700__;
+  --kiwiki-grey-800: __kiwiki_color_grey_800__;
+  --kiwiki-grey-900: __kiwiki_color_grey_900__;
+  --kiwiki-body-color: __kiwiki_color_text__;
+  --kiwiki-body-bg: __kiwiki_color_body_bg__;
+  --kiwiki-btn-bg: __kiwiki_color_btn_bg__;
+  --kiwiki-btn-hover-bg: __kiwiki_color_btn_hover_bg__;
+  --kiwiki-btn-border-color: __kiwiki_color_btn_border_color__;
+}
+
+* {
+  outline: 0;
+}
+
+::-moz-selection,
+::selection {
+  color: var(--kiwiki-white);
+  background: var(--kiwiki-btn-hover-bg);
+}
+
+html,
+body {
+  background-color: __background__;
+  color: __text__;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: auto;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+img {
+  border-width: 0;
+}
+
+img,
+video {
+  height: auto;
+}
+
+img,
+object,
+iframe,
+video,
+audio,
+select {
+  max-width: 100%;
+}
+
+a,
+a:visited {
+  color: var(--kiwiki-btn-bg);
+}
+
+a:hover {
+  color: var(--kiwiki-btn-hover-bg);
+}
