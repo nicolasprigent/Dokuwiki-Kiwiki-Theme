@@ -176,9 +176,11 @@
   }
   #kiwiki #dokuwiki__content > .group {
     margin-left: 0;
+    padding: 0;
+  }
+  #kiwiki #dokuwiki__content > .group > .page.group {
     padding: 15px;
   }
-
   #kiwiki #dokuwiki__content ul {
     padding: 0 0 0 20px;
   }
@@ -211,5 +213,14 @@
   #kiwiki #dokuwiki__content > .other,
   #kiwiki #dokuwiki__content > .other ul {
     flex-wrap: wrap;
+  }
+
+  #kiwiki pre {
+    word-wrap: break-word;
+  }
+  #kiwiki .edit-this {
+    left: 4px;
+    right: 4px;
+    width: fit-content;
   }
 } /* /@media */
