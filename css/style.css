@@ -709,24 +709,6 @@
   border-color: var(--kiwiki-grey-200);
 }
 
-/*other*/
-#kiwiki #dokuwiki__content > .other-pages {
-  margin-top: 15px;
-}
-#kiwiki #dokuwiki__content > .other,
-#kiwiki #dokuwiki__content > .other ul {
-  display: flex;
-  gap: 10px;
-  padding: 0;
-}
-
-#dokuwiki__content > .other * {
-  list-style-type: none;
-  font-size: 12px;
-  margin: 0 5px;
-  padding: 0;
-  text-decoration: none;
-}
 /*GOTOP*/
 #kiwiki #gotop {
   position: fixed;
@@ -755,6 +737,33 @@
 }
 #kiwiki #gotop .icon:hover svg {
   top: -6px;
+}
+
+/*CONFIG PANEL*/
+#kiwiki #config__manager td.label span.outkey {
+  background-color: var(--kiwiki-body-bg);
+  color: var(--kiwiki-body-color);
+  padding: 0 4px 3px;
+}
+#kiwiki form#dw__configform {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#kiwiki fieldset {
+  width: 100%;
+  position: relative;
+  display: block;
+  background-color: var(--kiwiki-white);
+  color: var(--kiwiki-body-color);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#kiwiki #config__manager td input.edit {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*REVISIONS*/
