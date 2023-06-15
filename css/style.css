@@ -319,6 +319,7 @@
   margin: 0;
   padding: 0;
   display: block;
+  position: relative;
   min-width: 300px;
   width: 100%;
 }
