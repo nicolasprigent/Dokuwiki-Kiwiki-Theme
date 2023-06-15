@@ -11,7 +11,10 @@ https://www.dokuwiki.org/template:kiwiki
 ### 2023-06-14
 - Initial release
 
+## Screenshots
+
+Basic colors
 ![kiwiki_screenshot](./screenshots/kiwiki_screenshot.jpg)
 
-
+Theme colors editor
 ![kiwiki_screenshot02](./screenshots/kiwiki_screenshot02.jpg)
