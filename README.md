@@ -12,3 +12,4 @@ https://www.dokuwiki.org/template:kiwiki
 - Initial release
 
 ![kiwiki_screenshot](./screenshots/kiwiki_screenshot.jpg)
+![kiwiki_screenshot02](./screenshots/kiwiki_screenshot02.jpg)
