@@ -244,7 +244,7 @@
   display: none;
   list-style-type: none;
   position: absolute;
-  background-color: #fff;
+  background-color: var(--kiwiki-white);
   box-shadow: 0 0.5rem 1rem #00000026;
   border: 1px solid #62697629;
   border-radius: 4px;
