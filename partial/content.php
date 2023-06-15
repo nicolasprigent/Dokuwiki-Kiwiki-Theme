@@ -62,6 +62,5 @@
             <?php tpl_flush() ?>
             <?php tpl_includeFile('pagefooter.html') ?>
         </div>
-        <div class="other"><?php tpl_flush(); ?><?php tpl_include_page('sidebar'); ?></div>
     </main><!-- /content -->
 </div><!-- /wrapper -->
