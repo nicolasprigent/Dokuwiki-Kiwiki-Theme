@@ -4,11 +4,48 @@
  *
  */
 
-$lang['__existing__']      = 'The color for links to existing pages';
-$lang['__missing__']       = 'The color for links to non-existing pages';
-$lang['__site_width__']    = 'The width of the full site (can be any length unit: %, px, em, ...)';
-$lang['__sidebar_width__'] = 'The width of the sidebar, if any (can be any length unit: %, px, em, ...)';
-
-$lang['search']        = 'Search';
+$lang['__existing__']      = 'Existing page link color';
+$lang['__missing__']       = 'Non-existing page link color';
+$lang['__site_width__']    = 'Site width';
+$lang['__sidebar_width__'] = 'Sidebar width';
+$lang['search'] = 'Search';
 $lang['Menu']        = 'Menu';
-$lang['__other_color__ ']        = 'Other color';
+$lang['edit-menu']   = 'Edit menu';
+
+$lang['__kiwiki_body_bg_color__'] = "Background color";
+$lang['__kiwiki_text_color__'] = "Text color";
+$lang['__kiwiki_main_color__'] = "Content background color" ;
+$lang['__kiwiki_ui_color__'] = "UI Color" ;
+$lang['__kiwiki_ui_100_color__'] = "UI Color 100" ;
+$lang['__kiwiki_ui_200_color__'] = "UI Color 200";
+$lang['__kiwiki_ui_300_color__'] = "UI Color 300";
+$lang['__kiwiki_ui_400_color__'] = "UI Color 400" ; 
+$lang['__kiwiki_ui_500_color__'] = "UI Color 500" ; 
+$lang['__kiwiki_ui_600_color__'] = "UI Color 600" ; 
+$lang['__kiwiki_ui_700_color__'] = "UI Color 700" ;
+$lang['__kiwiki_ui_800_color__'] = "UI Color 800" ; 
+$lang['__kiwiki_ui_900_color__'] = "UI Color 900" ; 
+$lang['__kiwiki_btn_bg_color__'] = "Button background color" ; 
+$lang['__kiwiki_btn_text_color__'] = "Button text color" ; 
+$lang['__kiwiki_btn_bg_hover_color__'] = "Button background hover color" ; 
+$lang['__kiwiki_btn_hover_text_color__'] = "Button text hover color" ; 
+$lang['__kiwiki_color_btn_border_color__'] = "Button border color" ; 
+
+$lang['__kiwiki_dark_body_bg_color__'] = "Background color" ; 
+$lang['__kiwiki_dark_text_color__'] = "Text color" ; 
+$lang['__kiwiki_dark_main_color__'] = "Content background color" ; 
+$lang['__kiwiki_dark_ui_color__'] = "UI Color" ; 
+$lang['__kiwiki_dark_ui_100_color__'] = "UI Color 100" ; 
+$lang['__kiwiki_dark_ui_200_color__'] = "UI Color 200" ; 
+$lang['__kiwiki_dark_ui_300_color__'] = "UI Color 300" ; 
+$lang['__kiwiki_dark_ui_400_color__'] = "UI Color 400" ; 
+$lang['__kiwiki_dark_ui_500_color__'] = "UI Color 500" ; 
+$lang['__kiwiki_dark_ui_600_color__'] = "UI Color 600" ; 
+$lang['__kiwiki_dark_ui_700_color__'] = "UI Color 700" ; 
+$lang['__kiwiki_dark_ui_800_color__'] = "UI Color 800" ; 
+$lang['__kiwiki_dark_ui_900_color__'] = "UI Color 900" ; 
+$lang['__kiwiki_dark_btn_bg_color__'] = "Button background color" ; 
+$lang['__kiwiki_dark_btn_text_color__'] = "Button text color" ; 
+$lang['__kiwiki_dark_btn_bg_hover_color__'] = "Button background hover color" ; 
+$lang['__kiwiki_dark_btn_hover_text_color__'] = "Button text hover color" ; 
+$lang['__kiwiki_dark_color_btn_border_color__'] = "Button border color" ; 
