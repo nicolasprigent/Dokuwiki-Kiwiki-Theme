@@ -31,6 +31,9 @@
             <div id="open-search">
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'search.svg') ?></strong>
             </div>
+            <div id="theme-mode">
+                <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'theme_mode.svg') ?></strong>
+            </div>
             <div id="dokuwiki__pagetools">
                 
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'preferences.svg') ?></strong>
