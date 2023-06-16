@@ -5,6 +5,11 @@ Flex theme with lots of css fix and some ease of use features. You can change al
 https://www.dokuwiki.org/template:kiwiki
 
 ### 2023-06-15
+- Added light/dark theme mode, with separated customization
+- Detection of os preferences for light or dark mode
+- Override with cookie when clicking a button
+  
+### 2023-06-15
 - Fixed word wrapping for pre code blocks on mobile
 - Fixed the edit icon position on mobile
 
