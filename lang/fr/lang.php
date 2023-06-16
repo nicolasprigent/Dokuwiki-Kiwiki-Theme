@@ -4,19 +4,48 @@
  *
  */
 
-$lang['__existing__']      = 'The color for links to existing pages';
-$lang['__missing__']       = 'The color for links to non-existing pages';
-$lang['__site_width__']    = 'The width of the full site (can be any length unit: %, px, em, ...)';
-$lang['__sidebar_width__'] = 'The width of the sidebar, if any (can be any length unit: %, px, em, ...)';
+$lang['__existing__']      = 'La couleur des liens vers les pages qui existent';
+$lang['__missing__']       = 'La couleur des liens vers les pages qui n\'existent pas';
+$lang['__site_width__']    = 'La largeur du site';
+$lang['__sidebar_width__'] = 'La largeur de la barre latérale';
 $lang['search'] = 'Rechercher';
 $lang['Menu']        = 'Menu';
 $lang['edit-menu']   = 'Éditer le menu';
-$lang['__kiwiki_color_black__']        = 'Couleur sombre';
-$lang['__kiwiki_color_white__']        = 'Couleur claire';
-$lang['__kiwiki_color_grey__']        = 'Couleur grise';
-$lang['__kiwiki_color_grey_dark__']        = 'Couleur gris sombre';
-$lang['__kiwiki_color_text__']        = 'Couleur texte';
-$lang['__kiwiki_color_body_bg__']        = 'Couleur fond';
-$lang['__kiwiki_color_btn_bg__']        = 'Couleur bouton';
-$lang['__kiwiki_color_btn_hover_bg__']        = 'Couleur survol bouton';
-$lang['__kiwiki_color_btn_border_color__']        = 'Couleur contour bouton';
+
+$lang['__kiwiki_body_bg_color__'] = "Couleur de fond";
+$lang['__kiwiki_text_color__'] = "Couleur du texte";
+$lang['__kiwiki_main_color__'] = "Couleur de fond du contenu" ;
+$lang['__kiwiki_ui_color__'] = "Couleur d'interface" ;
+$lang['__kiwiki_ui_100_color__'] = "Couleur d'interface 100" ;
+$lang['__kiwiki_ui_200_color__'] = "Couleur d'interface 200";
+$lang['__kiwiki_ui_300_color__'] = "Couleur d'interface 300";
+$lang['__kiwiki_ui_400_color__'] = "Couleur d'interface 400" ; 
+$lang['__kiwiki_ui_500_color__'] = "Couleur d'interface 500" ; 
+$lang['__kiwiki_ui_600_color__'] = "Couleur d'interface 600" ; 
+$lang['__kiwiki_ui_700_color__'] = "Couleur d'interface 700" ;
+$lang['__kiwiki_ui_800_color__'] = "Couleur d'interface 800" ; 
+$lang['__kiwiki_ui_900_color__'] = "Couleur d'interface 900" ; 
+$lang['__kiwiki_btn_bg_color__'] = "Couleur de fond du bouton" ; 
+$lang['__kiwiki_btn_text_color__'] = "Couleur de texte du bouton" ; 
+$lang['__kiwiki_btn_bg_hover_color__'] = "Couleur de fond au survol du bouton" ; 
+$lang['__kiwiki_btn_hover_text_color__'] = "Couleur de texte au survol du bouton" ; 
+$lang['__kiwiki_color_btn_border_color__'] = "Couleur de la bordure du bouton" ; 
+
+$lang['__kiwiki_dark_body_bg_color__'] = "Couleur de fond" ; 
+$lang['__kiwiki_dark_text_color__'] = "Couleur du texte" ; 
+$lang['__kiwiki_dark_main_color__'] = "Couleur de fond du contenu" ; 
+$lang['__kiwiki_dark_ui_color__'] = "Couleur d'interface" ; 
+$lang['__kiwiki_dark_ui_100_color__'] = "Couleur d'interface 100" ; 
+$lang['__kiwiki_dark_ui_200_color__'] = "Couleur d'interface 200" ; 
+$lang['__kiwiki_dark_ui_300_color__'] = "Couleur d'interface 300" ; 
+$lang['__kiwiki_dark_ui_400_color__'] = "Couleur d'interface 400" ; 
+$lang['__kiwiki_dark_ui_500_color__'] = "Couleur d'interface 500" ; 
+$lang['__kiwiki_dark_ui_600_color__'] = "Couleur d'interface 600" ; 
+$lang['__kiwiki_dark_ui_700_color__'] = "Couleur d'interface 700" ; 
+$lang['__kiwiki_dark_ui_800_color__'] = "Couleur d'interface 800" ; 
+$lang['__kiwiki_dark_ui_900_color__'] = "Couleur d'interface 900" ; 
+$lang['__kiwiki_dark_btn_bg_color__'] = "Couleur de fond du bouton" ; 
+$lang['__kiwiki_dark_btn_text_color__'] = "Couleur de texte du bouton" ; 
+$lang['__kiwiki_dark_btn_bg_hover_color__'] = "Couleur de fond au survol du bouton" ; 
+$lang['__kiwiki_dark_btn_hover_text_color__'] = "Couleur de texte au survol du bouton" ; 
+$lang['__kiwiki_dark_color_btn_border_color__'] = "Couleur de la bordure du bouton" ; 
