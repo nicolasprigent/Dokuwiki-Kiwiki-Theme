@@ -4,13 +4,13 @@
   line-height: 1.8;
   margin: 0 0 0.5rem;
   padding: 0 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--kiwiki-ui-300);
 }
 #kiwiki h2 {
   font-size: 1.8em;
   margin: 0.5em 0;
   padding: 0 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--kiwiki-ui-300);
   line-height: 1.5;
 }
 #kiwiki h3 {
@@ -35,7 +35,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  color: var(--kiwiki-body-color);
+  color: var(--kiwiki-text-color);
 }
 
 #kiwiki #dokuwiki__top .wrapper {
@@ -65,10 +65,11 @@
   max-width: 400px;
   flex-direction: column;
   box-shadow: #1e293b0a 0 2px 4px 0;
-  border: 1px solid #62697629;
-  background: var(--kiwiki-white, #fff);
+  border: 1px solid var(--kiwiki-ui-100);
+  background: var(--kiwiki-main, #fff);
   border-radius: 4px;
   padding: 30px;
+  margin: 0 auto;
 }
 
 #kiwiki #dw__login fieldset,
@@ -128,8 +129,8 @@
   align-items: center;
   position: relative;
   z-index: 99;
-  background-color: var(--kiwiki-white);
-  box-shadow: inset 0 -1px 0 0 #62697629;
+  background-color: var(--kiwiki-main);
+  box-shadow: inset 0 -1px 0 0 var(--kiwiki-ui-100);
   padding: 0 20px;
   margin: 0 0 10px;
 }
@@ -165,7 +166,7 @@
   font-size: 25px;
   font-weight: 400;
   letter-spacing: 0.1rem;
-  color: var(--kiwiki-body-color);
+  color: var(--kiwiki-text-color);
 }
 #kiwiki
   #dokuwiki__header
@@ -197,13 +198,13 @@
 
 #kiwiki form.search .no button[type="submit"] {
   background-color: transparent;
-  color: var(--kiwiki-body-color);
-  border: 1px solid #62697629;
+  color: var(--kiwiki-text-color);
+  border: 1px solid var(--kiwiki-ui-100);
 }
 
 #kiwiki form.search .no button[type="submit"]:hover {
   background-color: var(--kiwiki-btn-hover-bg);
-  color: var(--kiwiki-white);
+  color: var(--kiwiki-main);
 }
 
 #dokuwiki__site > .group {
@@ -232,7 +233,7 @@
 #kiwiki nav.tools > div > strong svg {
   width: 32px;
   height: 32px;
-  fill: var(--kiwiki-body-color);
+  fill: var(--kiwiki-text-color);
   transition: all 0.2s ease-in-out;
 }
 #kiwiki nav.tools > div:hover > strong svg {
@@ -244,9 +245,9 @@
   display: none;
   list-style-type: none;
   position: absolute;
-  background-color: var(--kiwiki-white);
+  background-color: var(--kiwiki-main);
   box-shadow: 0 0.5rem 1rem #00000026;
-  border: 1px solid #62697629;
+  border: 1px solid var(--kiwiki-ui-100);
   border-radius: 4px;
   padding: 0;
   overflow: hidden;
@@ -272,7 +273,7 @@
 
 #kiwiki nav.tools > div > ul > li#sitemenu {
   padding: 10px 20px;
-  background-color: var(--kiwiki-body-color);
+  background-color: var(--kiwiki-text-color);
   font-size: 0.8rem;
   display: flex;
   justify-content: center;
@@ -282,7 +283,7 @@
 }
 
 #kiwiki nav.tools #sitemenu .icon {
-  fill: var(--kiwiki-white);
+  fill: var(--kiwiki-main);
 }
 
 #kiwiki nav.tools > div > ul > li#sitemenu a:hover .icon {
@@ -291,8 +292,8 @@
 
 #kiwiki #dokuwiki__usertools .user {
   padding: 10px 20px;
-  background-color: var(--kiwiki-body-color);
-  color: var(--kiwiki-white);
+  background-color: var(--kiwiki-text-color);
+  color: var(--kiwiki-main);
   font-size: 0.8rem;
 }
 
@@ -343,8 +344,8 @@
 #kiwiki #dokuwiki__content > .group {
   display: block;
   box-shadow: #1e293b0a 0 2px 4px 0;
-  border: 1px solid #62697629;
-  background: var(--kiwiki-white, #fff);
+  border: 1px solid var(--kiwiki-ui-100);
+  background: var(--kiwiki-main, #fff);
   border-radius: 4px;
   padding: 30px 60px;
 }
@@ -392,8 +393,8 @@
   margin: 0;
   border-radius: 4px;
   box-shadow: #1e293b0a 0 2px 4px 0;
-  border: 1px solid #62697629;
-  background: var(--kiwiki-white, #fff);
+  border: 1px solid var(--kiwiki-ui-100);
+  background: var(--kiwiki-main, #fff);
 }
 
 #kiwiki #dokuwiki__aside .dokuwiki__aside_wrapper .back + #dw__toc {
@@ -423,7 +424,7 @@
 #kiwiki #dokuwiki__aside ul li a,
 #kiwiki #dokuwiki__aside ul li a:visited {
   text-decoration: none;
-  color: var(--kiwiki-body-color);
+  color: var(--kiwiki-text-color);
 }
 
 #kiwiki #dokuwiki__aside ul li a:hover {
@@ -444,7 +445,7 @@
 #kiwiki .edit-this svg {
   width: 16px;
   height: 16px;
-  fill: var(--kiwiki-body-color);
+  fill: var(--kiwiki-text-color);
 }
 
 /*BUTTONS*/
@@ -456,7 +457,7 @@
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  color: var(--kiwiki-white);
+  color: var(--kiwiki-btn-text);
   background-color: var(--kiwiki-btn-bg);
   border: 1px solid var(--kiwiki-btn-bg);
   padding: 5px 10px;
@@ -472,9 +473,9 @@
 
 #kiwiki .secedit button,
 #kiwiki .editBox #tool__bar button {
-  color: var(--kiwiki-grey-300);
+  color: var(--kiwiki-ui-300);
   background-color: transparent;
-  border: 1px solid var(--kiwiki-grey-300);
+  border: 1px solid var(--kiwiki-ui-300);
 }
 #kiwiki .editBox #tool__bar button {
   filter: grayscale(1);
@@ -482,7 +483,7 @@
 
 #kiwiki button:hover,
 #kiwiki .ui-dialog .ui-dialog-buttonpane button:hover {
-  color: var(--kiwiki-white);
+  color: var(--kiwiki-btn-hover-text);
   background-color: var(--kiwiki-btn-hover-bg);
 }
 
@@ -492,7 +493,7 @@
 
 /*popup*/
 #kiwiki .ui-widget-overlay {
-  background: var(--kiwiki-grey-800);
+  background: var(--kiwiki-ui-800);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
@@ -500,7 +501,7 @@
 #kiwiki .ui-widget-header {
   background: var(--kiwiki-btn-bg);
   border: none;
-  color: var(--kiwiki-white);
+  color: var(--kiwiki-main);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -526,7 +527,7 @@
   filter: brightness(5);
 }
 #kiwiki .ui-dialog .ui-dialog-buttonpane {
-  border-color: var(--kiwiki-grey-200);
+  border-color: var(--kiwiki-ui-200);
 }
 
 /*TEXT INPUT*/
@@ -540,7 +541,7 @@
   height: 2rem;
   padding: 5px;
   border-radius: 4px;
-  border: 1px solid #62697629;
+  border: 1px solid var(--kiwiki-ui-100);
   transition: all 0.2s ease-out;
   font-size: 14px;
   margin: 0;
@@ -549,7 +550,7 @@
 
 #kiwiki input.edit:focus,
 #kiwiki select.edit:focus {
-  color: var(--kiwiki-grey-800);
+  color: var(--kiwiki-ui-800);
   background-color: #fff;
   border-color: #90b5e2;
   outline: 0;
@@ -576,7 +577,6 @@
   border-radius: 4px;
   white-space: pre-wrap;
   background: var(--kiwiki-body-bg);
-  /*border: 1px solid var(--kiwiki-grey-300);*/
   -webkit-font-smoothing: auto;
   transition: all 0.2s ease-in-out;
 }
@@ -593,10 +593,10 @@
   text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: 900;
-  color: var(--kiwiki-grey-300);
+  color: var(--kiwiki-ui-300);
 }
 #kiwiki pre:hover {
-  box-shadow: 0 0 5px var(--kiwiki-grey-300);
+  box-shadow: 0 0 5px var(--kiwiki-ui-300);
 }
 /*SECTION EDIT*/
 #kiwiki div[class*="level"] {
@@ -608,7 +608,6 @@
   width: 100%;
   display: flex;
   justify-content: end;
-  /*border-top:1px solid rgba(98,105,118,.16);*/
 }
 
 #kiwiki .secedit button {
@@ -618,7 +617,7 @@
 }
 
 #kiwiki div.section_highlight {
-  background: var(--kiwiki-grey-100);
+  background: var(--kiwiki-ui-100);
   border-color: transparent;
   padding: 0;
   margin: 0;
@@ -643,21 +642,15 @@
 
 #kiwiki .qq-upload-button {
   cursor: inherit !important;
-
   direction: inherit !important;
 }
 
 #kiwiki .qq-upload-button input {
   font-family: inherit !important;
-
   font-size: 1em !important;
-
   margin: inherit !important;
-
   opacity: 1 !important;
-
   padding: inherit !important;
-
   position: static !important;
 }
 
@@ -682,11 +675,11 @@
   max-width: 1300px;
   width: 100%;
   padding: 15px 0 15px 15px;
-  border: 1px solid var(--kiwiki-grey-400);
+  border: 1px solid var(--kiwiki-ui-100);
   background-color: var(--kiwiki-body-bg);
-  color: var(--kiwiki-body-color);
+  color: var(--kiwiki-text-color);
   outline: 0;
-  box-shadow: 0 0 15px var(--kiwiki-grey-400);
+  box-shadow: 0 0 15px var(--kiwiki-ui-100);
   border-radius: 5px;
   height: 400px;
   overflow: hidden scroll;
@@ -696,17 +689,17 @@
 }
 
 #kiwiki form.search div.ajax_qsearch::-webkit-scrollbar-thumb {
-  background-color: var(--kiwiki-grey-700);
-  outline: 1px solid var(--kiwiki-grey-700);
+  background-color: var(--kiwiki-ui-700);
+  outline: 1px solid var(--kiwiki-ui-700);
   width: 1em;
   border-radius: 1em;
 }
 #kiwiki form.search div.ajax_qsearch::-webkit-scrollbar-track {
-  background-color: var(--kiwiki-grey-200);
+  background-color: var(--kiwiki-ui-200);
   border-style: solid;
   border-radius: 1em;
   border-width: 1px;
-  border-color: var(--kiwiki-grey-200);
+  border-color: var(--kiwiki-ui-200);
 }
 
 /*GOTOP*/
@@ -727,7 +720,7 @@
   transition: all 0.2s ease-in-out;
 }
 #kiwiki #gotop svg {
-  fill: var(--kiwiki-white);
+  fill: var(--kiwiki-main);
   position: relative;
   top: 0;
   transition: all 0.25s ease-in-out;
@@ -742,7 +735,7 @@
 /*CONFIG PANEL*/
 #kiwiki #config__manager td.label span.outkey {
   background-color: var(--kiwiki-body-bg);
-  color: var(--kiwiki-body-color);
+  color: var(--kiwiki-text-color);
   padding: 0 4px 3px;
 }
 #kiwiki form#dw__configform {
@@ -754,8 +747,8 @@
   width: 100%;
   position: relative;
   display: block;
-  background-color: var(--kiwiki-white);
-  color: var(--kiwiki-body-color);
+  background-color: var(--kiwiki-main);
+  color: var(--kiwiki-text-color);
   margin: 0;
   box-sizing: border-box;
 }
@@ -788,7 +781,7 @@
   flex-wrap: wrap;
   gap: 0;
   align-items: center;
-  border-bottom: 1px solid var(--kiwiki-grey-200);
+  border-bottom: 1px solid var(--kiwiki-ui-200);
   padding: 15px 0;
 }
 #kiwiki .changes ul > li > div.li * {
@@ -864,7 +857,7 @@
 #kiwiki .diffoptions {
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid var(--kiwiki-grey-200);
+  border-bottom: 1px solid var(--kiwiki-ui-200);
 }
 #kiwiki .diffoptions > form,
 #kiwiki .diffoptions > p {
@@ -900,7 +893,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid var(--kiwiki-grey-200);
+  border: 1px solid var(--kiwiki-ui-200);
   padding: 7px 0 6px;
   margin: 0 2px;
 }
@@ -953,7 +946,7 @@
   height: 2rem;
   padding: 5px;
   border-radius: 4px;
-  border: 1px solid #62697629;
+  border: 1px solid var(--kiwiki-ui-100);
   transition: all 0.2s ease-out;
   font-size: 14px;
   margin: 0;
@@ -973,8 +966,8 @@
   order: 3;
   width: 95%;
   background-color: transparent;
-  color: var(--kiwiki-body-color);
-  border: 1px solid #62697629;
+  color: var(--kiwiki-text-color);
+  border: 1px solid var(--kiwiki-ui-100);
 }
 
 #kiwiki .search_quickhits {
@@ -997,8 +990,8 @@
 #kiwiki ul.tabs li strong,
 #kiwiki ul.tabs li a {
   background-color: transparent;
-  color: var(--kiwiki-grey-400);
-  border: 1px solid var(--kiwiki-grey-300);
+  color: var(--kiwiki-ui-100);
+  border: 1px solid var(--kiwiki-ui-300);
   border-radius: 0;
   position: relative;
   z-index: 0;
@@ -1007,7 +1000,7 @@
 #kiwiki ul.tabs li strong,
 #kiwiki ul.tabs li.active a {
   background-color: var(--kiwiki-body-bg);
-  color: var(--kiwiki-body-color);
+  color: var(--kiwiki-text-color);
 }
 #kiwiki .tabs > ul:after,
 #kiwiki ul.tabs:after {
@@ -1019,7 +1012,7 @@
 }
 #kiwiki .panelHeader {
   background: none;
-  border: 1px solid var(--kiwiki-grey-300);
+  border: 1px solid var(--kiwiki-ui-300);
   border-top: 0;
   border-radius: 0 0 4px 4px;
 }
@@ -1046,8 +1039,8 @@
   margin: 0;
   border-radius: 4px;
   box-shadow: #1e293b0a 0 2px 4px 0;
-  border: 1px solid #62697629;
-  background: var(--kiwiki-white, #fff);
+  border: 1px solid var(--kiwiki-ui-100);
+  background: var(--kiwiki-main, #fff);
 }
 
 #kiwiki #mediamanager__page .panel.namespaces h2 {
@@ -1066,8 +1059,8 @@
 }
 
 #kiwiki #mediamanager__page .panel.file .panelHeader {
-  border-left: 1px solid var(--kiwiki-grey-300);
-  border-right: 1px solid var(--kiwiki-grey-300);
+  border-left: 1px solid var(--kiwiki-ui-300);
+  border-right: 1px solid var(--kiwiki-ui-300);
   border-radius: 0;
   margin: 0;
   padding: 20px;
@@ -1079,7 +1072,7 @@
 }
 
 #kiwiki #mediamanager__page .panel.file .panelContent {
-  border: 1px solid var(--kiwiki-grey-300);
+  border: 1px solid var(--kiwiki-ui-300);
   border-top: 0;
   display: flex;
   flex-direction: column;
@@ -1098,7 +1091,7 @@
   cursor: pointer;
 }
 #kiwiki #mediamanager__page .panel.filelist .thumbs li:hover {
-  background-color: var(--kiwiki-grey-200);
+  background-color: var(--kiwiki-ui-200);
 }
 #kiwiki #mediamanager__page .panel.filelist .thumbs li dl {
   display: flex;
@@ -1150,12 +1143,12 @@
   margin: 20px auto;
   text-align: center;
   font-size: 0.75rem;
-  color: var(--kiwiki-body-color);
+  color: var(--kiwiki-text-color);
 }
 
 /*MISC*/
 #kiwiki .JSpopup {
-  border: 1px solid __border__;
+  border: 1px solid var(--kiwiki-ui-300);
 }
 
 #kiwiki div.ui-admin {
