@@ -104,7 +104,7 @@
     .kiwiki-main-menu
     h3:hover {
     background-color: var(--kiwiki-btn-hover-bg);
-    color: var(--kiwiki-white);
+    color: var(--kiwiki-btn-hover-text);
   }
 
   #kiwiki
