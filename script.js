@@ -1,8 +1,33 @@
 (function ($) {
   "use strict";
+  function _kiwikiChangeAdminLabels(label, level, title) {
+    $(label)
+      .parent()
+      .parent()
+      .html(
+        '<td colspan="2" class="kiwiki-styles"><' +
+          level +
+          ">" +
+          title +
+          "</" +
+          level +
+          "></td>"
+      );
+  }
+
+  var colorscheme = "lightmode";
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    colorscheme = "darkmode";
+    console.log(colorscheme);
+  }
   $(document).on("click", function (event) {
     var trigger = $("nav.tools>div");
     var search = $("div#open-search");
+    var thememode = $("div#theme-mode");
+
     var menu = $(
       "#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside .kiwiki-main-menu h3"
     );
@@ -25,10 +50,44 @@
     if ($(event.target).is(menu)) {
       $(menu).parent().toggleClass("open");
     }
-  });
+    if ($(event.target).is(thememode)) {
+      console.log(colorscheme);
+      if (!!$.cookie("theme")) {
+        if (!$("body").hasClass("darkmode")) {
+          $("body").removeClass("lightmode");
+          $("body").addClass("darkmode");
+          document.cookie = "theme=darkmode";
+        } else {
+          $("body").removeClass("darkmode");
+          $("body").addClass("lightmode");
+          document.cookie = "theme=lightmode";
+        }
+      } else {
+        if (colorscheme == "darkmode") {
+          $("body").addClass("lightmode");
+          document.cookie = "theme=lightmode";
+        } else {
+          $("body").addClass("darkmode");
+          document.cookie = "theme=darkmode";
+        }
+      }
 
-  $('label[for="tpl____kiwiki_color__"]')
-    .parent()
-    .parent()
-    .html('<td colspan="2" class="kiwiki-styles"><h3>Kiwiki</h3></td>');
+      /**/
+    }
+  });
+  _kiwikiChangeAdminLabels(
+    'label[for="tpl____kiwiki_color__"]',
+    "h3",
+    "Kiwiki"
+  );
+  _kiwikiChangeAdminLabels(
+    'label[for="tpl____kiwiki_light_colors__"]',
+    "h4",
+    "Light mode colors"
+  );
+  _kiwikiChangeAdminLabels(
+    'label[for="tpl____kiwiki_dark_colors__"]',
+    "h4",
+    "Dark mode colors"
+  );
 })(jQuery);
