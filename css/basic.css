@@ -1,43 +1,106 @@
-/*:root {
-  --kiwiki-black: #000000;
-  --kiwiki-white: #ffffff;
-  --kiwiki-grey: #475569;
-  --kiwiki-grey-dark: #1e293b;
-  --kiwiki-grey-100: #f1f5f9;
-  --kiwiki-grey-200: #e2e8f0;
-  --kiwiki-grey-300: #cbd5e1;
-  --kiwiki-grey-400: #94a3b8;
-  --kiwiki-grey-500: #64748b;
-  --kiwiki-grey-600: #475569;
-  --kiwiki-grey-700: #334155;
-  --kiwiki-grey-800: #1e293b;
-  --kiwiki-grey-900: #0f172a;
-  --kiwiki-body-color: #1e293b;
-  --kiwiki-body-bg: #f5f7fd;
-  --kiwiki-btn-bg: #1a569d;
-  --kiwiki-btn-hover-bg: #1e77e1;
-  --kiwiki-btn-border-color: #185093;
-}*/
-
 body {
-  --kiwiki-black: __kiwiki_color_black__;
-  --kiwiki-white: __kiwiki_color_white__;
-  --kiwiki-grey: __kiwiki_color_grey__;
-  --kiwiki-grey-dark: __kiwiki_color_grey_dark__;
-  --kiwiki-grey-100: __kiwiki_color_grey_100__;
-  --kiwiki-grey-200: __kiwiki_color_grey_200__;
-  --kiwiki-grey-300: __kiwiki_color_grey_300__;
-  --kiwiki-grey-400: __kiwiki_color_grey_400__;
-  --kiwiki-grey-500: __kiwiki_color_grey_500__;
-  --kiwiki-grey-600: __kiwiki_color_grey_600__;
-  --kiwiki-grey-700: __kiwiki_color_grey_700__;
-  --kiwiki-grey-800: __kiwiki_color_grey_800__;
-  --kiwiki-grey-900: __kiwiki_color_grey_900__;
-  --kiwiki-body-color: __kiwiki_color_text__;
-  --kiwiki-body-bg: __kiwiki_color_body_bg__;
-  --kiwiki-btn-bg: __kiwiki_color_btn_bg__;
-  --kiwiki-btn-hover-bg: __kiwiki_color_btn_hover_bg__;
-  --kiwiki-btn-border-color: __kiwiki_color_btn_border_color__;
+  --kiwiki-body-bg: __kiwiki_body_bg_color__;
+  --kiwiki-text-color: __kiwiki_text_color__;
+  --kiwiki-main: __kiwiki_main_color__;
+  --kiwiki-ui-color: __kiwiki_ui_color__;
+  --kiwiki-ui-100: __kiwiki_ui_100_color__;
+  --kiwiki-ui-200: __kiwiki_ui_200_color__;
+  --kiwiki-ui-300: __kiwiki_ui_300_color__;
+  --kiwiki-ui-400: __kiwiki_ui_400_color__;
+  --kiwiki-ui-500: __kiwiki_ui_500_color__;
+  --kiwiki-ui-600: __kiwiki_ui_600_color__;
+  --kiwiki-ui-700: __kiwiki_ui_700_color__;
+  --kiwiki-ui-800: __kiwiki_ui_800_color__;
+  --kiwiki-ui-900: __kiwiki_ui_900_color__;
+  --kiwiki-btn-bg: __kiwiki_btn_bg_color__;
+  --kiwiki-btn-text: __kiwiki_btn_text_color__;
+  --kiwiki-btn-hover-bg: __kiwiki_btn_bg_hover_color__;
+  --kiwiki-btn-hover-text: __kiwiki_btn_hover_text_color__;
+  --kiwiki-btn-border: __kiwiki_btn_border_color__;
+}
+
+#theme-mode svg#themeicon #dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --kiwiki-body-bg: __kiwiki_dark_body_bg_color__;
+    --kiwiki-text-color: __kiwiki_dark_text_color__;
+    --kiwiki-main: __kiwiki_dark_main_color__;
+    --kiwiki-ui-color: __kiwiki_dark_ui_color__;
+    --kiwiki-ui-100: __kiwiki_dark_ui_100_color__;
+    --kiwiki-ui-200: __kiwiki_dark_ui_200_color__;
+    --kiwiki-ui-300: __kiwiki_dark_ui_300_color__;
+    --kiwiki-ui-400: __kiwiki_dark_ui_400_color__;
+    --kiwiki-ui-500: __kiwiki_dark_ui_500_color__;
+    --kiwiki-ui-600: __kiwiki_dark_ui_600_color__;
+    --kiwiki-ui-700: __kiwiki_dark_ui_700_color__;
+    --kiwiki-ui-800: __kiwiki_dark_ui_800_color__;
+    --kiwiki-ui-900: __kiwiki_dark_ui_900_color__;
+    --kiwiki-btn-bg: __kiwiki_dark_btn_bg_color__;
+    --kiwiki-btn-text: __kiwiki_dark_btn_text_color__;
+    --kiwiki-btn-hover-bg: __kiwiki_dark_btn_bg_hover_color__;
+    --kiwiki-btn-hover-text: __kiwiki_dark_btn_hover_text_color__;
+    --kiwiki-btn-border: __kiwiki_dark_btn_border_color__;
+  }
+  #theme-mode svg#themeicon #light {
+    display: none;
+  }
+  #theme-mode svg#themeicon #dark {
+    display: initial;
+  }
+}
+
+body.lightmode {
+  --kiwiki-body-bg: __kiwiki_body_bg_color__;
+  --kiwiki-text-color: __kiwiki_text_color__;
+  --kiwiki-main: __kiwiki_main_color__;
+  --kiwiki-ui-color: __kiwiki_ui_color__;
+  --kiwiki-ui-100: __kiwiki_ui_100_color__;
+  --kiwiki-ui-200: __kiwiki_ui_200_color__;
+  --kiwiki-ui-300: __kiwiki_ui_300_color__;
+  --kiwiki-ui-400: __kiwiki_ui_400_color__;
+  --kiwiki-ui-500: __kiwiki_ui_500_color__;
+  --kiwiki-ui-600: __kiwiki_ui_600_color__;
+  --kiwiki-ui-700: __kiwiki_ui_700_color__;
+  --kiwiki-ui-800: __kiwiki_ui_800_color__;
+  --kiwiki-ui-900: __kiwiki_ui_900_color__;
+  --kiwiki-btn-bg: __kiwiki_btn_bg_color__;
+  --kiwiki-btn-text: __kiwiki_btn_text_color__;
+  --kiwiki-btn-hover-bg: __kiwiki_btn_bg_hover_color__;
+  --kiwiki-btn-hover-text: __kiwiki_btn_hover_text_color__;
+  --kiwiki-btn-border: __kiwiki_btn_border_color__;
+}
+
+body.darkmode {
+  --kiwiki-body-bg: __kiwiki_dark_body_bg_color__;
+  --kiwiki-text-color: __kiwiki_dark_text_color__;
+  --kiwiki-main: __kiwiki_dark_main_color__;
+  --kiwiki-ui-color: __kiwiki_dark_ui_color__;
+  --kiwiki-ui-100: __kiwiki_dark_ui_100_color__;
+  --kiwiki-ui-200: __kiwiki_dark_ui_200_color__;
+  --kiwiki-ui-300: __kiwiki_dark_ui_300_color__;
+  --kiwiki-ui-400: __kiwiki_dark_ui_400_color__;
+  --kiwiki-ui-500: __kiwiki_dark_ui_500_color__;
+  --kiwiki-ui-600: __kiwiki_dark_ui_600_color__;
+  --kiwiki-ui-700: __kiwiki_dark_ui_700_color__;
+  --kiwiki-ui-800: __kiwiki_dark_ui_800_color__;
+  --kiwiki-ui-900: __kiwiki_dark_ui_900_color__;
+  --kiwiki-btn-bg: __kiwiki_dark_btn_bg_color__;
+  --kiwiki-btn-text: __kiwiki_dark_btn_text_color__;
+  --kiwiki-btn-hover-bg: __kiwiki_dark_btn_bg_hover_color__;
+  --kiwiki-btn-hover-text: __kiwiki_dark_btn_hover_text_color__;
+  --kiwiki-btn-border: __kiwiki_dark_btn_border_color__;
+}
+
+body.darkmode #theme-mode svg#themeicon #light,
+body.lightmode #theme-mode svg#themeicon #dark {
+  display: none;
+}
+body.darkmode #theme-mode svg#themeicon #dark,
+body.lightmode #theme-mode svg#themeicon #light {
+  display: initial;
 }
 
 * {
@@ -46,14 +109,14 @@ body {
 
 ::-moz-selection,
 ::selection {
-  color: var(--kiwiki-white);
+  color: var(--kiwiki-main);
   background: var(--kiwiki-btn-hover-bg);
 }
 
 html,
 body {
-  background-color: __background__;
-  color: __text__;
+  background-color: var(--kiwiki-body-bg);
+  color: var(--kiwiki-text-color);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
