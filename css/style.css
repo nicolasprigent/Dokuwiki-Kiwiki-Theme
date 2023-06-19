@@ -802,6 +802,7 @@
   width: 10%;
   text-align: center;
   order: 3;
+  color: var(--kiwiki-ui-500);
 }
 #kiwiki .changes ul > li > div.li *:nth-child(3) {
   width: 4%;
