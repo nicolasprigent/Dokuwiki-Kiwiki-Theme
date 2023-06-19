@@ -17,6 +17,14 @@
   #kiwiki h3 {
     font-size: 1.3em;
   }
+
+  #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper .wikilogo img {
+    max-height: 40px;
+  }
+  #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper a.wikilogo > div {
+    font-size: 20px;
+    letter-spacing: 0;
+  }
   #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper #dw__search {
     order: 3;
     min-width: initial;
@@ -40,6 +48,7 @@
   }
   #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper nav {
     order: 2;
+    flex-wrap: nowrap;
   }
 
   #kiwiki .breadcrumbs {
