@@ -268,12 +268,13 @@
 }
 
 #kiwiki nav.tools > div > ul > li a:hover {
-  background-color: #f8f8f8;
+  background-color: var(--kiwiki-ui-500);
+  color: var(--kiwiki-btn-text);
 }
 
 #kiwiki nav.tools > div > ul > li#sitemenu {
   padding: 10px 20px;
-  background-color: var(--kiwiki-text-color);
+  background-color: var(--kiwiki-ui-400);
   font-size: 0.8rem;
   display: flex;
   justify-content: center;
@@ -292,8 +293,8 @@
 
 #kiwiki #dokuwiki__usertools .user {
   padding: 10px 20px;
-  background-color: var(--kiwiki-text-color);
-  color: var(--kiwiki-main);
+  background-color: var(--kiwiki-ui-400);
+  color: var(--kiwiki-text-color);
   font-size: 0.8rem;
 }
 
@@ -990,7 +991,7 @@
 #kiwiki ul.tabs li strong,
 #kiwiki ul.tabs li a {
   background-color: transparent;
-  color: var(--kiwiki-ui-100);
+  color: var(--kiwiki-ui-400);
   border: 1px solid var(--kiwiki-ui-300);
   border-radius: 0;
   position: relative;
@@ -1005,6 +1006,7 @@
 #kiwiki .tabs > ul:after,
 #kiwiki ul.tabs:after {
   z-index: 9;
+  border-bottom: 1px solid var(--kiwiki-ui-300);
 }
 #kiwiki ul.tabs li:first-child * {
   margin: 0;
@@ -1131,6 +1133,124 @@
 #kiwiki #mediamanager__page .file dl:last-child > * {
   width: fit-content;
   background-color: transparent;
+}
+
+/*EXTENSIONS MANAGER*/
+#kiwiki #extension__list .legend > div {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  width: 100%;
+  gap: 4px 15px;
+  border-right: 1px solid var(--kiwiki-ui-300);
+}
+
+#kiwiki #extension__list .legend h2,
+#kiwiki #extension__list .legend div.screenshot {
+  float: none;
+  margin: 0;
+}
+#kiwiki #extension__list .legend h2,
+#kiwiki #extension__list .legend p,
+#kiwiki #extension__list .legend div.linkbar {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 0;
+}
+#kiwiki #extension__list .legend div.screenshot {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  margin: 0;
+  max-width: 100%;
+}
+
+#kiwiki #extension__list .legend div.screenshot img {
+  width: 100%;
+  height: auto;
+}
+
+#kiwiki #extension__list .legend div.popularity {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  width: 90%;
+  right: initial;
+  top: 30px;
+  background-color: var(--kiwiki-body-bg);
+  border-color: var(--kiwiki-ui-300);
+}
+#extension__list .legend div.popularity div {
+  background-color: var(--kiwiki-btn-bg);
+}
+#kiwiki #extension__list .legend dl.details {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: var(--kiwiki-ui-200);
+  border: 0;
+  padding: 10px;
+  border-radius: 10px 10px 0 10px;
+}
+#kiwiki #extension__list .legend a.info {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+#extension__manager div.msg {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#kiwiki #extension__list ul.extensionList li {
+  color: var(--kiwiki-text-color);
+  border-color: var(--kiwiki-ui-300);
+}
+
+#kiwiki #extension__manager .actions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#kiwiki #extension__manager .actions p.permerror {
+  background-position: top 2px left;
+  line-height: 0.8rem;
+  margin-top: 10px;
+}
+#kiwiki #dokuwiki__site #extension__manager form {
+  margin: 30px auto;
+  background-color: var(--kiwiki-ui-200);
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+#kiwiki #dokuwiki__site #extension__manager form div.no {
+  flex-direction: column;
+}
+
+#kiwiki #dokuwiki__site #extension__manager form div.no label.block {
+  justify-content: start;
+  gap: 10px;
+}
+
+#kiwiki #dokuwiki__site #extension__manager form div.no button[type="submit"] {
+  color: var(--kiwiki-btn-text);
+  background-color: var(--kiwiki-btn-bg);
+  border: 1px solid var(--kiwiki-btn-bg);
+}
+#kiwiki
+  #dokuwiki__site
+  #extension__manager
+  form
+  div.no
+  button[type="submit"]:hover {
+  color: var(--kiwiki-btn-hover-text);
+  background-color: var(--kiwiki-btn-hover-bg);
 }
 
 /*FOOTER*/
