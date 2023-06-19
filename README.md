@@ -23,10 +23,10 @@ https://www.dokuwiki.org/template:kiwiki
 ## Screenshots
 
 Basic colors
-![kiwiki_screenshot](./screenshots/kiwiki_screenshot.jpg)
+![kiwiki_screenshot](./screenshots/kiwiki_screenshot_2023_06_19_00.jpg)
 
 Dark colors example
-![kiwiki_screenshot01](./screenshots/kiwiki_screenshot01.jpg)
+![kiwiki_screenshot01](./screenshots/kiwiki_screenshot_2023_06_19_01.jpg)
 
 Theme colors editor
-![kiwiki_screenshot02](./screenshots/kiwiki_screenshot02.jpg)
+![kiwiki_screenshot02](./screenshots/kiwiki_screenshot_2023_06_19_02.jpg)
