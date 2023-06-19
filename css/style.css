@@ -551,7 +551,7 @@
 
 #kiwiki input.edit:focus,
 #kiwiki select.edit:focus {
-  color: var(--kiwiki-ui-800);
+  color: var(--kiwiki-ui-500);
   background-color: #fff;
   border-color: #90b5e2;
   outline: 0;
@@ -1133,6 +1133,21 @@
 #kiwiki #mediamanager__page .file dl:last-child > * {
   width: fit-content;
   background-color: transparent;
+}
+
+/*ADMIN*/
+#kiwiki #dokuwiki__content div.ui-admin ul.admin_tasks {
+  float: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+
+#kiwiki #dokuwiki__content div.ui-admin ul li a span.icon svg,
+#kiwiki #dokuwiki__content div.ui-admin ul li a span.icon svg path {
+  fill: var(--kiwiki-btn-bg);
 }
 
 /*EXTENSIONS MANAGER*/
