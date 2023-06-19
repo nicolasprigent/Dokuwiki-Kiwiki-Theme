@@ -3,16 +3,17 @@
     
     /***userloggedin***/
     if(isset($_SERVER['REMOTE_USER'])) {
-
     ?>
     
     <div class="dokuwiki__header__wrapper">
         <div class="group">
-            <?php //tpl_includeFile('header.html')
-            ?>
 
             <a href="<?php echo wl(); ?>" class="wikilogo">
-                <img src="/lib/tpl/kiwiki/images/kiwiki-icon.png" class="media" loading="lazy" alt="" width="80">
+                <?php
+                $logoSize = array();
+                $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png'), false, $logoSize);
+                ?>
+                <img src=<?php echo $logo; ?> class="media" loading="lazy" alt="" width="80">
                 <div>
                     <?php echo $conf['title']; ?>
                     <?php if ($conf['tagline']): ?>
