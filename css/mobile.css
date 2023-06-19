@@ -223,4 +223,35 @@
     right: 4px;
     width: fit-content;
   }
+  /*EXTENSIONS*/
+  #kiwiki #extension__list .legend > div {
+    grid-template-columns: 20% 80%;
+    border-right: 0;
+    border-bottom: 1px solid var(--kiwiki-ui-300);
+    padding-bottom: 15px;
+  }
+  #kiwiki #dokuwiki__content #extension__list ul.extensionList {
+    padding: 0;
+  }
+  #kiwiki #extension__list ul.extensionList li {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    background-color: var(--kiwiki-ui-300);
+    border-radius: 10px;
+    border: 0;
+  }
+
+  #kiwiki #extension__list .legend,
+  #kiwiki #extension__manager .actions {
+    width: 100%;
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  #kiwiki #extension__list .legend dl.details {
+    border-radius: 0;
+  }
 } /* /@media */
