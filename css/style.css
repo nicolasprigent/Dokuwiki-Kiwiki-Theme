@@ -1222,7 +1222,6 @@
 }
 #kiwiki #dokuwiki__site #extension__manager form {
   margin: 30px auto;
-  background-color: var(--kiwiki-ui-200);
   padding: 20px;
   border-radius: 15px;
   width: 100%;
@@ -1243,6 +1242,11 @@
   background-color: var(--kiwiki-btn-bg);
   border: 1px solid var(--kiwiki-btn-bg);
 }
+
+#kiwiki #dokuwiki__site #extension__list .legend h2 strong {
+  display: block;
+}
+
 #kiwiki
   #dokuwiki__site
   #extension__manager
