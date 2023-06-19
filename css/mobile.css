@@ -193,6 +193,9 @@
   #kiwiki #dokuwiki__content ul {
     padding: 0 0 0 20px;
   }
+  #kiwiki #dokuwiki__content ul.admin_tasks {
+    padding: 0;
+  }
   #kiwiki [dir="rtl"] .hasSidebar #dokuwiki__content > div {
     margin-right: 0;
   }
