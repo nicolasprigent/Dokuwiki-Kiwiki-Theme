@@ -205,6 +205,7 @@
 #kiwiki form.search .no button[type="submit"]:hover {
   background-color: var(--kiwiki-btn-hover-bg);
   color: var(--kiwiki-main);
+  border: 1px solid var(--kiwiki-btn-hover-bg);
 }
 
 #dokuwiki__site > .group {
@@ -577,9 +578,10 @@
   tab-size: 3;
   border-radius: 4px;
   white-space: pre-wrap;
-  background: var(--kiwiki-body-bg);
   -webkit-font-smoothing: auto;
   transition: all 0.2s ease-in-out;
+  background: var(--kiwiki-ui-100);
+  color: var(--kiwiki-text-color);
 }
 
 #kiwiki pre:before {
@@ -598,6 +600,9 @@
 }
 #kiwiki pre:hover {
   box-shadow: 0 0 5px var(--kiwiki-ui-300);
+}
+#kiwiki .code .kw2 {
+  color: #7f430e;
 }
 /*SECTION EDIT*/
 #kiwiki div[class*="level"] {
