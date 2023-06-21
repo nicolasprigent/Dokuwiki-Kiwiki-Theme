@@ -604,6 +604,11 @@
 #kiwiki .code .kw2 {
   color: #7f430e;
 }
+#kiwiki .code .kw3,
+#kiwiki .code .kw7,
+#kiwiki .code .sy2 {
+  color: #6363ff;
+}
 /*SECTION EDIT*/
 #kiwiki div[class*="level"] {
   padding: 10px;
