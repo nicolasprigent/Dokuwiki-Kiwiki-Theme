@@ -5,6 +5,10 @@ Flex theme with lots of css fix and some ease of use features. You can change al
 https://www.dokuwiki.org/template:kiwiki
 
 ### 2023-06-19
+- CSS fixes for dark mode
+- Default style.ini adjusted on some colors
+  
+### 2023-06-19
 - CSS fixes on the extension manager page
 - New screenshots to show the theme light/dark mode switcher
 - Restored functionnality to change the logo (as described here : https://www.dokuwiki.org/template:dokuwiki#changing_the_logo)
