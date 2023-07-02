@@ -13,6 +13,7 @@ $lang['Menu']        = 'Menu';
 $lang['edit-menu']   = 'Edit menu';
 
 $lang['__kiwiki_body_bg_color__'] = "Background color";
+$lang['__kiwiki_header_bg_color__'] = "Header background color";
 $lang['__kiwiki_text_color__'] = "Text color";
 $lang['__kiwiki_main_color__'] = "Content background color" ;
 $lang['__kiwiki_ui_color__'] = "UI Color" ;
@@ -32,6 +33,7 @@ $lang['__kiwiki_btn_hover_text_color__'] = "Button text hover color" ;
 $lang['__kiwiki_color_btn_border_color__'] = "Button border color" ; 
 
 $lang['__kiwiki_dark_body_bg_color__'] = "Background color" ; 
+$lang['__kiwiki_dark_header_bg_color__'] = "Header background color";
 $lang['__kiwiki_dark_text_color__'] = "Text color" ; 
 $lang['__kiwiki_dark_main_color__'] = "Content background color" ; 
 $lang['__kiwiki_dark_ui_color__'] = "UI Color" ; 
