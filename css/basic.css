@@ -54,6 +54,7 @@ body {
 
 body.lightmode {
   --kiwiki-body-bg: __kiwiki_body_bg_color__;
+  --kiwiki-header-bg: __kiwiki_header_bg_color__;
   --kiwiki-text-color: __kiwiki_text_color__;
   --kiwiki-main: __kiwiki_main_color__;
   --kiwiki-ui-color: __kiwiki_ui_color__;
@@ -75,6 +76,7 @@ body.lightmode {
 
 body.darkmode {
   --kiwiki-body-bg: __kiwiki_dark_body_bg_color__;
+  --kiwiki-header-bg: __kiwiki_dark_header_bg_color__;
   --kiwiki-text-color: __kiwiki_dark_text_color__;
   --kiwiki-main: __kiwiki_dark_main_color__;
   --kiwiki-ui-color: __kiwiki_dark_ui_color__;
