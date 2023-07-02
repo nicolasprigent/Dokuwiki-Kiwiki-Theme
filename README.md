@@ -4,6 +4,9 @@ Flex theme with lots of css fix and some ease of use features. You can change al
 
 https://www.dokuwiki.org/template:kiwiki
 
+### 2023-07-02
+- New style parameter for changing header color
+
 ### 2023-06-21
 - CSS fix for dark mode
 - Default style.ini adjusted on some colors
