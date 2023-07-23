@@ -38,6 +38,14 @@
   color: var(--kiwiki-text-color);
 }
 
+#kiwiki #dokuwiki__top.mode_login{
+  display: flex;
+  margin-bottom:-90px;
+  height: 100vh;
+  align-items: center;
+  
+}
+
 #kiwiki #dokuwiki__top .wrapper {
   max-width: 1300px;
   width: 100%;
@@ -57,7 +65,7 @@
 #kiwiki h1#connexion + .level1 {
   text-align: center;
   max-width: 700px;
-  margin: 0 auto 60px;
+  margin: 0 auto 10px;
 }
 
 #kiwiki #dw__login fieldset {
@@ -80,6 +88,10 @@
 
 #kiwiki #dw__login p {
   font-size: 0.75rem;
+}
+
+#kiwiki #dw__login p a{
+  display: block;
 }
 
 #kiwiki #dw__login label.block select,
@@ -119,6 +131,14 @@
 
 #kiwiki #autorisation_refusee + .level1 p {
   margin: 0;
+}
+#kiwiki .back-home{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin:0.5rem 0;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--kiwiki-ui-300);
 }
 
 /*HEADER*/
@@ -315,6 +335,10 @@
   gap: 20px;
   position: relative;
   justify-content: center;
+}
+
+#kiwiki #dokuwiki__site #dokuwiki__top.mode_login #dokuwiki__content__wrapper{
+    max-width: 500px;
 }
 
 #kiwiki #dokuwiki__content {
