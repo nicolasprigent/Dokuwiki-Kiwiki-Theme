@@ -11,6 +11,7 @@ $lang['__sidebar_width__'] = 'Sidebar width';
 $lang['search'] = 'Search';
 $lang['Menu']        = 'Menu';
 $lang['edit-menu']   = 'Edit menu';
+$lang['Back to homepage']   = 'Back to homepage';
 
 $lang['__kiwiki_body_bg_color__'] = "Background color";
 $lang['__kiwiki_header_bg_color__'] = "Header background color";
