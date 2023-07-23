@@ -1,8 +1,8 @@
 <header id="dokuwiki__header">
     <?php
     
-    /***userloggedin***/
-    if(isset($_SERVER['REMOTE_USER'])) {
+    /*** disable header on login page ***/
+    if($ACT!="login"){
     ?>
     
     <div class="dokuwiki__header__wrapper">
