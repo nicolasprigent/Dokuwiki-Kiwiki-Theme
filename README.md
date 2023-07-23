@@ -4,6 +4,11 @@ Flex theme with lots of css fix and some ease of use features. You can change al
 
 https://www.dokuwiki.org/template:kiwiki
 
+### 2023-07-23
+- Fixed issue about public wikis getting no header
+- Added back to home link on login page
+- Some css fixes on login page
+
 ### 2023-07-02
 - New style parameter for changing header color
 
