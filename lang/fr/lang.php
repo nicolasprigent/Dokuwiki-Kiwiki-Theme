@@ -11,6 +11,7 @@ $lang['__sidebar_width__'] = 'La largeur de la barre latérale';
 $lang['search'] = 'Rechercher';
 $lang['Menu']        = 'Menu';
 $lang['edit-menu']   = 'Éditer le menu';
+$lang['Back to homepage']   = 'Retour à la page d\'accueil';
 
 $lang['__kiwiki_body_bg_color__'] = "Couleur de fond";
 $lang['__kiwiki_header_bg_color__'] = "Couleur de fond du header";
