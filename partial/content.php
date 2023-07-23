@@ -1,15 +1,10 @@
-
-
-    
 <div id="dokuwiki__content__wrapper">
     <!-- ********** ASIDE ********** -->
     
     <?php 
-    /*echo '<pre>';
-    var_dump($ACT);
-    echo '</pre>';*/
 
-    if(isset($_SERVER['REMOTE_USER']) ) {
+    /* disable sidemenu on login and some pages */
+    if($ACT!="login"){
         if (($ACT == 'show')||(isset($_REQUEST['page']) && $ACT=='admin' && $_REQUEST['page'] == 'config')){
     ?>
     
@@ -59,8 +54,10 @@
                 ?>
                 <!-- wikipage stop -->
             </div>
-            <?php tpl_flush() ?>
-            <?php tpl_includeFile('pagefooter.html') ?>
+            <?php tpl_flush();
+            if($ACT=="login"){?>
+                <a href="/" class="back-home"><?php echo tpl_getLang('Back to homepage'); ?></a>
+            <?php } ?>
         </div>
     </main><!-- /content -->
 </div><!-- /wrapper -->
