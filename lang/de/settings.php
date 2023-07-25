@@ -4,4 +4,4 @@
  *
  */
 
-$lang['hideTools']        = 'Hide tools to anonymous visitors?';
+$lang['hideTools']        = 'Tools für anonyme Besucher ausblenden?';
