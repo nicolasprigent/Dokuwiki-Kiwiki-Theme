@@ -1,8 +1,8 @@
 <header id="dokuwiki__header">
     <?php
     
-    /*** disable header on login page ***/
-    if($ACT!="login"){
+    /*** disable header on login or denied pages ***/
+    if(($ACT!="login") && ($ACT!="denied")){
     ?>
     
     <div class="dokuwiki__header__wrapper">
