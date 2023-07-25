@@ -1,6 +1,7 @@
 # Dokuwiki Kiwiki Theme
 
 Flex theme with lots of css fix and some ease of use features. You can change all colors of the theme to your own taste.
+Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
 ### 2023-07-25
 - new language Added German language - Thanks to @holisticagile
