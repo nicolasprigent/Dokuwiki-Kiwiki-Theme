@@ -4,7 +4,7 @@
     <?php 
 
     /* disable sidemenu on login and some pages */
-    if($ACT!="login"){
+    if(($ACT!="login") && ($ACT!="denied")){
         if (($ACT == 'show')||(isset($_REQUEST['page']) && $ACT=='admin' && $_REQUEST['page'] == 'config')){
     ?>
     
@@ -55,7 +55,7 @@
                 <!-- wikipage stop -->
             </div>
             <?php tpl_flush();
-            if($ACT=="login"){?>
+            if(($ACT=="login") || ($ACT=="denied")){?>
                 <a href="/" class="back-home"><?php echo tpl_getLang('Back to homepage'); ?></a>
             <?php } ?>
         </div>
