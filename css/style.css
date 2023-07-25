@@ -115,21 +115,29 @@
   margin-bottom: 1.4em;
 }
 
-#kiwiki #autorisation_refusee,
-#kiwiki #autorisation_refusee + .level1 {
-  background-color: rgba(255, 0, 0, 0.4);
+#kiwiki #dokuwiki__site #dokuwiki__top.mode_denied #dokuwiki__content__wrapper{
+  max-width: 700px;
+}
+
+#kiwiki .mode_denied #dokuwiki__content .page.group > h1,
+#kiwiki .mode_denied #dokuwiki__content .page.group > h1  + .level1{
   text-align: center;
   margin: 0;
-  padding: 15px 30px 0;
+  padding: 15px 30px 15px;
+
+}
+#kiwiki .mode_denied #dokuwiki__content .page.group > h1:first-child,
+#kiwiki .mode_denied #dokuwiki__content h1:first-child + .level1 {
+  background-color: rgba(255, 0, 0, 0.4);
   border-radius: 8px 8px 0 0;
 }
 
-#kiwiki #autorisation_refusee + .level1 {
+#kiwiki .mode_denied #dokuwiki__content h1:first-child + .level1 {
   padding: 0 30px 15px;
   border-radius: 0 0 8px 8px;
 }
 
-#kiwiki #autorisation_refusee + .level1 p {
+#kiwiki .mode_denied #dokuwiki__content h1:first-child + .level1 p {
   margin: 0;
 }
 #kiwiki .back-home{
