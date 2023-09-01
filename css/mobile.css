@@ -254,7 +254,7 @@
     border-radius: 10px;
     border: 0;
   }
-
+  
   #kiwiki #extension__list .legend,
   #kiwiki #extension__manager .actions {
     width: 100%;
@@ -265,5 +265,11 @@
 
   #kiwiki #extension__list .legend dl.details {
     border-radius: 0;
+  }
+  #kiwiki #extension__list.hasDisplayOptions .enabled, #kiwiki #extension__list.hasDisplayOptions .disabled, #kiwiki #extension__list.hasDisplayOptions .updatable{
+    display: none;
+  }
+  #kiwiki #extension__list.hasDisplayOptions.enabled .enabled, #kiwiki #extension__list.hasDisplayOptions.disabled .disabled, #kiwiki #extension__list.hasDisplayOptions.updatable .updatable{
+    display: flex;
   }
 } /* /@media */
