@@ -15,7 +15,9 @@
             /*mainmenu*/
             if ($ACT=='show'){
                 $mainmenu = tpl_getConf('MainMenu');
-                
+                if ($INFO['namespace']){
+                    $mainmenu = $INFO['namespace'] . ":" . $mainmenu;
+                }                
                     ?>
                     <div class="kiwiki-main-menu dokuwiki__aside__block">
                         <h3><?php echo tpl_getLang('Menu'); ?></h3>
