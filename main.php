@@ -42,7 +42,7 @@ if (!empty($_COOKIE['theme'])){
         <!-- ********** HEADER ********** -->
         <?php include('partial/header.php');?>
         
-        <?php include('partial/breadcrumb.php'); ?>
+        <?php include('partial/before_content.php'); ?>
 
         <?php include('partial/content.php');?>        
 
