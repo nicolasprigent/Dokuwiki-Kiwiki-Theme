@@ -5,7 +5,7 @@ Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
 ### 2023-09-30
 - Added compatibility with Translation Plugin
-- 
+  
 ### 2023-09-01
 - Updated css to have the filters working on small size screens
 
