@@ -384,13 +384,42 @@
   padding: 30px 60px;
 }
 
-/*BREADCRUMBS*/
-#kiwiki .breadcrumbs {
+/*BEFORE CONTENT*/
+#kiwiki .before-content {  
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto 10px;
   font-size: 12px;
   text-align: center;
+}
+#kiwiki .dokuwiki div.plugin_translation ul{
+    background-color: var(--kiwiki-body-bg);   
+}
+#kiwiki .dokuwiki div.plugin_translation ul li{
+    background-color: transparent;
+    border:2px solid transparent;
+    border-radius: 3px;
+}
+
+#kiwiki .dokuwiki div.plugin_translation ul li:hover{
+    background-color: var(--kiwiki-ui-200);    
+    border:2px solid var(--kiwiki-btn-bg);
+}
+
+#kiwiki .dokuwiki div.plugin_translation ul li.span{
+    background-color: var(--kiwiki-btn-bg);
+}
+
+#kiwiki .dokuwiki div.plugin_translation ul li.span span{
+    color: var(--kiwiki-body-bg);
+}
+
+#kiwiki .dokuwiki div.plugin_translation ul li a, #kiwiki .dokuwiki div.plugin_translation ul li span{
+    background-color: transparent;
 }
 
 /*ASIDE*/
