@@ -15,9 +15,12 @@
             /*mainmenu*/
             if ($ACT=='show'){
                 $mainmenu = tpl_getConf('MainMenu');
-                if ($INFO['namespace']){
-                    $mainmenu = $INFO['namespace'] . ":" . $mainmenu;
-                }                
+               $translation = plugin_load('helper','translation');
+                $currentlng = "";
+                if ($translation){
+                    $currentlng = (explode(":",$INFO['namespace']))[0] . ":";
+                }
+                $mainmenu = $currentlng . $mainmenu;      
                     ?>
                     <div class="kiwiki-main-menu dokuwiki__aside__block">
                         <h3><?php echo tpl_getLang('Menu'); ?></h3>
