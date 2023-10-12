@@ -494,6 +494,30 @@
   text-decoration: underline;
   color: var(--kiwiki-btn-hover-bg);
 }
+
+#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside #dw__toc > div {
+  max-height: var(--kiwiki-toc-max-height);
+  overflow: hidden scroll;
+}
+
+#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside #dw__toc > div::-webkit-scrollbar {
+  width: .8em;
+}
+
+#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside #dw__toc > div::-webkit-scrollbar-thumb {
+  background-color: var(--kiwiki-ui-200);
+  outline: 1px solid var(--kiwiki-ui-200);
+  width: 1em;
+  border-radius: 1em;
+}
+
+#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside #dw__toc > div::-webkit-scrollbar-track {
+  background-color: var(--kiwiki-main);
+  border-style: solid;
+  border-radius: 1em;
+  border-width: 1px;
+  border-color: var(--kiwiki-ui-200);
+}
 /* EDIT THIS BUTTON */
 #kiwiki .edit-this {
   position: absolute;
