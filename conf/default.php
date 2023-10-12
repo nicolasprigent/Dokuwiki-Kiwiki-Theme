@@ -5,3 +5,4 @@
  */
 
 $conf['MainMenu'] = 'mainmenu';
+$conf['TocMaxHeight'] = '300';
