@@ -4,4 +4,5 @@
  *
  */
 
-$lang['hideTools']        = 'Tools für anonyme Besucher ausblenden?';
+$lang['MainMenu'] = 'Menü-Bezeichner';
+$lang['TocMaxHeight'] = 'Max. Höhe des Inhaltsverzeichnisses';
