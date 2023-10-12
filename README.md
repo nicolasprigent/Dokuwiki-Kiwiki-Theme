@@ -6,10 +6,10 @@ Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 ### 2023-10-12
 - Added max height for table of content in theme configuration
 
-### 2023-09-31
+### 2023-10-02
 - Bug fix on menu disappearing on deep level pages
 
-### 2023-10-02
+### 2023-09-31
 - Added compatibility with Translation Plugin
   
 ### 2023-09-01
