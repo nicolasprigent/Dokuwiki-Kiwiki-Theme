@@ -4,4 +4,5 @@
  *
  */
 
-$lang['hideTools']        = 'Hide tools to anonymous visitors?';
+$lang['MainMenu'] = 'Menu identifier';
+$lang['TocMaxHeight'] = 'Max. table of contents height';
