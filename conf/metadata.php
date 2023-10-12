@@ -8,3 +8,4 @@
 $meta['sidebarIsNav']     = array('onoff');*/
 
 $meta['MainMenu'] = array('string');
+$meta['TocMaxHeight'] = array('numeric');
