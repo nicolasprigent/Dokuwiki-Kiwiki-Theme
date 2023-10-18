@@ -12,6 +12,8 @@ $lang['search'] = 'Search';
 $lang['Menu']        = 'Menu';
 $lang['edit-menu']   = 'Edit menu';
 $lang['Back to homepage']   = 'Back to homepage';
+$lang['Visible to'] = "Page visible to: " ; 
+$lang['Hidden to'] = "Page hidden to : " ; 
 
 $lang['__kiwiki_body_bg_color__'] = "Background color";
 $lang['__kiwiki_header_bg_color__'] = "Header background color";
