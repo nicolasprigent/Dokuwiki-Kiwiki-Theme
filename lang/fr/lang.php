@@ -14,6 +14,7 @@ $lang['edit-menu']   = 'Éditer le menu';
 $lang['Back to homepage']   = 'Retour à la page d\'accueil';
 $lang['Visible to'] = "Page visible pour : " ; 
 $lang['Hidden to'] = "Page cachée pour : " ; 
+$lang['User is in group'] = "Vous appartenez aux groupes suivants : " ; 
 
 $lang['__kiwiki_body_bg_color__'] = "Couleur de fond";
 $lang['__kiwiki_header_bg_color__'] = "Couleur de fond du header";
