@@ -27,6 +27,7 @@
     var trigger = $("nav.tools>div");
     var search = $("div#open-search");
     var thememode = $("div#theme-mode");
+    var fullscreen = $("div#full-screen");
 
     var menu = $(
       "#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside .kiwiki-main-menu h3"
@@ -46,12 +47,13 @@
         "#dokuwiki__header > .dokuwiki__header__wrapper #dw__search"
       ).toggleClass("open");
     }
-
+    if ($(event.target).is(fullscreen)) {
+      $("body").toggleClass("fullscreen");
+    }
     if ($(event.target).is(menu)) {
       $(menu).parent().toggleClass("open");
     }
     if ($(event.target).is(thememode)) {
-      console.log(colorscheme);
       if (!!$.cookie("theme")) {
         if (!$("body").hasClass("darkmode")) {
           $("body").removeClass("lightmode");
