@@ -77,7 +77,6 @@ class Kiwiki_Functions {
             sort($list);
             print tpl_getLang('Visible to');
             print join(', ',$list);
-            print ")";
         }
         
         // Uncomment this, if you want to display users/groups who cannot access this page, too:
@@ -91,7 +90,6 @@ class Kiwiki_Functions {
             print " • ";
             print tpl_getLang('Hidden to');
             print join(', ',$list);
-            print ")";
         }
     }
 }
