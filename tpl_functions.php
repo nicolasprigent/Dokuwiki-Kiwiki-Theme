@@ -13,7 +13,8 @@ if (!defined('DOKU_INC')) die();
 
 set_include_path(__DIR__);
 include_once(__DIR__ .'/classes/kiwiki_page_menu.php'); 
-include_once(__DIR__ .'/classes/kiwiki_go_top.php'); 
+include_once(__DIR__ .'/classes/kiwiki_go.php'); 
+include_once(__DIR__ .'/classes/kiwiki_go_bottom.php'); 
 require_once(__DIR__ .'/classes/kiwiki_functions.php'); 
 
 $https = isset($_SERVER['HTTPS']) ? "https://" : "http://";
