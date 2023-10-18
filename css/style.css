@@ -148,6 +148,20 @@
   padding: 20px 0 0;
   border-top: 1px solid var(--kiwiki-ui-300);
 }
+/*USER GROUP INFORMATION*/
+#kiwiki .user_groups_info {
+  width: 100%;
+  position: relative;
+  display: block;
+  background-color:var(--kiwiki-ui-100);
+  color: var(--kiwiki-text-color);
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 40px;
+}
 
 /*HEADER*/
 
@@ -1411,10 +1425,7 @@
 }
 #kiwiki #dokuwiki__footer .meta{
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0 20px;
-  margin-bottom: 5px;
+  gap:20px;
 }
 #dokuwiki__footer .acl{
     display: inline-block;
