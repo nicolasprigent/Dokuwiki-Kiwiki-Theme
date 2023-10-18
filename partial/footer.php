@@ -8,7 +8,7 @@
         }
         ?>
 
-        <?php if (tpl_getConf('ShowACLFooter')){
+        <?php if (tpl_getConf('ShowACLFooter') && ($INFO['editable'])){
             echo '<div class="acl">';
             Kiwiki_Functions::tpl_aclinfo();
             echo '</div>';
