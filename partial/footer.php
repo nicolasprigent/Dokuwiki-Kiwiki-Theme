@@ -2,14 +2,18 @@
     <div class="meta">
         
         <?php if (tpl_getConf('ShowUserFooter')){
-        echo '<div class="user">';
-        tpl_userinfo();
-        echo '</div>';
+            echo '<div class="user">';
+            tpl_userinfo();
+            echo '</div>';
         }
         ?>
 
-        <?php if (tpl_getConf('ShowACLFooter'))
-        echo '<div class="acl">' . Kiwiki_Functions::tpl_aclinfo() . '</div>'?>
+        <?php if (tpl_getConf('ShowACLFooter')){
+            echo '<div class="acl">';
+            Kiwiki_Functions::tpl_aclinfo();
+            echo '</div>';
+        }
+        ?>
         
         <div class="doc"><?php tpl_pageinfo() ?></div>
     </div>
