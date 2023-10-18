@@ -52,18 +52,24 @@ if (!empty($_COOKIE['theme'])){
         <!-- ********** FOOTER ********** -->
     <?php include('partial/footer.php'); ?>
     <!-- GO TOP -->
-    <div id="gotop">
+    <div id="go">
     <?php
 
-    
-    $items = (new \dokuwiki\Menu\KiwikiGoTop())->getItems();
-        echo '<a href="'.$items[0]->getLink().'" title="'.$items[0]->getTitle().'">'
-        .'<span class="icon">'.inlineSVG($items[0]->getSvg()).'</span>'
-        . '<span class="a11y">'.$items[0]->getLabel().'</span>'
-        . '</a>';
+    $items = (new \dokuwiki\Menu\KiwikiGo())->getItems();
+    foreach ($items as $item){
+        if ($item -> getType() == 'bottom' && !tpl_getConf('GoBottomBtn')){
+            continue;
+        }else{
+            echo '<a href="'.$item->getLink().'" title="'.$item->getTitle().'">'
+            .'<span class="icon">'.inlineSVG($item->getSvg()).'</span>'
+            . '<span class="a11y">'.$item->getLabel().'</span>'
+            . '</a>';
+        }
+    }
     ?>
     </div>
     </div><!-- /site -->
+    <div id="dokuwiki__bottom"></div>
     <div class="no"><?php tpl_indexerWebBug() /* provide DokuWiki housekeeping, required in all templates */ ?></div>
 </body>
 </html>
