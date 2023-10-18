@@ -1411,7 +1411,10 @@
 }
 #kiwiki #dokuwiki__footer .meta{
   display: flex;
-  gap:20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  margin-bottom: 5px;
 }
 #dokuwiki__footer .acl{
     display: inline-block;
