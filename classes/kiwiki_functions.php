@@ -75,7 +75,7 @@ class Kiwiki_Functions {
         }
         if (count($list)) {
             sort($list);
-            print "(page visible to: ";
+            print tpl_getLang('Visible to');
             print join(', ',$list);
             print ")";
         }
@@ -88,7 +88,8 @@ class Kiwiki_Functions {
         }
         if (count($list)) {
             sort($list);
-            print "(page hidden to: ";
+            print " • ";
+            print tpl_getLang('Hidden to');
             print join(', ',$list);
             print ")";
         }
