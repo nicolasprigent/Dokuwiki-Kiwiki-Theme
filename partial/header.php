@@ -32,6 +32,11 @@
             <div id="open-search">
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'search.svg') ?></strong>
             </div>
+            <?php if (tpl_getConf('FullScreenBtn')){?>
+            <div id="full-screen">
+                <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'full_screen.svg') ?></strong>
+            </div>
+            <?php } ?>
             <div id="theme-mode">
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'theme_mode.svg') ?></strong>
             </div>
