@@ -1409,7 +1409,10 @@
   font-size: 0.75rem;
   color: var(--kiwiki-text-color);
 }
-
+#kiwiki #dokuwiki__footer .meta{
+  display: flex;
+  gap:20px;
+}
 /*MISC*/
 #kiwiki .JSpopup {
   border: 1px solid var(--kiwiki-ui-300);
