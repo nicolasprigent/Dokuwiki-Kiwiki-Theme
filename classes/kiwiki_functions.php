@@ -32,7 +32,7 @@ class Kiwiki_Functions {
      * https://forum.dokuwiki.org/d/21636-acl-deny-a-user-group-to-a-namespace/13
      */
 
-     public function tpl_aclinfo() {
+     public static function tpl_aclinfo() {
         global $ID, $AUTH_ACL, $INFO;
         
         if ((auth_quickaclcheck($ID) == 0) ||(!$INFO['editable']))
