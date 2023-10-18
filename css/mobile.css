@@ -272,4 +272,10 @@
   #kiwiki #extension__list.hasDisplayOptions.enabled .enabled, #kiwiki #extension__list.hasDisplayOptions.disabled .disabled, #kiwiki #extension__list.hasDisplayOptions.updatable .updatable{
     display: flex;
   }
+
+  /*GO TOP/BOTTOM*/
+  #kiwiki #go {
+    flex-direction: column;
+  }
+
 } /* /@media */
