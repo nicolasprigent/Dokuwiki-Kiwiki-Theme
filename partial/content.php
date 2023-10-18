@@ -60,9 +60,10 @@
                 <!-- wikipage stop -->
             </div>
             <?php tpl_flush();
-            if(($ACT=="login") || ($ACT=="denied")){?>
-                <a href="/" class="back-home"><?php echo tpl_getLang('Back to homepage'); ?></a>
-            <?php } ?>
+            if(($ACT=="login") || ($ACT=="denied")){
+                html_msgarea();
+                echo '<a href="/" class="back-home">' . tpl_getLang('Back to homepage') . '</a>';
+            } ?>
         </div>
     </main><!-- /content -->
 </div><!-- /wrapper -->
