@@ -1413,6 +1413,11 @@
   display: flex;
   gap:20px;
 }
+#dokuwiki__footer .acl{
+    display: inline-block;
+    background-color: rgba(255,0,0,.1);
+    padding: 1px 10px;
+}
 /*MISC*/
 #kiwiki .JSpopup {
   border: 1px solid var(--kiwiki-ui-300);
