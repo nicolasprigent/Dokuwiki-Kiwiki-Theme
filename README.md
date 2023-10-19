@@ -3,6 +3,13 @@
 Flex theme with lots of css fix and some ease of use features. You can change all colors of the theme to your own taste.
 Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
+### 2023-10-19 (features suggestions from @Chris75forumname -> https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/12)
+- Added go to bottom button with option to activate it or not
+- Added fullscreen button in header
+- Added connected user information on footer, with option to activate it or not
+- Added ACL informations on footer (only for editors), with option to activate it or not
+- Added ACL group list in user page has an info 
+
 ### 2023-10-18
 - Added back the message area on connection page
 
