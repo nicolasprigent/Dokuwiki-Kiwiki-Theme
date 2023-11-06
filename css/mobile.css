@@ -140,7 +140,7 @@
     #dokuwiki__aside
     .kiwiki-main-menu
     h3
-    + ul,
+    + *:not(.edit-this),
   #kiwiki
     #dokuwiki__site
     #dokuwiki__content__wrapper
@@ -156,7 +156,7 @@
     #dokuwiki__aside
     .kiwiki-main-menu.open
     h3
-    + ul,
+    + *:not(.edit-this),
   #kiwiki
     #dokuwiki__site
     #dokuwiki__content__wrapper
