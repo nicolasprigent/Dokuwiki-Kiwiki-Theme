@@ -3,6 +3,9 @@
 Flex theme with lots of css fix and some ease of use features. You can change all colors of the theme to your own taste.
 Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
+### 2023-11-06
+- Fix on mobile menu switch not hiding navigation menu on mobile if translation plugin is activated
+
 ### 2023-10-19 (features suggestions from @Chris75forumname -> https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/12)
 - Added go to bottom button with option to activate it or not
 - Added fullscreen button in header
