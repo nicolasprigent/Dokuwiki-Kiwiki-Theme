@@ -586,21 +586,37 @@
   font-weight: 400;
   font-size: 14px;
 }
-
-#kiwiki .secedit button,
-#kiwiki .editBox #tool__bar button {
+/*EDITOR*/
+#kiwiki .secedit button, #kiwiki .editBox #tool__bar button,#kiwiki button.toolbutton, #kiwiki button.pickerbutton{
   color: var(--kiwiki-ui-300);
-  background-color: transparent;
+  background-color: var(--kiwiki-main);
   border: 1px solid var(--kiwiki-ui-300);
 }
-#kiwiki .editBox #tool__bar button {
-  filter: grayscale(1);
+#kiwiki button.pickerbutton {
+  margin: 2px;
+  padding: 2px 8px;
+  font-size: 16px;
+}
+#kiwiki .secedit button:hover, #kiwiki .editBox #tool__bar button:hover, #kiwiki button.toolbutton:hover, #kiwiki button.pickerbutton:hover{
+  background-color: var(--kiwiki-btn-hover-bg);    
 }
 
-#kiwiki button:hover,
-#kiwiki .ui-dialog .ui-dialog-buttonpane button:hover {
-  color: var(--kiwiki-btn-hover-text);
-  background-color: var(--kiwiki-btn-hover-bg);
+#kiwiki button.toolbutton img{
+  filter:grayscale(1);
+}
+
+#kiwiki.darkmode button.toolbutton img{
+  filter:invert(1) grayscale(1) brightness(1.5);    
+}
+
+#kiwiki .picker{
+  background-color:var(--kiwiki-main);
+  border:none;
+  border-radius:5px;
+}
+#picker2{
+    overflow: hidden scroll;
+    height: 300px;
 }
 
 #kiwiki fieldset {
