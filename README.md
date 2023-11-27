@@ -3,6 +3,9 @@
 Flex theme with lots of css fix and some ease of use features. You can change all colors of the theme to your own taste.
 Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
+### 2023-11-27
+- Updated editor css for readability
+
 ### 2023-11-23
 - The edit button was limited to admin group only, now it checks edit permissions
   
