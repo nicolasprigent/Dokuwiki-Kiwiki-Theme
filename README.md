@@ -4,6 +4,9 @@ Flex theme with lots of css fix and some ease of use features. You can change al
 Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
 ### 2023-11-27
+- Added css for tables in content
+  
+### 2023-11-27
 - Updated editor css for readability
 
 ### 2023-11-23
