@@ -169,3 +169,7 @@ a:visited {
 a:hover {
   color: var(--kiwiki-btn-hover-bg);
 }
+
+a.wikilink2:link, a.wikilink2:hover, a.wikilink2:visited {
+  color: red;
+}
