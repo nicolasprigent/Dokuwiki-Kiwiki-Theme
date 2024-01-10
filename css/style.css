@@ -413,7 +413,8 @@
   padding: 30px 60px;
 }
 
-#dokuwiki__content table{
+/*TABLES*/
+#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table{
     width: 100%;
     border:1px solid var(--kiwiki-body-bg);
     padding: 0;
@@ -422,21 +423,21 @@
     
 }
 
-#dokuwiki__content table thead{
+#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table thead{
     background-color: var(--kiwiki-ui-600);
     color: var(--kiwiki-ui-100);
     padding: 15px;
 }
 
-#dokuwiki__content table tbody tr:nth-child(odd){
+#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table tbody tr:nth-child(odd){
     background-color: var(--kiwiki-ui-200);
 }
 
-#dokuwiki__content table tr:nth-child(even){
+#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table tr:nth-child(even){
     background-color: var(--kiwiki-ui-300);
 }
 
-#dokuwiki__content table thead th, #dokuwiki__content table td{
+#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table thead th, #kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table td{
     padding: 10px;
 }
 
