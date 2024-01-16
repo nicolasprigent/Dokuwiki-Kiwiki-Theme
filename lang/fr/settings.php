@@ -9,3 +9,5 @@ $lang['TocMaxHeight'] = 'Hauteur max. de la table des matières';
 $lang['GoBottomBtn'] = 'Bouton aller en bas';
 $lang['ShowUserFooter']    = 'Afficher l\'utilisateur connecté dans le footer';
 $lang['ShowACLFooter']    = 'Afficher les autorisation de groupe (ACL) dans le footer';
+$lang['FullScreenBtn']    = 'Bouton plein écran';
+
