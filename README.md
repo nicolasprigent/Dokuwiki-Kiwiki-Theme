@@ -3,10 +3,10 @@
 Flex theme with lots of css fix and some ease of use features. You can change all colors of the theme to your own taste.
 Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
-### 2023-01-16
+### 2024-01-16
 - Added Chinese language. Thanks to @AzurCrystal
 
-### 2023-01-10
+### 2024-01-10
 - Added css for tables in content
   
 ### 2023-11-27
