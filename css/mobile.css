@@ -49,8 +49,12 @@
   #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper nav {
     order: 2;
     flex-wrap: nowrap;
+    gap: 8px;
   }
-
+  #kiwiki nav.tools > div > strong svg{
+    width: 24px;
+    height: 24px;
+  }
   #kiwiki .breadcrumbs {
     margin: 15px auto;
   }
@@ -75,6 +79,7 @@
     z-index: 8;
     margin: 0;
   }
+
   #kiwiki
     #dokuwiki__site
     #dokuwiki__content__wrapper
@@ -90,6 +95,7 @@
     display: flex;
     flex-direction: column;
   }
+
   #kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside h3 {
     font-size: 18px;
     padding: 10px 5px;
