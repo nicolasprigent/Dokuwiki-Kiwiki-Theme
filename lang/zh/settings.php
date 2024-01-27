@@ -5,6 +5,7 @@
  */
 
 $lang['MainMenu'] = '主菜单的页面名称';
+$lang['MenuMaxHeight'] = '菜单最大高度';
 $lang['TocMaxHeight'] = '目录最大高度';
 $lang['GoBottomBtn'] = '启用前往页脚按钮';
 $lang['ShowUserFooter']    = '在页脚显示当前登录用户名';
