@@ -5,6 +5,7 @@
  */
 
 $conf['MainMenu'] = 'mainmenu';
+$conf['MenuMaxHeight'] = '300';
 $conf['TocMaxHeight'] = '300';
 $conf['GoBottomBtn']    = 0;
 $conf['FullScreenBtn']    = 1;
