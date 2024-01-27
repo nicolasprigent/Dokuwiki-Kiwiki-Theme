@@ -14,6 +14,7 @@ if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
 $showTools = !tpl_getConf('hideTools') || ( tpl_getConf('hideTools') && !empty($_SERVER['REMOTE_USER']) );
 $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
 $sidebarElement = tpl_getConf('sidebarIsNav') ? 'nav' : 'aside';
+$menuMaxHeight = tpl_getConf('MenuMaxHeight');
 $tocMaxHeight = tpl_getConf('TocMaxHeight');
 $themeMode = '';
 if (!empty($_COOKIE['theme'])){
@@ -30,7 +31,11 @@ if (!empty($_COOKIE['theme'])){
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <?php echo tpl_favicon(array('favicon', 'mobile')) ?>
     <?php tpl_includeFile('meta.html')?>
-    <style>body{ --kiwiki-toc-max-height:<?php echo $tocMaxHeight; ?>px}</style>
+    <style>body{
+        --kiwiki-menu-max-height:<?php echo $menuMaxHeight; ?>px;
+        --kiwiki-toc-max-height:<?php echo $tocMaxHeight; ?>px;
+    }
+    </style>
 </head>
 
 
