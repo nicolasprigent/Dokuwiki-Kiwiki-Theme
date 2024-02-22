@@ -3,10 +3,16 @@
 class Kiwiki_Functions {
 
     public static function _edit_icon($what, $usergroup, $action){
+        global $conf;
         $output = "";
         if (isset($usergroup)){
-            if ((auth_quickaclcheck($USERINFO['id']) > AUTH_READ) && $action == 'show'){                     
-                $output = '<a class="edit-this" href="doku.php?id=' . $what . '&do=edit">' . inlineSVG(KIWIKI_IMAGES_PATH . 'edit.svg') .'</a>';
+            if ((auth_quickaclcheck($USERINFO['id']) > AUTH_READ) && $action == 'show'){
+                if ($conf['userewrite'] && $conf['useslash']) {
+                    $pagename = end(explode (":", $what));                     
+                    $output = '<a class="edit-this" href="' . $pagename . '?do=edit">' . inlineSVG(KIWIKI_IMAGES_PATH . 'edit.svg') .'</a>';
+                } else {                     
+                    $output = '<a class="edit-this" href="doku.php?id=' . $what . '&do=edit">' . inlineSVG(KIWIKI_IMAGES_PATH . 'edit.svg') .'</a>';
+                }
             }
         }
         return $output;
