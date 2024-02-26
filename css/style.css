@@ -361,6 +361,10 @@
 }
 
 /*CONTENT*/
+#kiwiki .urlextern {
+    word-break:break-all;
+}
+
 #kiwiki #dokuwiki__site div.no {
   display: flex;
 }
