@@ -3,6 +3,10 @@
 Flex theme with lots of css fix and some ease of use features. You can change all colors of the theme to your own taste.
 Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
+### 2024-02-26
+- Fix: edit_page button break when userewrite and useslash config enabled. Thanks to @AzurCrystal
+- Fix : long links overflow on mobile view. Thanks to @Gabe-LSN
+
 ### 2024-01-27
 - Added max height for left menu
 
