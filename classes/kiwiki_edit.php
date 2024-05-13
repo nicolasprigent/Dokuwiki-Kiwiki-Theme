@@ -9,8 +9,6 @@ namespace dokuwiki\Menu;
  */
 class KiwikiEdit extends AbstractMenu {
     
-    protected $view = 'page';
-
     public $types = array(
         'EditIcon'
     );
