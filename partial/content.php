@@ -65,7 +65,7 @@
                 html_msgarea();
                 echo '<a href="/" class="back-home">' . tpl_getLang('Back to homepage') . '</a>';
             }
-            if ($_REQUEST['do'] == 'profile'){
+            if (isset($_REQUEST['do']) && $_REQUEST['do'] == 'profile'){
                 echo '<div class="user_groups_info">' . tpl_getLang('User is in group');
                 echo join(', ',$INFO['userinfo']['grps']);
                 echo '</div>';
