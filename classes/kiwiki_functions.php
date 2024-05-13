@@ -5,7 +5,7 @@ class Kiwiki_Functions {
     public static function _edit_icon($what, $usergroup, $action){
         global $conf;
         $output = "";
-        if (isset($usergroup)){
+        if (isset($usergroup)&&isset($USERINFO)){
             if ((auth_quickaclcheck($USERINFO['id']) > AUTH_READ) && $action == 'show'){
                 if ($conf['userewrite'] && $conf['useslash']) {
                     $pagename = end(explode (":", $what));                     
