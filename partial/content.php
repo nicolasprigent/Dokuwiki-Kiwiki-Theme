@@ -26,8 +26,7 @@
                         <h3><?php echo tpl_getLang('Menu'); ?></h3>
                         <div class="menu-content">
                         <?php tpl_include_page($mainmenu); 
-                        if (isset($USERINFO['grps']))
-                        echo Kiwiki_Functions::_edit_icon($mainmenu,$USERINFO['grps'], $ACT);                        
+                        echo Kiwiki_Functions::_edit_icon($mainmenu);
                         ?>
                         </div>
                     </div>
@@ -55,8 +54,7 @@
             <div class="page group">
                 <!-- wikipage start -->
                 <?php tpl_content(false);
-                if (isset($USERINFO['grps']))
-                echo Kiwiki_Functions::_edit_icon($INFO['id'],$USERINFO['grps'], $ACT);
+                echo Kiwiki_Functions::_edit_icon('');
                 ?>
                 <!-- wikipage stop -->
             </div>
