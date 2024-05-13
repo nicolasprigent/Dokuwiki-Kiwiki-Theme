@@ -13,6 +13,8 @@ if (!defined('DOKU_INC')) die();
 
 set_include_path(__DIR__);
 include_once(__DIR__ .'/classes/kiwiki_page_menu.php'); 
+include_once(__DIR__ .'/classes/kiwiki_edit.php'); 
+include_once(__DIR__ .'/classes/kiwiki_edit_icon.php'); 
 include_once(__DIR__ .'/classes/kiwiki_go.php'); 
 include_once(__DIR__ .'/classes/kiwiki_go_bottom.php'); 
 require_once(__DIR__ .'/classes/kiwiki_functions.php'); 
