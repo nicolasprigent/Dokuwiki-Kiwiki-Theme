@@ -38,12 +38,11 @@
   color: var(--kiwiki-text-color);
 }
 
-#kiwiki #dokuwiki__top.mode_login{
+#kiwiki #dokuwiki__top.mode_login {
   display: flex;
-  margin-bottom:-90px;
+  margin-bottom: -90px;
   height: 100vh;
   align-items: center;
-  
 }
 
 #kiwiki #dokuwiki__top .wrapper {
@@ -90,7 +89,7 @@
   font-size: 0.75rem;
 }
 
-#kiwiki #dw__login p a{
+#kiwiki #dw__login p a {
   display: block;
 }
 
@@ -115,16 +114,15 @@
   margin-bottom: 1.4em;
 }
 
-#kiwiki #dokuwiki__site #dokuwiki__top.mode_denied #dokuwiki__content__wrapper{
+#kiwiki #dokuwiki__site #dokuwiki__top.mode_denied #dokuwiki__content__wrapper {
   max-width: 700px;
 }
 
 #kiwiki .mode_denied #dokuwiki__content .page.group > h1,
-#kiwiki .mode_denied #dokuwiki__content .page.group > h1  + .level1{
+#kiwiki .mode_denied #dokuwiki__content .page.group > h1 + .level1 {
   text-align: center;
   margin: 0;
   padding: 15px 30px 15px;
-
 }
 #kiwiki .mode_denied #dokuwiki__content .page.group > h1:first-child,
 #kiwiki .mode_denied #dokuwiki__content h1:first-child + .level1 {
@@ -140,11 +138,11 @@
 #kiwiki .mode_denied #dokuwiki__content h1:first-child + .level1 p {
   margin: 0;
 }
-#kiwiki .back-home{
+#kiwiki .back-home {
   display: block;
   width: 100%;
   text-align: center;
-  margin:0.5rem 0;
+  margin: 0.5rem 0;
   padding: 20px 0 0;
   border-top: 1px solid var(--kiwiki-ui-300);
 }
@@ -153,7 +151,7 @@
   width: 100%;
   position: relative;
   display: block;
-  background-color:var(--kiwiki-ui-100);
+  background-color: var(--kiwiki-ui-100);
   color: var(--kiwiki-text-color);
   margin: 0;
   box-sizing: border-box;
@@ -345,24 +343,24 @@
   color: #f00;
 }
 
-#kiwiki.fullscreen #dokuwiki__site #dokuwiki__top #dokuwiki__content__wrapper{
-  max-width:  100vw;
+#kiwiki.fullscreen #dokuwiki__site #dokuwiki__top #dokuwiki__content__wrapper {
+  max-width: 100vw;
 }
 
-#kiwiki.fullscreen #dokuwiki__header{
-  margin-top:-80px;
-  margin-bottom:30px;
+#kiwiki.fullscreen #dokuwiki__header {
+  margin-top: -80px;
+  margin-bottom: 30px;
 }
 
-#kiwiki.fullscreen #dokuwiki__header #full-screen{
+#kiwiki.fullscreen #dokuwiki__header #full-screen {
   position: fixed;
-  top:5px;
+  top: 5px;
   right: 5px;
 }
 
 /*CONTENT*/
 #kiwiki .urlextern {
-    word-break:break-all;
+  word-break: break-all;
 }
 
 #kiwiki #dokuwiki__site div.no {
@@ -378,8 +376,8 @@
   justify-content: center;
 }
 
-#kiwiki #dokuwiki__site #dokuwiki__top.mode_login #dokuwiki__content__wrapper{
-    max-width: 500px;
+#kiwiki #dokuwiki__site #dokuwiki__top.mode_login #dokuwiki__content__wrapper {
+  max-width: 500px;
 }
 
 #kiwiki #dokuwiki__content {
@@ -418,35 +416,44 @@
 }
 
 /*TABLES*/
-#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table{
-    width: 100%;
-    border:1px solid var(--kiwiki-body-bg);
-    padding: 0;
-    display: table;
+#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table {
+  width: 100%;
+  border: 1px solid var(--kiwiki-body-bg);
+  padding: 0;
+  display: table;
   border-spacing: 0;
-    
 }
 
-#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table thead{
-    background-color: var(--kiwiki-ui-600);
-    color: var(--kiwiki-ui-100);
-    padding: 15px;
+#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table thead {
+  background-color: var(--kiwiki-ui-600);
+  color: var(--kiwiki-ui-100);
+  padding: 15px;
 }
 
-#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table tbody tr:nth-child(odd){
-    background-color: var(--kiwiki-ui-200);
+#kiwiki
+  #dokuwiki__top:not(.mode_admin)
+  #dokuwiki__content
+  table
+  tbody
+  tr:nth-child(odd) {
+  background-color: var(--kiwiki-ui-200);
 }
 
-#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table tr:nth-child(even){
-    background-color: var(--kiwiki-ui-300);
+#kiwiki
+  #dokuwiki__top:not(.mode_admin)
+  #dokuwiki__content
+  table
+  tr:nth-child(even) {
+  background-color: var(--kiwiki-ui-300);
 }
 
-#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table thead th, #kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table td{
-    padding: 10px;
+#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table thead th,
+#kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table td {
+  padding: 10px;
 }
 
 /*BEFORE CONTENT*/
-#kiwiki .before-content {  
+#kiwiki .before-content {
   position: relative;
   z-index: 1;
   display: flex;
@@ -457,30 +464,31 @@
   font-size: 12px;
   text-align: center;
 }
-#kiwiki .dokuwiki div.plugin_translation ul{
-    background-color: var(--kiwiki-body-bg);   
+#kiwiki .dokuwiki div.plugin_translation ul {
+  background-color: var(--kiwiki-body-bg);
 }
-#kiwiki .dokuwiki div.plugin_translation ul li{
-    background-color: transparent;
-    border:2px solid transparent;
-    border-radius: 3px;
-}
-
-#kiwiki .dokuwiki div.plugin_translation ul li:hover{
-    background-color: var(--kiwiki-ui-200);    
-    border:2px solid var(--kiwiki-btn-bg);
+#kiwiki .dokuwiki div.plugin_translation ul li {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 3px;
 }
 
-#kiwiki .dokuwiki div.plugin_translation ul li.span{
-    background-color: var(--kiwiki-btn-bg);
+#kiwiki .dokuwiki div.plugin_translation ul li:hover {
+  background-color: var(--kiwiki-ui-200);
+  border: 2px solid var(--kiwiki-btn-bg);
 }
 
-#kiwiki .dokuwiki div.plugin_translation ul li.span span{
-    color: var(--kiwiki-body-bg);
+#kiwiki .dokuwiki div.plugin_translation ul li.span {
+  background-color: var(--kiwiki-btn-bg);
 }
 
-#kiwiki .dokuwiki div.plugin_translation ul li a, #kiwiki .dokuwiki div.plugin_translation ul li span{
-    background-color: transparent;
+#kiwiki .dokuwiki div.plugin_translation ul li.span span {
+  color: var(--kiwiki-body-bg);
+}
+
+#kiwiki .dokuwiki div.plugin_translation ul li a,
+#kiwiki .dokuwiki div.plugin_translation ul li span {
+  background-color: transparent;
 }
 
 /*ASIDE*/
@@ -560,23 +568,46 @@
   overflow: hidden scroll;
 }
 
-#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside #dw__toc > div {
+#kiwiki
+  #dokuwiki__site
+  #dokuwiki__content__wrapper
+  #dokuwiki__aside
+  #dw__toc
+  > div {
   max-height: var(--kiwiki-toc-max-height);
   overflow: hidden scroll;
 }
 
-#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside #dw__toc > div::-webkit-scrollbar, #kiwiki .kiwiki-main-menu .menu-content::-webkit-scrollbar {
-  width: .8em;
+#kiwiki
+  #dokuwiki__site
+  #dokuwiki__content__wrapper
+  #dokuwiki__aside
+  #dw__toc
+  > div::-webkit-scrollbar,
+#kiwiki .kiwiki-main-menu .menu-content::-webkit-scrollbar {
+  width: 0.8em;
 }
 
-#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside #dw__toc > div::-webkit-scrollbar-thumb, #kiwiki .kiwiki-main-menu .menu-content::-webkit-scrollbar-thumb {
+#kiwiki
+  #dokuwiki__site
+  #dokuwiki__content__wrapper
+  #dokuwiki__aside
+  #dw__toc
+  > div::-webkit-scrollbar-thumb,
+#kiwiki .kiwiki-main-menu .menu-content::-webkit-scrollbar-thumb {
   background-color: var(--kiwiki-ui-200);
   outline: 1px solid var(--kiwiki-ui-200);
   width: 1em;
   border-radius: 1em;
 }
 
-#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside #dw__toc > div::-webkit-scrollbar-track, #kiwiki .kiwiki-main-menu .menu-content::-webkit-scrollbar-track {
+#kiwiki
+  #dokuwiki__site
+  #dokuwiki__content__wrapper
+  #dokuwiki__aside
+  #dw__toc
+  > div::-webkit-scrollbar-track,
+#kiwiki .kiwiki-main-menu .menu-content::-webkit-scrollbar-track {
   background-color: var(--kiwiki-main);
   border-style: solid;
   border-radius: 1em;
@@ -584,17 +615,20 @@
   border-color: var(--kiwiki-ui-200);
 }
 /* EDIT THIS BUTTON */
-#kiwiki .edit-this {
+#kiwiki .kiwiki-edit {
   position: absolute;
   top: 5px;
   right: 5px;
   opacity: 0.2;
 }
-#kiwiki .edit-this:hover {
+#kiwiki .kiwiki-edit span {
+  display: none;
+}
+#kiwiki .kiwiki-edit:hover {
   opacity: 1;
 }
 
-#kiwiki .edit-this svg {
+#kiwiki .kiwiki-edit svg {
   width: 16px;
   height: 16px;
   fill: var(--kiwiki-text-color);
@@ -623,7 +657,10 @@
   font-size: 14px;
 }
 /*EDITOR*/
-#kiwiki .secedit button, #kiwiki .editBox #tool__bar button,#kiwiki button.toolbutton, #kiwiki button.pickerbutton{
+#kiwiki .secedit button,
+#kiwiki .editBox #tool__bar button,
+#kiwiki button.toolbutton,
+#kiwiki button.pickerbutton {
   color: var(--kiwiki-ui-300);
   background-color: var(--kiwiki-main);
   border: 1px solid var(--kiwiki-ui-300);
@@ -633,26 +670,29 @@
   padding: 2px 8px;
   font-size: 16px;
 }
-#kiwiki .secedit button:hover, #kiwiki .editBox #tool__bar button:hover, #kiwiki button.toolbutton:hover, #kiwiki button.pickerbutton:hover{
-  background-color: var(--kiwiki-btn-hover-bg);    
+#kiwiki .secedit button:hover,
+#kiwiki .editBox #tool__bar button:hover,
+#kiwiki button.toolbutton:hover,
+#kiwiki button.pickerbutton:hover {
+  background-color: var(--kiwiki-btn-hover-bg);
 }
 
-#kiwiki button.toolbutton img{
-  filter:grayscale(1);
+#kiwiki button.toolbutton img {
+  filter: grayscale(1);
 }
 
-#kiwiki.darkmode button.toolbutton img{
-  filter:invert(1) grayscale(1) brightness(1.5);    
+#kiwiki.darkmode button.toolbutton img {
+  filter: invert(1) grayscale(1) brightness(1.5);
 }
 
-#kiwiki .picker{
-  background-color:var(--kiwiki-main);
-  border:none;
-  border-radius:5px;
+#kiwiki .picker {
+  background-color: var(--kiwiki-main);
+  border: none;
+  border-radius: 5px;
 }
-#picker2{
-    overflow: hidden scroll;
-    height: 300px;
+#picker2 {
+  overflow: hidden scroll;
+  height: 300px;
 }
 
 #kiwiki fieldset {
@@ -893,7 +933,7 @@
   bottom: 20px;
   right: 20px;
   display: flex;
-  gap:5px;
+  gap: 5px;
 }
 #kiwiki #go .icon {
   display: flex;
@@ -1475,14 +1515,14 @@
   font-size: 0.75rem;
   color: var(--kiwiki-text-color);
 }
-#kiwiki #dokuwiki__footer .meta{
+#kiwiki #dokuwiki__footer .meta {
   display: flex;
-  gap:20px;
+  gap: 20px;
 }
-#dokuwiki__footer .acl{
-    display: inline-block;
-    background-color: rgba(255,0,0,.3);
-    padding: 1px 10px;
+#dokuwiki__footer .acl {
+  display: inline-block;
+  background-color: rgba(255, 0, 0, 0.3);
+  padding: 1px 10px;
 }
 /*MISC*/
 #kiwiki .JSpopup {
@@ -1494,6 +1534,6 @@
   flex-direction: column;
 }
 
-#kiwiki .ProseMirror li p{
-    color:var(--kiwiki-text-color);
+#kiwiki .ProseMirror li p {
+  color: var(--kiwiki-text-color);
 }
