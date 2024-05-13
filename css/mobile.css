@@ -51,7 +51,7 @@
     flex-wrap: nowrap;
     gap: 8px;
   }
-  #kiwiki nav.tools > div > strong svg{
+  #kiwiki nav.tools > div > strong svg {
     width: 24px;
     height: 24px;
   }
@@ -146,7 +146,7 @@
     #dokuwiki__aside
     .kiwiki-main-menu
     h3
-    + *:not(.edit-this),
+    + *:not(.kiwiki-edit),
   #kiwiki
     #dokuwiki__site
     #dokuwiki__content__wrapper
@@ -162,7 +162,7 @@
     #dokuwiki__aside
     .kiwiki-main-menu.open
     h3
-    + *:not(.edit-this),
+    + *:not(.kiwiki-edit),
   #kiwiki
     #dokuwiki__site
     #dokuwiki__content__wrapper
@@ -236,7 +236,7 @@
   #kiwiki pre {
     word-wrap: break-word;
   }
-  #kiwiki .edit-this {
+  #kiwiki .kiwiki-edit {
     left: 4px;
     right: 4px;
     width: fit-content;
@@ -260,7 +260,7 @@
     border-radius: 10px;
     border: 0;
   }
-  
+
   #kiwiki #extension__list .legend,
   #kiwiki #extension__manager .actions {
     width: 100%;
@@ -272,10 +272,14 @@
   #kiwiki #extension__list .legend dl.details {
     border-radius: 0;
   }
-  #kiwiki #extension__list.hasDisplayOptions .enabled, #kiwiki #extension__list.hasDisplayOptions .disabled, #kiwiki #extension__list.hasDisplayOptions .updatable{
+  #kiwiki #extension__list.hasDisplayOptions .enabled,
+  #kiwiki #extension__list.hasDisplayOptions .disabled,
+  #kiwiki #extension__list.hasDisplayOptions .updatable {
     display: none;
   }
-  #kiwiki #extension__list.hasDisplayOptions.enabled .enabled, #kiwiki #extension__list.hasDisplayOptions.disabled .disabled, #kiwiki #extension__list.hasDisplayOptions.updatable .updatable{
+  #kiwiki #extension__list.hasDisplayOptions.enabled .enabled,
+  #kiwiki #extension__list.hasDisplayOptions.disabled .disabled,
+  #kiwiki #extension__list.hasDisplayOptions.updatable .updatable {
     display: flex;
   }
 
@@ -283,5 +287,4 @@
   #kiwiki #go {
     flex-direction: column;
   }
-
 } /* /@media */
