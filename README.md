@@ -5,8 +5,8 @@ Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
 ### 2024-05-13
 - Fix: php warning errors on non existing variables https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/16
-- Refactoring of the edit icon button for it to use the correct dokuwiki classes (Menu and MenuItem), and get the same authorizations than the default edit page link.
-- 
+- Refactoring of the edit icon button for it to use the correct dokuwiki classes (Menu and MenuItem), and get the same authorizations than the default edit page link. https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/23
+  
 ### 2024-02-26
 - Fix: edit_page button break when userewrite and useslash config enabled. Thanks to @AzurCrystal
 - Fix : long links overflow on mobile view. Thanks to @Gabe-LSN
