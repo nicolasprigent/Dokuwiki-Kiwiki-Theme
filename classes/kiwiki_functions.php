@@ -2,20 +2,20 @@
 
 class Kiwiki_Functions {
 
-    public static function _edit_icon($what, $usergroup, $action){
-        global $conf;
-        $output = "";
-        if (isset($usergroup)&&isset($USERINFO)){
-            if ((auth_quickaclcheck($USERINFO['id']) > AUTH_READ) && $action == 'show'){
-                if ($conf['userewrite'] && $conf['useslash']) {
-                    $pagename = end(explode (":", $what));                     
-                    $output = '<a class="edit-this" href="' . $pagename . '?do=edit">' . inlineSVG(KIWIKI_IMAGES_PATH . 'edit.svg') .'</a>';
-                } else {                     
-                    $output = '<a class="edit-this" href="doku.php?id=' . $what . '&do=edit">' . inlineSVG(KIWIKI_IMAGES_PATH . 'edit.svg') .'</a>';
-                }
+    
+    /**
+     * Edit icon button
+     */
+    public static function _edit_icon($what){
+        global $ACT;
+        if ($ACT == 'show'){
+            $editicon = (new \dokuwiki\Menu\KiwikiEdit())->getListItems('kiwiki-',true);
+            
+            if (!empty($what)){
+                $editicon = preg_replace('/<a(.*)href="([^"]*)"(.*)>/','<a$1href="/doku.php?id='.$what.'&do=edit"$3>',$editicon);
             }
+            return $editicon;
         }
-        return $output;
     }
 
     
