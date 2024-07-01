@@ -677,11 +677,11 @@
   background-color: var(--kiwiki-btn-hover-bg);
 }
 
-#kiwiki button.toolbutton img {
+#kiwiki div:not(.picker) button.toolbutton img {
   filter: grayscale(1);
 }
 
-#kiwiki.darkmode button.toolbutton img {
+#kiwiki.darkmode div:not(.picker) button.toolbutton img {
   filter: invert(1) grayscale(1) brightness(1.5);
 }
 
