@@ -16,6 +16,7 @@ $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
 $sidebarElement = tpl_getConf('sidebarIsNav') ? 'nav' : 'aside';
 $menuMaxHeight = tpl_getConf('MenuMaxHeight');
 $tocMaxHeight = tpl_getConf('TocMaxHeight');
+$contentMaxWidth = tpl_getConf('ContentMaxWidth');
 $themeMode = '';
 if (!empty($_COOKIE['theme'])){
     $themeMode = $_COOKIE['theme'];
@@ -34,6 +35,7 @@ if (!empty($_COOKIE['theme'])){
     <style>body{
         --kiwiki-menu-max-height:<?php echo $menuMaxHeight; ?>px;
         --kiwiki-toc-max-height:<?php echo $tocMaxHeight; ?>px;
+        --kiwiki-content-max-width:<?php echo $contentMaxWidth; ?>;
     }
     </style>
 </head>
