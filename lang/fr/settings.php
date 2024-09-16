@@ -11,4 +11,4 @@ $lang['GoBottomBtn'] = 'Bouton aller en bas';
 $lang['ShowUserFooter']    = 'Afficher l\'utilisateur connecté dans le footer';
 $lang['ShowACLFooter']    = 'Afficher les autorisation de groupe (ACL) dans le footer';
 $lang['FullScreenBtn']    = 'Bouton plein écran';
-
+$lang['ContentMaxWidth']    = 'Largeur max du contenu (précisez l\'unité)';
