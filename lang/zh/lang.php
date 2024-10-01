@@ -15,6 +15,7 @@ $lang['Back to homepage']   = '返回主页';
 $lang['Visible to'] = "页面对这些用户组可见: " ;
 $lang['Hidden to'] = "页面对这些用户组隐藏: " ;
 $lang['User is in group'] = "你属于这些用户组:" ;
+$lang['btn_bottom'] = "Go to bottom" ; 
 
 $lang['__kiwiki_body_bg_color__'] = "背景颜色";
 $lang['__kiwiki_header_bg_color__'] = "首栏背景颜色";
