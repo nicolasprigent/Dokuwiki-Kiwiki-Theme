@@ -27,8 +27,8 @@ class Bottom extends AbstractItem {
      * @todo this does currently not support the SVG icon
      * @return string
      */
-    /*public function asHtmlButton() {
+    public function asHtmlButton() {
         return Kiwiki_Functions::html_bottombtn();
-    }*/
+    }
 
 }
