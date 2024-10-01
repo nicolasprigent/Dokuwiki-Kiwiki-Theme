@@ -3,10 +3,9 @@
 namespace dokuwiki\Menu\Item;
 
 /**
- * Class Top
+ * Class Bottom
  *
- * Scroll back to the top. Uses a hash as $id which is handled special in getLink().
- * Not shown in mobile context
+ * Scroll to the bottom. Uses a hash as $id which is handled special in getLink().
  */
 class Bottom extends AbstractItem {
 
@@ -28,8 +27,8 @@ class Bottom extends AbstractItem {
      * @todo this does currently not support the SVG icon
      * @return string
      */
-    public function asHtmlButton() {
+    /*public function asHtmlButton() {
         return Kiwiki_Functions::html_bottombtn();
-    }
+    }*/
 
 }
