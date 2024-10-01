@@ -23,14 +23,14 @@ class Kiwiki_Functions {
      * Go bottom button
      */
 
-    /*public static function html_bottombtn() {
+    public static function html_bottombtn() {
         global $lang;
 
         return '<a class="nolink" href="#dokuwiki__bottom">'
             .'<button class="button" onclick="window.scrollTo(0, 0)" title="'. $lang['btn_bottom'] .'">'
             . $lang['btn_bottom']
             .'</button></a>';
-    }*/
+    }
 
     /**
      * Custom ACL Informations in footer
