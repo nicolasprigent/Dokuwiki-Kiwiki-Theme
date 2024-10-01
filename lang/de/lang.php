@@ -15,6 +15,7 @@ $lang['Back to homepage']   = 'Zurück zur Homepage';
 $lang['Visible to'] = "Seite sichtbar für: " ; 
 $lang['Hidden to'] = "Seite ausgeblendet bis: " ; 
 $lang['User is in group'] = "Sie gehören zu den folgenden Gruppen: " ; 
+$lang['btn_bottom'] = "Zum Seitenende gehen" ; 
 
 $lang['__kiwiki_body_bg_color__'] = "Hintergrundfarbe";
 $lang['__kiwiki_header_bg_color__'] = "Kopfzeile Hintergrundfarbe";
