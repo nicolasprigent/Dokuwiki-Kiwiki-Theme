@@ -58,19 +58,19 @@
         if (!$("body").hasClass("darkmode")) {
           $("body").removeClass("lightmode");
           $("body").addClass("darkmode");
-          document.cookie = "theme=darkmode";
+          document.cookie = "theme=darkmode;path=/;";
         } else {
           $("body").removeClass("darkmode");
           $("body").addClass("lightmode");
-          document.cookie = "theme=lightmode";
+          document.cookie = "theme=lightmode;path=/;";
         }
       } else {
         if (colorscheme == "darkmode") {
           $("body").addClass("lightmode");
-          document.cookie = "theme=lightmode";
+          document.cookie = "theme=lightmode;path=/;";
         } else {
           $("body").addClass("darkmode");
-          document.cookie = "theme=darkmode";
+          document.cookie = "theme=darkmode;path=/;";
         }
       }
 
