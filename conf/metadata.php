@@ -12,3 +12,5 @@ $meta['ContentMaxWidth'] = array('string');
 $meta['FullScreenBtn']    = array('onoff');
 $meta['ShowUserFooter']    = array('onoff');
 $meta['ShowACLFooter']    = array('onoff');
+$meta['DefaultTheme']    = array('multichoice','_choices' => array('system-color','darkmode','lightmode'));
+$meta['ForceTheme']    = array('onoff');
