@@ -37,9 +37,13 @@
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'full_screen.svg') ?></strong>
             </div>
             <?php } ?>
+            
+            <?php if (!tpl_getConf('ForceTheme')){?>
             <div id="theme-mode">
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'theme_mode.svg') ?></strong>
             </div>
+            <?php } ?>
+
             <div id="dokuwiki__pagetools">
                 
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'preferences.svg') ?></strong>
