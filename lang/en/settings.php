@@ -12,3 +12,5 @@ $lang['ShowUserFooter']    = 'Display logged-in user in footer';
 $lang['ShowACLFooter']    = 'Display group permissions (ACL) in footer';
 $lang['FullScreenBtn']    = 'Full screen button';
 $lang['ContentMaxWidth']    = 'Content max width (unit is needed)';
+$lang['DefaultTheme']    = 'Default theme color';
+$lang['ForceTheme']    = 'Force the default theme color (will disable theme switcher button in header)';
