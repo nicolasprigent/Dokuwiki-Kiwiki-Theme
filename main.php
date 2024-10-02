@@ -17,9 +17,18 @@ $sidebarElement = tpl_getConf('sidebarIsNav') ? 'nav' : 'aside';
 $menuMaxHeight = tpl_getConf('MenuMaxHeight');
 $tocMaxHeight = tpl_getConf('TocMaxHeight');
 $contentMaxWidth = tpl_getConf('ContentMaxWidth');
-$themeMode = '';
+$themeMode = tpl_getConf('DefaultTheme');
+$forceTheme = tpl_getConf('ForceTheme');
+
 if (!empty($_COOKIE['theme'])){
-    $themeMode = $_COOKIE['theme'];
+    if(!$forceTheme){
+        $themeMode = $_COOKIE['theme'];
+    }else{
+        setcookie("theme",$themeMode);
+    }
+}
+if (!isset($_COOKIE['theme']) || empty($_COOKIE['theme'])){
+    setcookie("theme",$themeMode);
 }
 ?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $conf['lang'] ?>"
@@ -42,7 +51,7 @@ if (!empty($_COOKIE['theme'])){
 
 
 <body id="kiwiki" class="<?php echo $themeMode; ?>">
-    <?php /* the "dokuwiki__top" id is needed somewhere at the top, because that's where the "back to top" button/link links to */ ?>
+    <?php    /* the "dokuwiki__top" id is needed somewhere at the top, because that's where the "back to top" button/link links to */ ?>
     <?php /* tpl_classes() provides useful CSS classes; if you choose not to use it, the 'dokuwiki' class at least
              should always be in one of the surrounding elements (e.g. plugins and templates depend on it) */ ?>
     <?php $admin_page = (($ACT == "admin") && (isset($_REQUEST['page']))) ? explode("#",$_REQUEST['page'])[0]: "" ;?>
