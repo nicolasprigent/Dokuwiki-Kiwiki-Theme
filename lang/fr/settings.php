@@ -12,3 +12,5 @@ $lang['ShowUserFooter']    = 'Afficher l\'utilisateur connecté dans le footer';
 $lang['ShowACLFooter']    = 'Afficher les autorisation de groupe (ACL) dans le footer';
 $lang['FullScreenBtn']    = 'Bouton plein écran';
 $lang['ContentMaxWidth']    = 'Largeur max du contenu (précisez l\'unité)';
+$lang['DefaultTheme']    = 'Couleur de thème par défaut';
+$lang['ForceTheme']    = 'Forcer la couleur de theme par défaut (désactivera le bouton de choix de couleur dans le header)';
