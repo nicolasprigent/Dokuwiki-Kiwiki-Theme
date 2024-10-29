@@ -1,6 +1,5 @@
 <header id="dokuwiki__header">
     <?php
-    
     /*** disable header on login or denied pages ***/
     if(($ACT!="login") && ($ACT!="denied")){
     ?>
@@ -10,10 +9,11 @@
 
             <a href="<?php echo wl(); ?>" class="wikilogo">
                 <?php
-                $logoSize = array();
-                $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png'), false, $logoSize);
+
+
                 ?>
-                <img src=<?php echo $logo; ?> class="media" loading="lazy" alt="" width="80">
+                <span class="logo-img"><img src=<?php echo $logo; ?> class="media" loading="lazy" alt="" width="80"></span>
+                
                 <div>
                     <?php echo $conf['title']; ?>
                     <?php if ($conf['tagline']): ?>
