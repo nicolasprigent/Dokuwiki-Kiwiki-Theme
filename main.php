@@ -20,6 +20,8 @@ $contentMaxWidth = tpl_getConf('ContentMaxWidth');
 $themeMode = tpl_getConf('DefaultTheme');
 $forceTheme = tpl_getConf('ForceTheme');
 
+
+
 if (!empty($_COOKIE['theme'])){
     if(!$forceTheme){
         $themeMode = $_COOKIE['theme'];
@@ -30,6 +32,13 @@ if (!empty($_COOKIE['theme'])){
 if (!isset($_COOKIE['theme']) || empty($_COOKIE['theme'])){
     setcookie("theme",$themeMode);
 }
+$logoSize = array();
+
+$logodark = tpl_getMediaFile(array(':wiki:logo-dark.png', ':logo-dark.png', 'images/logo-dark.png'), true, $logoSize, false);
+$logolight = tpl_getMediaFile(array(':wiki:logo-light.png', ':logo-light.png', 'images/logo-light.png'), true, $logoSize, false);
+$logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png'), true, $logoSize);
+
+
 ?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $conf['lang'] ?>"
   lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
@@ -45,6 +54,9 @@ if (!isset($_COOKIE['theme']) || empty($_COOKIE['theme'])){
         --kiwiki-menu-max-height:<?php echo $menuMaxHeight; ?>px;
         --kiwiki-toc-max-height:<?php echo $tocMaxHeight; ?>px;
         --kiwiki-content-max-width:<?php echo $contentMaxWidth; ?>;
+        --kiwiki-logo-url:url(<?php echo $logo; ?>);
+        --kiwiki-logo-light-url:url(<?php echo $logolight ? $logolight : $logo; ?>);
+        --kiwiki-logo-dark-url:url(<?php echo $logodark ? $logodark : $logo; ?>);
     }
     </style>
 </head>
