@@ -15,14 +15,27 @@
       );
   }
 
+  
+
+
+  console.log($.cookie("theme"));
   var colorscheme = "lightmode";
-  if (
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  ) {
-    colorscheme = "darkmode";
-    console.log(colorscheme);
+  if($.cookie("theme")=="system-color"){
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      colorscheme = "darkmode";
+      document.cookie = "theme=darkmode;path=/;";
+      $("body").removeClass("lightmode");
+      $("body").addClass("darkmode");
+    }else{
+      document.cookie = "theme=lightmode;path=/;";
+      $("body").removeClass("darkmode");
+      $("body").addClass("lightmode");
+    }
   }
+
   $(document).on("click", function (event) {
     var trigger = $("nav.tools>div");
     var search = $("div#open-search");
@@ -77,6 +90,8 @@
       /**/
     }
   });
+
+  
   _kiwikiChangeAdminLabels(
     'label[for="tpl____kiwiki_color__"]',
     "h3",
