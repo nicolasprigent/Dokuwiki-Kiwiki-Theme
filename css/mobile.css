@@ -19,7 +19,11 @@
   }
 
   #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper .wikilogo img {
-    max-height: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+  #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper .wikilogo .logo-img{
+    height: 40px;
   }
   #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper a.wikilogo > div {
     font-size: 20px;

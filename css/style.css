@@ -195,10 +195,30 @@
 }
 
 #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper .wikilogo img {
-  max-height: 60px;
-  margin: 10px 0;
+  height: 60px;
+  min-width: 60px;
   width: auto;
+  opacity: 0;
 }
+
+#kiwiki #dokuwiki__header > .dokuwiki__header__wrapper .wikilogo .logo-img{
+  display: block;
+  width: fit-content;
+  height: 60px;
+  margin: 10px 0;
+  background-image: var(--kiwiki-logo-url);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#kiwiki.lightmode #dokuwiki__header > .dokuwiki__header__wrapper .wikilogo .logo-img{
+  background-image: var(--kiwiki-logo-light-url);
+}
+
+#kiwiki.darkmode #dokuwiki__header > .dokuwiki__header__wrapper .wikilogo .logo-img{
+  background-image: var(--kiwiki-logo-dark-url);
+}
+
 #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper a.wikilogo > div {
   display: flex;
   gap: 5px;
@@ -416,6 +436,9 @@
 }
 
 /*TABLES*/
+#kiwiki #dokuwiki__content .table {
+  overflow: auto;
+}
 #kiwiki #dokuwiki__top:not(.mode_admin) #dokuwiki__content table {
   width: 100%;
   border: 1px solid var(--kiwiki-body-bg);
