@@ -3,6 +3,12 @@
 Flex theme with lots of css fix and some ease of use features. You can change all colors of the theme to your own taste.
 Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
+### 2024-10-30
+- Added a functionnality to get a different logo on dark/light theme (https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/31). Upload your custom logos on the root of your install :
+  - logo.png for default logo (still mandatory for this to work)
+  - logo-dark.png for dark logo
+  - logo-light.png for light logo
+
 ### 2024-05-13
 - Fix: php warning errors on non existing variables https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/16
 - Refactoring of the edit icon button for it to use the correct dokuwiki classes (Menu and MenuItem), and get the same authorizations than the default edit page link. https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/23
