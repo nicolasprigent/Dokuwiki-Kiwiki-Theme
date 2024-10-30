@@ -1,7 +1,7 @@
 base     kiwiki
 author   Nicolas Prigent
 email    contactd3w3@gmail.com
-date     2024-10-02
+date     2024-10-30
 name     Kiwiki
 desc     Flex theme with lots of css fix and some ease of use features
 url      https://www.dokuwiki.org/template:kiwiki
