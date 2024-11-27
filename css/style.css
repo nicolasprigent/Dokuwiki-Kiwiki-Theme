@@ -55,7 +55,10 @@
   align-items: start;
   padding: 0;
 }
-
+div.dokuwiki .hentry{
+  padding: 0;
+  background-color: transparent;
+}
 /*LOGIN*/
 #kiwiki h1#connexion {
   text-align: center;
@@ -432,7 +435,7 @@
   border: 1px solid var(--kiwiki-ui-100);
   background: var(--kiwiki-main, #fff);
   border-radius: 4px;
-  padding: 30px 60px;
+  padding: 30px;
 }
 
 /*TABLES*/
@@ -658,7 +661,7 @@
 }
 
 /*BUTTONS*/
-#kiwiki button,
+#kiwiki button, #kiwiki .button,
 #kiwiki .ui-dialog .ui-dialog-buttonpane button {
   cursor: pointer;
   border-radius: 4px;
@@ -696,7 +699,7 @@
 #kiwiki .secedit button:hover,
 #kiwiki .editBox #tool__bar button:hover,
 #kiwiki button.toolbutton:hover,
-#kiwiki button.pickerbutton:hover {
+#kiwiki button.pickerbutton:hover,#kiwiki .button:hover {
   background-color: var(--kiwiki-btn-hover-bg);
 }
 
@@ -1547,6 +1550,61 @@
   background-color: rgba(255, 0, 0, 0.3);
   padding: 1px 10px;
 }
+
+/*Discussion plugin*/
+#kiwiki #comment_wrapper{  
+  background-color: var(--kiwiki-ui-100);
+  border-radius: 5px;
+  box-shadow: #1e293b0a 0 2px 4px 0;
+}
+#kiwiki #discussion__comment_form > .no{
+  flex-wrap: wrap;
+}
+
+#kiwiki div.dokuwiki .comment_head{
+  background-color: var(--kiwiki-ui-300);
+  color: var(--kiwiki-ui-900);
+  padding: .5em;
+  border-radius: 5px 5px 0 0;
+}
+
+
+#kiwiki div.dokuwiki .comment_body{
+  background-color: var(--kiwiki-ui-200);
+  padding: .5em;
+  border-radius: 0 0 5px 5px;
+}
+
+#kiwiki #discussion__comment_form label.nowrap{
+  order:999;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+div.dokuwiki div.comment_buttons {
+  margin-top: -13px;
+}
+
+#kiwiki .comment_buttons > .button{
+  padding:0;
+}
+#kiwiki .comment_buttons > .button input.button{
+  border: 0;
+  margin: 0;
+  font-size: 12px;
+  filter: grayscale(.7);
+  padding:1px 8px ;
+}
+
+#kiwiki .comment_buttons > .button input.button:hover{
+  filter: grayscale(0);
+}
+
+#kiwiki div.dokuwiki div.comment_replies.reply {
+  background-color: var(--kiwiki-ui-200);
+  padding: .5em;
+}
+
 /*MISC*/
 #kiwiki .JSpopup {
   border: 1px solid var(--kiwiki-ui-300);
