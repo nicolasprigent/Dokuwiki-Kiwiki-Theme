@@ -661,8 +661,7 @@ div.dokuwiki .hentry{
 }
 
 /*BUTTONS*/
-#kiwiki button, #kiwiki .button,
-#kiwiki .ui-dialog .ui-dialog-buttonpane button {
+#kiwiki button, #kiwiki .ui-dialog .ui-dialog-buttonpane button,#kiwiki #comment_wrapper .button {
   cursor: pointer;
   border-radius: 4px;
   display: inline-flex;
@@ -699,7 +698,7 @@ div.dokuwiki .hentry{
 #kiwiki .secedit button:hover,
 #kiwiki .editBox #tool__bar button:hover,
 #kiwiki button.toolbutton:hover,
-#kiwiki button.pickerbutton:hover,#kiwiki .button:hover {
+#kiwiki button.pickerbutton:hover,#kiwiki #comment_wrapper .button:hover {
   background-color: var(--kiwiki-btn-hover-bg);
 }
 
@@ -1581,14 +1580,14 @@ div.dokuwiki .hentry{
   display: flex;
   align-items: center;
 }
-div.dokuwiki div.comment_buttons {
+#kiwiki #comment_wrapper .comment_buttons {
   margin-top: -13px;
 }
 
-#kiwiki .comment_buttons > .button{
+#kiwiki #comment_wrapper .comment_buttons > .button{
   padding:0;
 }
-#kiwiki .comment_buttons > .button input.button{
+#kiwiki #comment_wrapper .comment_buttons > .button input.button{
   border: 0;
   margin: 0;
   font-size: 12px;
@@ -1596,7 +1595,7 @@ div.dokuwiki div.comment_buttons {
   padding:1px 8px ;
 }
 
-#kiwiki .comment_buttons > .button input.button:hover{
+#kiwiki #comment_wrapper .comment_buttons > .button input.button:hover{
   filter: grayscale(0);
 }
 
