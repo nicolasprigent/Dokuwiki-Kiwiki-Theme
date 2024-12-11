@@ -105,10 +105,6 @@ body.lightmode #theme-mode svg#themeicon #light {
   display: initial;
 }
 
-#kiwiki.darkmode form.search .no button[type="submit"] {
-  border: 1px solid var(--kiwiki-text-color);
-}
-
 * {
   outline: 0;
 }
