@@ -772,7 +772,6 @@ div.dokuwiki .hentry{
   transition: all 0.2s ease-out;
   font-size: 14px;
   margin: 0;
-  color: #000;
 }
 
 #kiwiki input.edit:focus,
