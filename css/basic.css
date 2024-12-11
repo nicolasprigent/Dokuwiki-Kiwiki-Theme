@@ -174,7 +174,7 @@ a.wikilink2:link, a.wikilink2:hover, a.wikilink2:visited {
   color: red;
 }
 
-.edit [
+.edit {
   background-color: var(--kiwiki-body-bg);
   color: var(--kiwiki-body);
 }
