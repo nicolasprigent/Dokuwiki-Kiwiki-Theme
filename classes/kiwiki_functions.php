@@ -12,7 +12,7 @@ class Kiwiki_Functions {
             $editicon = (new \dokuwiki\Menu\KiwikiEdit())->getListItems('kiwiki-',true);
             
             if (!empty($what)){
-                $editicon = preg_replace('/<a(.*)href="([^"]*)"(.*)>/','<a$1href="/doku.php?id='.$what.'&do=edit"$3>',$editicon);
+                $editicon = preg_replace('/<a(.*)href="([^"]*)"(.*)>/','<a$1href='.$conf['basedir'].'"/doku.php?id='.$what.'&do=edit"$3>',$editicon);
             }
             return $editicon;
         }
