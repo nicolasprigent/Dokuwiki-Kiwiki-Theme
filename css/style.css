@@ -259,12 +259,6 @@ div.dokuwiki .hentry{
   gap: 15px;
 }
 
-#kiwiki form.search .no button[type="submit"] {
-  background-color: transparent;
-  color: var(--kiwiki-text-color);
-  border: 1px solid var(--kiwiki-ui-100);
-}
-
 #kiwiki form.search .no button[type="submit"]:hover {
   background-color: var(--kiwiki-btn-hover-bg);
   color: var(--kiwiki-main);
@@ -778,7 +772,6 @@ div.dokuwiki .hentry{
   transition: all 0.2s ease-out;
   font-size: 14px;
   margin: 0;
-  color: #000;
 }
 
 #kiwiki input.edit:focus,
