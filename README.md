@@ -20,6 +20,8 @@ Theme colors editor
 
 <details>
   <summary>Changelog</summary>
+### 2024-12-12
+- Fix the edit menu button for non-root domain installs
   
 ### 2024-11-27
 - css fixes for discussion plugin
