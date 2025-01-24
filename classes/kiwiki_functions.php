@@ -8,11 +8,14 @@ class Kiwiki_Functions {
      */
     public static function _edit_icon($what){
         global $ACT;
+        global $INFO;
+        $rev = ($INFO['rev']) ? '&rev='.$INFO['rev'] : '';
         if ($ACT == 'show'){
             $editicon = (new \dokuwiki\Menu\KiwikiEdit())->getListItems('kiwiki-',true);
-            
             if (!empty($what)){
                 $editicon = preg_replace('/<a(.*)href="([^"]*)"(.*)>/','<a$1href="'.DOKU_BASE.'doku.php?id='.$what.'&do=edit"$3>',$editicon);
+            }else{
+                $editicon = preg_replace('/<a(.*)href="([^"]*)"(.*)>/','<a$1href="'.DOKU_BASE.'doku.php?id='.$INFO['id'].'&do=edit'.$rev.'"$3>',$editicon);
             }
             return $editicon;
         }
