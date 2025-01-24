@@ -20,6 +20,10 @@ Theme colors editor
 
 <details>
   <summary>Changelog</summary>
+  
+### 2025-01-24
+- Fix the edit icon on revisions https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/36
+  
 ### 2024-12-12
 - Fix the edit menu button for non-root domain installs
   
