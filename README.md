@@ -20,6 +20,9 @@ Theme colors editor
 
 <details>
   <summary>Changelog</summary>
+
+### 2025-04-24
+- Added informal german language
   
 ### 2025-01-24
 - Fix the edit icon on revisions https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/36
