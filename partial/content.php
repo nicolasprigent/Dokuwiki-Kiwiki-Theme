@@ -4,8 +4,9 @@
     <?php 
 
     /* disable sidemenu on login and some pages */
+    $toc = tpl_toc(true);
     if(($ACT!="login") && ($ACT!="denied")){
-        if (($ACT == 'show')||(isset($_REQUEST['page']) && $ACT=='admin' && $_REQUEST['page'] == 'config')){
+        if (($ACT == 'show')||(isset($_REQUEST['page']) && $ACT=='admin' && $toc!="")){
     ?>
     
     
@@ -34,8 +35,7 @@
                 <?php
             }    
             /*toc*/
-            $toc = tpl_toc(true);
-            if ((isset($toc))){
+            if ($toc!=""){
                 echo tpl_toc() ;
             }
             ?>
@@ -43,7 +43,8 @@
     </div>
     <?php 
         }
-    } ?>
+    } 
+    ?>
     <!-- ********** CONTENT ********** -->
     
     <main id="dokuwiki__content">

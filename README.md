@@ -21,17 +21,20 @@ Theme colors editor
 <details>
   <summary>Changelog</summary>
 
+### 2025-04-30
+- Fix:table of content not showing on some admin pages
+
 ### 2025-04-24
 - Added informal german language
   
 ### 2025-01-24
-- Fix the edit icon on revisions https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/36
+- Fix:the edit icon on revisions https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/36
   
 ### 2024-12-12
-- Fix the edit menu button for non-root domain installs
+- Fix:the edit menu button for non-root domain installs
   
 ### 2024-11-27
-- css fixes for discussion plugin
+- Fix:CSS fixes for discussion plugin
 
 ### 2024-10-30
 - Added a functionnality to get a different logo on dark/light theme (https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/31). Upload your custom logos on the root of your install :
