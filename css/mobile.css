@@ -6,6 +6,10 @@
   #kiwiki nav.tools > div#open-search {
     display: none;
   }
+  
+  #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper a.wikilogo {
+    gap:15px;
+  }
 }
 @media only screen and (max-width: 950px) {
   #kiwiki h1 {
@@ -17,7 +21,9 @@
   #kiwiki h3 {
     font-size: 1.3em;
   }
-
+  #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper .wikilogo {
+   gap:5px;
+  }
   #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper .wikilogo img {
     height: 40px;
     min-width: 40px;
@@ -26,7 +32,7 @@
     height: 40px;
   }
   #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper a.wikilogo > div {
-    font-size: 20px;
+    font-size:14px;
     letter-spacing: 0;
   }
   #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper #dw__search {
@@ -44,7 +50,7 @@
     margin: 0;
   }
   #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0;
   }
   #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper .group {
@@ -59,6 +65,11 @@
     width: 24px;
     height: 24px;
   }
+  
+  #kiwiki nav.tools > div#dokuwiki__pagetools > ul {
+    right: -35px;
+  }
+
   #kiwiki .breadcrumbs {
     margin: 15px auto;
   }

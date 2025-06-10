@@ -192,7 +192,6 @@ div.dokuwiki .hentry{
 
 #kiwiki #dokuwiki__header > .dokuwiki__header__wrapper a.wikilogo {
   display: flex;
-  gap: 15px;
   align-items: center;
   text-decoration: none;
 }
