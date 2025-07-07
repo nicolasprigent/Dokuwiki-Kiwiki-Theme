@@ -24,12 +24,12 @@ $forceTheme = tpl_getConf('ForceTheme');
 
 if (!empty($_COOKIE['theme'])){
     if(!$forceTheme){
-        $themeMode = $_COOKIE['theme'];
+        $themeMode = in_array($_COOKIE['theme'], ['darkmode', 'lightmode', 'system-color']) ? $_COOKIE['theme'] : $themeMode;
     }else{
         setcookie("theme",$themeMode);
     }
 }
-if (!isset($_COOKIE['theme']) || empty($_COOKIE['theme'])){
+if (!isset($_COOKIE['theme']) || empty($_COOKIE['theme'] || !in_array($_COOKIE['theme'], ['darkmode', 'lightmode', 'system-color']))){ 
     setcookie("theme",$themeMode);
 }
 $logoSize = array();
