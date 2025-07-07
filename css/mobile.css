@@ -120,7 +120,7 @@
     #dokuwiki__site
     #dokuwiki__content__wrapper
     #dokuwiki__aside
-    .kiwiki-main-menu
+    .kiwiki-sidebar
     h3 {
     text-align: center;
     cursor: pointer;
@@ -131,7 +131,7 @@
     #dokuwiki__site
     #dokuwiki__content__wrapper
     #dokuwiki__aside
-    .kiwiki-main-menu
+    .kiwiki-sidebar
     h3:hover {
     background-color: var(--kiwiki-btn-hover-bg);
     color: var(--kiwiki-btn-hover-text);
@@ -141,7 +141,7 @@
     #dokuwiki__site
     #dokuwiki__content__wrapper
     #dokuwiki__aside
-    .kiwiki-main-menu
+    .kiwiki-sidebar
     h3:after {
     content: "+";
     float: right;
@@ -151,7 +151,7 @@
     #dokuwiki__site
     #dokuwiki__content__wrapper
     #dokuwiki__aside
-    .kiwiki-main-menu.open
+    .kiwiki-sidebar.open
     h3:after {
     content: "−";
   }
@@ -159,7 +159,7 @@
     #dokuwiki__site
     #dokuwiki__content__wrapper
     #dokuwiki__aside
-    .kiwiki-main-menu
+    .kiwiki-sidebar
     h3
     + *:not(.kiwiki-edit),
   #kiwiki
@@ -175,14 +175,14 @@
     #dokuwiki__site
     #dokuwiki__content__wrapper
     #dokuwiki__aside
-    .kiwiki-main-menu.open
+    .kiwiki-sidebar.open
     h3
     + *:not(.kiwiki-edit),
   #kiwiki
     #dokuwiki__site
     #dokuwiki__content__wrapper
     #dokuwiki__aside
-    .kiwiki-main-menu.open
+    .kiwiki-sidebar.open
     + #dw__toc {
     display: initial;
   }

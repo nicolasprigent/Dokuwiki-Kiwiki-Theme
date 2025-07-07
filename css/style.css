@@ -542,6 +542,11 @@ div.dokuwiki .hentry{
   #dokuwiki__content__wrapper
   #dokuwiki__aside
   .dokuwiki__aside__block,
+  #kiwiki
+  #dokuwiki__site
+  #dokuwiki__content__wrapper
+  #dokuwiki__aside
+  .kiwiki-sidebar,
 #kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside #dw__toc {
   float: none;
   position: relative;
@@ -588,7 +593,7 @@ div.dokuwiki .hentry{
   color: var(--kiwiki-btn-hover-bg);
 }
 
-#kiwiki .kiwiki-main-menu .menu-content {
+#kiwiki .kiwiki-sidebar .sidebar-content {
   max-height: var(--kiwiki-menu-max-height);
   overflow: hidden scroll;
 }
@@ -609,7 +614,7 @@ div.dokuwiki .hentry{
   #dokuwiki__aside
   #dw__toc
   > div::-webkit-scrollbar,
-#kiwiki .kiwiki-main-menu .menu-content::-webkit-scrollbar {
+#kiwiki .kiwiki-sidebar .sidebar-content::-webkit-scrollbar {
   width: 0.8em;
 }
 
@@ -619,7 +624,7 @@ div.dokuwiki .hentry{
   #dokuwiki__aside
   #dw__toc
   > div::-webkit-scrollbar-thumb,
-#kiwiki .kiwiki-main-menu .menu-content::-webkit-scrollbar-thumb {
+#kiwiki .kiwiki-sidebar .sidebar-content::-webkit-scrollbar-thumb {
   background-color: var(--kiwiki-ui-200);
   outline: 1px solid var(--kiwiki-ui-200);
   width: 1em;
@@ -632,7 +637,7 @@ div.dokuwiki .hentry{
   #dokuwiki__aside
   #dw__toc
   > div::-webkit-scrollbar-track,
-#kiwiki .kiwiki-main-menu .menu-content::-webkit-scrollbar-track {
+#kiwiki .kiwiki-sidebar .sidebar-content::-webkit-scrollbar-track {
   background-color: var(--kiwiki-main);
   border-style: solid;
   border-radius: 1em;

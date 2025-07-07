@@ -13,27 +13,26 @@
     <div id="dokuwiki__aside">
         <div class="dokuwiki__aside_wrapper">
         <?php
-            /*mainmenu*/
-            if ($ACT=='show'){
-                $mainmenu = tpl_getConf('MainMenu');
-               $translation = plugin_load('helper','translation');
+            /* sidebar */
+            $sidebar = $conf['sidebar'];
+            if (!empty($sidebar)) {
+                $translation = plugin_load('helper','translation');
                 $currentlng = "";
                 if ($translation){
                     $currentlng = (explode(":",$INFO['namespace']))[0] . ":";
                 }
-                $mainmenu = $currentlng . $mainmenu;      
+                $sidebar = $currentlng . $sidebar;      
                     ?>
-                    <div class="kiwiki-main-menu dokuwiki__aside__block">
-                        <h3><?php echo tpl_getLang('Menu'); ?></h3>
-                        <div class="menu-content">
-                        <?php tpl_include_page($mainmenu); 
-                        echo Kiwiki_Functions::_edit_icon($mainmenu);
+                    <div class="kiwiki-sidebar">
+                        <div class="sidebar-content">
+                        <?php tpl_include_page($sidebar, true, true);
+                        echo Kiwiki_Functions::_edit_icon($sidebar);
                         ?>
                         </div>
                     </div>
-            
+
                 <?php
-            }    
+            }
             /*toc*/
             if ($toc!=""){
                 echo tpl_toc() ;
