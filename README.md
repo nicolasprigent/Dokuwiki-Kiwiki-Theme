@@ -20,10 +20,21 @@ Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
 <details>
   <summary>Changelog</summary>
+### 2025-07-08
+This new version of Kiwiki is a major refactoring of the layout to get Sidebars default functionnality from Dokuwiki working (see https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/42).
 
-### 2025-04-30
+For UI reasons, I've decided to add my previous menu functionnality in a burger menu : this menu functionnality was intended at first to be accessible accross all website, so now that sidebars are available, it makes more sense to put the menu like this. It also solve this issue : https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/26
+Other fixes : 
+
+- Added two options to get the sidebar, table of content or both on the right side of the website https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/37
+- CSS fixes and new functionnalities to get menu and new content layout working
+- Better TOC sticky on mobile
+- Sidebar is now on the bottom of the page on mobile
+- Default content max width is now 1600px to get a better experience when using left and right sidebars together.
+  
+### 2025-07-07
 - Fix:Cross site scripting vulnerability (https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/43)
-- 
+
 ### 2025-04-30
 - Fix:table of content not showing on some admin pages
 
