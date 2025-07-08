@@ -15,8 +15,8 @@ Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 ### Template settings
 ![Template settings](./screenshots/05-screenshot-configuration-settings-kiwiki.jpg)
 ### Dark mode
-![General layout](./screenshots/06-screenshot-kiwiki-dark.jpg)
-![General layout](./screenshots/07-screenshot-kiwiki-dark.jpg)
+![General layout dark](./screenshots/06-screenshot-kiwiki-dark.jpg)
+![Menu dark](./screenshots/07-screenshot-kiwiki-dark.jpg)
 
 <details>
   <summary>Changelog</summary>
