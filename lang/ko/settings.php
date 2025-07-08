@@ -5,8 +5,10 @@
  */
 
 $lang['MainMenu'] = '메뉴 식별 문서';
-$lang['MenuMaxHeight'] = '최대 메뉴 높이';
+$lang['SidebarMaxHeight'] = '최대 사이드바 높이';
+$lang['SidebarRight'] = '사이드바를 오른쪽에 표시할까요?';
 $lang['TocMaxHeight'] = '최대 컨텐츠 테이블 높이';
+$lang['TocRight'] = '목차를 오른쪽에 표시할까요?';
 $lang['GoBottomBtn'] = '아래로 내리기 버튼';
 $lang['ShowUserFooter']    = '로그인한 사용자를 footer에 보여주기';
 $lang['ShowACLFooter']    = '그룹 권한 (ACL)을 footer에 보여주기';

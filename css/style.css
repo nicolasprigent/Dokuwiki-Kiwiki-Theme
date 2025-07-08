@@ -1042,10 +1042,21 @@ div.dokuwiki .hentry{
 }
 
 /*CONFIG PANEL*/
+#kiwiki #config__manager tr:hover{
+  transition: all 0.2s ease-in-out;
+}
+#kiwiki #config__manager tr:hover{
+  background-color: var(--kiwiki-body-bg);
+}
 #kiwiki #config__manager td.label span.outkey {
   background-color: var(--kiwiki-body-bg);
   color: var(--kiwiki-text-color);
   padding: 0 4px 3px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+#kiwiki #config__manager tr:hover td.label span.outkey {
+  opacity: .8;
 }
 #kiwiki form#dw__configform {
   position: relative;
