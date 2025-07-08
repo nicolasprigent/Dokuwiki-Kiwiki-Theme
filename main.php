@@ -43,6 +43,7 @@ if (!empty($_COOKIE['theme'])){
 if (!isset($_COOKIE['theme']) || empty($_COOKIE['theme'] || !in_array($_COOKIE['theme'], ['darkmode', 'lightmode', 'system-color']))){ 
     setcookie("theme",$themeMode);
 }
+
 $logoSize = array();
 
 $logodark = tpl_getMediaFile(array(':wiki:logo-dark.png', ':logo-dark.png', 'images/logo-dark.png'), true, $logoSize, false);

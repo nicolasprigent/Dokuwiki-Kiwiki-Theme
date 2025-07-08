@@ -22,6 +22,9 @@ Theme colors editor
   <summary>Changelog</summary>
 
 ### 2025-04-30
+- Fix:Cross site scripting vulnerability (https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/43)
+- 
+### 2025-04-30
 - Fix:table of content not showing on some admin pages
 
 ### 2025-04-24
