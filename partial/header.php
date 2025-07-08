@@ -47,27 +47,6 @@
             </div>
             <?php } ?>
 
-            <div id="dokuwiki__pagetools">
-                
-                <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'preferences.svg') ?></strong>
-                <ul>
-                <!-- SITE TOOLS -->
-                <li id="sitemenu">
-                <?php
-                $items = (new \dokuwiki\Menu\SiteMenu())->getItems();
-                foreach($items as $item) {
-                    echo '<a href="'.$item->getLink().'" title="'.$item->getTitle().'">'
-                .'<span class="icon">'.inlineSVG($item->getSvg()).'</span>'
-                . '<span class="a11y">'.$item->getLabel().'</span>'
-                . '</a>';
-                }
-                ?>
-                </li>
-                <!-- PAGE TOOLS -->
-                <?php echo (new \dokuwiki\Menu\KiwikiPageMenu())->getListItems('action ', false); ?>
-                </ul>
-            </div>
-            
             
             <!-- USER TOOLS -->
             <?php if ($conf['useacl']){ ?>
