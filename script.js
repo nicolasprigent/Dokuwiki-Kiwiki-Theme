@@ -15,10 +15,6 @@
       );
   }
 
-  
-
-
-  console.log($.cookie("theme"));
   var colorscheme = "lightmode";
   if($.cookie("theme")=="system-color"){
     if (
@@ -36,12 +32,26 @@
     }
   }
 
+  /*close the toc on mobile*/
+  function updateTocClass() {
+    if ($(window).width() < 950) {
+      var $toc = $('#dw__toc h3');
+      console.log($toc);
+      $toc[0].setState(-1);
+      
+    }
+  }
+
+  $(window).on("resize", updateTocClass);
+  $(document).ready(updateTocClass);
+
   $(document).on("click", function (event) {
-    var trigger = $("nav.tools>div");
+    var trigger = $("nav.tools>div,div#dokuwiki__pagetools");
     var search = $("div#open-search");
     var thememode = $("div#theme-mode");
     var fullscreen = $("div#full-screen");
-
+    var openmenu = $("#kiwiki-main-menu__open");
+    var closemenu = $("#kiwiki-main-menu__close, .kiwiki-main-menu-overlay");
     var menu = $(
       "#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside .kiwiki-main-menu h3"
     );
@@ -66,6 +76,13 @@
     if ($(event.target).is(menu)) {
       $(menu).parent().toggleClass("open");
     }
+    if ($(event.target).is(openmenu)) {
+      $(".kiwiki-main-menu__wrapper").addClass("open");
+    }
+    if ($(event.target).is(closemenu)) {
+      $(".kiwiki-main-menu__wrapper").removeClass("open");
+    }
+
     if ($(event.target).is(thememode)) {
       if (!!$.cookie("theme")) {
         if (!$("body").hasClass("darkmode")) {

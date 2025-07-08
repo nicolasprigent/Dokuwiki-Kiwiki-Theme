@@ -1,5 +1,8 @@
 <header id="dokuwiki__header">
     <?php
+    
+    $mainmenu = tpl_getConf('MainMenu');
+
     /*** disable header on login or denied pages ***/
     if(($ACT!="login") && ($ACT!="denied")){
     ?>
@@ -16,9 +19,9 @@
                 
                 <div>
                     <?php echo $conf['title']; ?>
-                    <?php if ($conf['tagline']): ?>
+                    <?php if ($conf['tagline']){ ?>
                     <div class="claim"><?php echo $conf['tagline'] ?></div>
-                    <?php endif ?>
+                    <?php } ?>
                 </div>
             </a>
         </div>
@@ -44,30 +47,9 @@
             </div>
             <?php } ?>
 
-            <div id="dokuwiki__pagetools">
-                
-                <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'preferences.svg') ?></strong>
-                <ul>
-                <!-- SITE TOOLS -->
-                <li id="sitemenu">
-                <?php
-                $items = (new \dokuwiki\Menu\SiteMenu())->getItems();
-                foreach($items as $item) {
-                    echo '<a href="'.$item->getLink().'" title="'.$item->getTitle().'">'
-                .'<span class="icon">'.inlineSVG($item->getSvg()).'</span>'
-                . '<span class="a11y">'.$item->getLabel().'</span>'
-                . '</a>';
-                }
-                ?>
-                </li>
-                <!-- PAGE TOOLS -->
-                <?php echo (new \dokuwiki\Menu\KiwikiPageMenu())->getListItems('action ', false); ?>
-                </ul>
-            </div>
-            
             
             <!-- USER TOOLS -->
-            <?php if ($conf['useacl']): ?>
+            <?php if ($conf['useacl']){ ?>
             <div id="dokuwiki__usertools">
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'user_icon.svg') ?></strong>
                 
@@ -82,10 +64,41 @@
                     <?php echo (new \dokuwiki\Menu\UserMenu())->getListItems('action ', false); ?>
                 </ul>
             </div>
-            <?php endif ?>
+            <?php }
+            
+            if (!empty($mainmenu)) {?>
+            <div id="kiwiki-main-menu__open">
+                <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'burger.svg') ?></strong>
+            </div>
+            <?php } ?>
         </nav>
     </div>
-    <?php 
+    <?php
+    /*mainmenu*/
+    if (!empty($mainmenu)) {
+        $translation = plugin_load('helper','translation');
+        $currentlng = "";
+        if ($translation){
+            $currentlng = (explode(":",$INFO['namespace']))[0] . ":";
+        }
+        $mainmenu = $currentlng . $mainmenu;      
+            ?>
+        <div class="kiwiki-main-menu__wrapper">
+            <div class="kiwiki-main-menu-overlay"></div>
+            <div class="kiwiki-main-menu">
+                <button id="kiwiki-main-menu__close">
+                    <span class="icon"><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'close.svg') ?></span>
+                    <span class="a11y"><?php echo tpl_getLang('Close') ?></span>
+                </button>
+                <div class="menu-content">
+                <?php tpl_include_page($mainmenu);
+                echo Kiwiki_Functions::_edit_icon($mainmenu);
+                ?>
+                </div>
+            </div>
+        </div>
+        <?php
+    }
     html_msgarea();
     
 } ?>

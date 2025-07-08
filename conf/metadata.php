@@ -5,8 +5,10 @@
  */
 
 $meta['MainMenu']     = array('string');
-$meta['MenuMaxHeight'] = array('numeric');
+$meta['SidebarMaxHeight'] = array('numeric');
+$meta['SidebarRight'] = array('onoff');
 $meta['TocMaxHeight'] = array('numeric');
+$meta['TocRight'] = array('onoff');
 $meta['GoBottomBtn']    = array('onoff');
 $meta['ContentMaxWidth'] = array('string');
 $meta['FullScreenBtn']    = array('onoff');

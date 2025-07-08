@@ -13,14 +13,25 @@ if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
 
 $showTools = !tpl_getConf('hideTools') || ( tpl_getConf('hideTools') && !empty($_SERVER['REMOTE_USER']) );
 $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
+$sidebar = $conf['sidebar'];
 $sidebarElement = tpl_getConf('sidebarIsNav') ? 'nav' : 'aside';
-$menuMaxHeight = tpl_getConf('MenuMaxHeight');
+$sidebarMaxHeight = tpl_getConf('SidebarMaxHeight');
+$sidebar_right = tpl_getConf('SidebarRight');
+$toc = tpl_toc(true);
 $tocMaxHeight = tpl_getConf('TocMaxHeight');
+$toc_right = tpl_getConf('TocRight');
 $contentMaxWidth = tpl_getConf('ContentMaxWidth');
 $themeMode = tpl_getConf('DefaultTheme');
 $forceTheme = tpl_getConf('ForceTheme');
-
-
+$contentWidth = '100%';
+$asideWidth = '20%';
+if(($toc!='' || ($ACT == 'show' && page_exists($sidebar))) && $sidebar_right == $toc_right){
+    $contentWidth = '80%';
+}
+if($sidebar_right != $toc_right ){
+    $contentWidth = '68%';
+    $asideWidth = '16%';
+}
 
 if (!empty($_COOKIE['theme'])){
     if(!$forceTheme){
@@ -52,9 +63,11 @@ $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png')
     <?php echo tpl_favicon(array('favicon', 'mobile')) ?>
     <?php tpl_includeFile('meta.html')?>
     <style>body{
-        --kiwiki-menu-max-height:<?php echo $menuMaxHeight; ?>px;
+        --kiwiki-sidebar-max-height:<?php echo $sidebarMaxHeight; ?>px;
         --kiwiki-toc-max-height:<?php echo $tocMaxHeight; ?>px;
         --kiwiki-content-max-width:<?php echo $contentMaxWidth; ?>;
+        --kiwiki-content-width:<?php echo $contentWidth; ?>;
+        --kiwiki-aside-width:<?php echo $asideWidth; ?>;
         --kiwiki-logo-url:url(<?php echo $logo; ?>);
         --kiwiki-logo-light-url:url(<?php echo $logolight ? $logolight : $logo; ?>);
         --kiwiki-logo-dark-url:url(<?php echo $logodark ? $logodark : $logo; ?>);

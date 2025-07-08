@@ -5,8 +5,10 @@
  */
 
 $lang['MainMenu'] = 'Menu identifier';
-$lang['MenuMaxHeight'] = 'Max. menu height';
+$lang['SidebarMaxHeight'] = 'Max. sidebar height';
+$lang['SidebarRight'] = 'Sidebar on the right?';
 $lang['TocMaxHeight'] = 'Max. table of contents height';
+$lang['TocRight'] = 'Table of contents on the right?';
 $lang['GoBottomBtn'] = 'Go to bottom button';
 $lang['ShowUserFooter']    = 'Display logged-in user in footer';
 $lang['ShowACLFooter']    = 'Display group permissions (ACL) in footer';

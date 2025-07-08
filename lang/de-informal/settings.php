@@ -5,8 +5,10 @@
  */
 
 $lang['MainMenu'] = 'Menü-Bezeichner';
-$lang['MenuMaxHeight'] = 'Max. Höhe des Menü';
+$lang['SidebarMaxHeight'] = 'Maximale Höhe der Seitenleiste';
+$lang['SidebarRight'] = 'Seitenleiste rechts?';
 $lang['TocMaxHeight'] = 'Max. Höhe des Inhaltsverzeichnisses';
+$lang['TocRight'] = 'Inhaltsverzeichnis rechts?';
 $lang['GoBottomBtn'] = 'Zur unteren Taste gehen';
 $lang['ShowUserFooter']    = 'Angemeldeten Benutzer im Footer anzeigen';
 $lang['ShowACLFooter']    = 'Gruppenberechtigungen (ACL) im Footer anzeigen';

@@ -286,71 +286,96 @@ div.dokuwiki .hentry{
   gap: 20px;
   position: relative;
 }
-#kiwiki nav.tools > div > strong {
+#kiwiki nav.tools > div > strong, #dokuwiki__pagetools > strong {
   pointer-events: none;
 }
-#kiwiki nav.tools > div {
+#kiwiki nav.tools > div{
   position: relative;
   cursor: pointer;
 }
-#kiwiki nav.tools > div > strong svg {
+#dokuwiki__pagetools {
+  position: absolute;
+  cursor: pointer;
+  right:0;
+  top:-3px;
+}
+#kiwiki nav.tools > div > strong svg, #dokuwiki__pagetools > strong svg {
   width: 32px;
   height: 32px;
   fill: var(--kiwiki-text-color);
   transition: all 0.2s ease-in-out;
 }
-#kiwiki nav.tools > div:hover > strong svg {
+#dokuwiki__pagetools > strong svg {
+  width: 24px;
+  height: 24px;
+}
+
+#kiwiki nav.tools > div:hover > strong svg, #dokuwiki__pagetools:hover > strong svg {
   fill: var(--kiwiki-btn-hover-bg);
   transform: scale(1.1);
 }
-#kiwiki nav.tools > div > ul {
+
+#dokuwiki__right_before{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+  padding-right: 50px;
+}
+
+#kiwiki nav.tools > div > ul, #dokuwiki__pagetools > ul {
   min-width: 250px;
   display: none;
   list-style-type: none;
   position: absolute;
   background-color: var(--kiwiki-main);
-  box-shadow: 0 0.5rem 1rem #00000026;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   border: 1px solid var(--kiwiki-ui-100);
   border-radius: 4px;
   padding: 0;
   overflow: hidden;
   right: 0;
 }
-#kiwiki nav.tools > div#dokuwiki__pagetools > ul {
-  right: -52px;
+#dokuwiki__pagetools > ul {
+  top: 16px;
+  right: 0;
 }
 
-#kiwiki nav.tools > div.active > ul {
+#dokuwiki__right_before .translation-switcher ul > li > a{
+  color:var(--kiwiki-text-color);
+}
+
+#kiwiki nav.tools > div.active > ul,   #dokuwiki__pagetools.active > ul{
   display: block;
 }
 
-#kiwiki nav.tools > div > ul > li a {
+#kiwiki nav.tools > div > ul > li a,  #dokuwiki__pagetools > ul > li a {
   display: block;
   text-decoration: none;
   padding: 10px 20px;
 }
 
-#kiwiki nav.tools > div > ul > li a:hover {
+#kiwiki nav.tools > div > ul > li a:hover, #dokuwiki__pagetools > ul > li a:hover {
   background-color: var(--kiwiki-ui-500);
   color: var(--kiwiki-btn-text);
 }
 
-#kiwiki nav.tools > div > ul > li#sitemenu {
+#dokuwiki__pagetools ul > li#sitemenu {
   padding: 10px 20px;
   background-color: var(--kiwiki-ui-400);
   font-size: 0.8rem;
   display: flex;
   justify-content: center;
 }
-#kiwiki nav.tools > div > ul > li#sitemenu a:hover {
+#dokuwiki__pagetools ul > li#sitemenu a:hover {
   background-color: transparent;
 }
 
-#kiwiki nav.tools #sitemenu .icon {
+#dokuwiki__pagetools #sitemenu .icon {
   fill: var(--kiwiki-main);
 }
 
-#kiwiki nav.tools > div > ul > li#sitemenu a:hover .icon {
+#dokuwiki__pagetools #sitemenu a:hover .icon {
   fill: var(--kiwiki-btn-hover-bg);
 }
 
@@ -380,62 +405,75 @@ div.dokuwiki .hentry{
   right: 5px;
 }
 
-/*CONTENT*/
-#kiwiki .urlextern {
-  word-break: break-all;
+/*Main Menu*/
+.kiwiki-main-menu__wrapper{
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index:9999;
+    opacity: 0;
+    transition:all .2s ease-in-out;
+    pointer-events: none;
 }
 
-#kiwiki #dokuwiki__site div.no {
-  display: flex;
-}
-#kiwiki #dokuwiki__site #dokuwiki__top #dokuwiki__content__wrapper {
-  width: 100%;
-  max-width:var(--kiwiki-content-max-width);
-  margin: 0 auto;
-  display: flex;
-  gap: 20px;
-  position: relative;
-  justify-content: center;
+.kiwiki-main-menu__wrapper.open{
+    opacity: 1;
+    pointer-events: initial;
 }
 
-#kiwiki #dokuwiki__site #dokuwiki__top.mode_login #dokuwiki__content__wrapper {
-  max-width: 500px;
+.kiwiki-main-menu__wrapper .kiwiki-main-menu-overlay{
+    background-color: var(--kiwiki-body-bg);
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 0;
+
 }
 
-#kiwiki #dokuwiki__content {
-  float: initial;
-  margin: 0;
-  padding: 0;
-  display: block;
-  position: relative;
-  min-width: 300px;
-  width: 100%;
+.kiwiki-main-menu__wrapper .kiwiki-main-menu{
+    z-index: 1;
+    position: relative;
+    height: 100vh;
+    width:20vw;
+    right: -100vw;
+    min-width: 200px;
+    background-color: var(--kiwiki-header-bg);
+    padding: 20px 60px;
+    transition:all .2s ease-in-out .1s;
 }
-/*
-#dokuwiki__aside + #dokuwiki__content {
-  width: 80%;
-}*/
+.kiwiki-main-menu__wrapper.open .kiwiki-main-menu{
+    
+    right: 0;
+    
+}
+.kiwiki-main-menu__wrapper #kiwiki-main-menu__close{
+    position: absolute;
+    top: 10px;
+    left: -35px;
+    color:var(--kiwiki-header-bg);
+}
+.kiwiki-main-menu__wrapper #kiwiki-main-menu__close .icon{
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
 
-#kiwiki #dokuwiki__site.mode_login #dokuwiki__content,
-#kiwiki #dokuwiki__site.mode_denied #dokuwiki__content {
-  background: transparent;
-  border: none;
-  padding: 0;
-  box-shadow: none;
+.kiwiki-main-menu__wrapper #kiwiki-main-menu__close .icon svg{
+    fill:var(--kiwiki-header-bg);
 }
 
-#kiwiki #dokuwiki__content > div {
-  margin: 0;
-}
 
-#kiwiki #dokuwiki__content > .group {
-  display: block;
-  box-shadow: #1e293b0a 0 2px 4px 0;
-  border: 1px solid var(--kiwiki-ui-100);
-  background: var(--kiwiki-main, #fff);
-  border-radius: 4px;
-  padding: 30px;
-}
+
+
 
 /*TABLES*/
 #kiwiki #dokuwiki__content .table {
@@ -480,12 +518,13 @@ div.dokuwiki .hentry{
 /*BEFORE CONTENT*/
 #kiwiki .before-content {
   position: relative;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: var(--kiwiki-content-max-width);
-  margin: 0 auto 10px;
+  margin: 10px auto;
   font-size: 12px;
   text-align: center;
 }
@@ -516,20 +555,74 @@ div.dokuwiki .hentry{
   background-color: transparent;
 }
 
+#kiwiki .dokuwiki div.plugin_translation ul li a.wikilink2{
+  filter:grayscale(1);
+}
+
+
+/*CONTENT WRAPPER*/
+#kiwiki .urlextern {
+  word-break: break-all;
+}
+
+#kiwiki #dokuwiki__site div.no {
+  display: flex;
+}
+#kiwiki #dokuwiki__site #dokuwiki__top #dokuwiki__content__wrapper {
+  width: 100%;
+  max-width:var(--kiwiki-content-max-width);
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  justify-content: center;
+}
+
+#kiwiki #dokuwiki__site #dokuwiki__top.mode_login #dokuwiki__content__wrapper {
+  max-width: 500px;
+}
+
+/*CONTENT*/
+#kiwiki #dokuwiki__content {
+  float: initial;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  min-width: 400px;
+  width:var(--kiwiki-content-width);
+}
+
+#kiwiki #dokuwiki__site.mode_login #dokuwiki__content,
+#kiwiki #dokuwiki__site.mode_denied #dokuwiki__content {
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+#kiwiki #dokuwiki__content > div {
+  margin: 0;
+}
+
+#kiwiki #dokuwiki__content > .group {
+  display: block;
+  box-shadow: #1e293b0a 0 2px 4px 0;
+  border: 1px solid var(--kiwiki-ui-100);
+  background: var(--kiwiki-main, #fff);
+  border-radius: 4px;
+  padding: 30px;
+}
+
 /*ASIDE*/
 
-#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside {
-  width: 20%;
-  min-width: 300px;
+#kiwiki .kiwiki_aside {
+  width:var(--kiwiki-aside-width);
   float: initial;
   margin: 0;
 }
 
-#kiwiki
-  #dokuwiki__site
-  #dokuwiki__content__wrapper
-  #dokuwiki__aside
-  .dokuwiki__aside_wrapper {
+#kiwiki .kiwiki_aside .dokuwiki__aside_wrapper {
   position: sticky;
   top: 20px;
   display: flex;
@@ -537,12 +630,7 @@ div.dokuwiki .hentry{
   gap: 10px;
 }
 
-#kiwiki
-  #dokuwiki__site
-  #dokuwiki__content__wrapper
-  #dokuwiki__aside
-  .dokuwiki__aside__block,
-#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside #dw__toc {
+#kiwiki .kiwiki_aside  .dokuwiki__aside_wrapper > div, #kiwiki .kiwiki-sidebar-mobile{
   float: none;
   position: relative;
   padding: 15px;
@@ -553,92 +641,70 @@ div.dokuwiki .hentry{
   border: 1px solid var(--kiwiki-ui-100);
   background: var(--kiwiki-main, #fff);
 }
-
-#kiwiki #dokuwiki__aside .dokuwiki__aside_wrapper .back + #dw__toc {
-  border-top: none;
+#kiwiki .kiwiki-sidebar-mobile{
+  display: none;
 }
 
 .toc > li.level1 > .li {
   font-weight: 700;
 }
-#kiwiki #dokuwiki__site #dokuwiki__content__wrapper #dokuwiki__aside h3 {
+#kiwiki .kiwiki_aside h3 {
   padding: 0 0.5em 0.2em;
   margin: 0.5em 0;
   font-weight: bold;
 }
-#kiwiki #dokuwiki__aside ul {
+#kiwiki .kiwiki_aside ul {
   padding: 0;
   margin: 0;
 }
-#kiwiki #dokuwiki__aside ul li {
+#kiwiki .kiwiki_aside ul li {
   list-style: none;
   padding: 0 10px;
   margin: 0;
   line-height: 1.5;
 }
 
-#kiwiki #dokuwiki__aside ul li a,
-#kiwiki #dokuwiki__aside ul li a:visited {
+#kiwiki .kiwiki_aside ul li a,
+#kiwiki .kiwiki_aside ul li a:visited {
   text-decoration: none;
   color: var(--kiwiki-text-color);
 }
 
-#kiwiki #dokuwiki__aside ul li a:hover {
+#kiwiki .kiwiki_aside ul li a:hover {
   text-decoration: underline;
   color: var(--kiwiki-btn-hover-bg);
 }
 
-#kiwiki .kiwiki-main-menu .menu-content {
-  max-height: var(--kiwiki-menu-max-height);
+#kiwiki .kiwiki-sidebar .sidebar-content {
+  max-height: var(--kiwiki-sidebar-max-height);
   overflow: hidden scroll;
 }
 
-#kiwiki
-  #dokuwiki__site
-  #dokuwiki__content__wrapper
-  #dokuwiki__aside
-  #dw__toc
-  > div {
+#kiwiki .kiwiki_aside  .dokuwiki__aside_wrapper > div.dw__toc > div {
   max-height: var(--kiwiki-toc-max-height);
   overflow: hidden scroll;
 }
 
-#kiwiki
-  #dokuwiki__site
-  #dokuwiki__content__wrapper
-  #dokuwiki__aside
-  #dw__toc
-  > div::-webkit-scrollbar,
-#kiwiki .kiwiki-main-menu .menu-content::-webkit-scrollbar {
+#kiwiki .kiwiki-sidebar .sidebar-content::-webkit-scrollbar, #kiwiki .kiwiki_aside  .dokuwiki__aside_wrapper > div.dw__toc > div::-webkit-scrollbar {
   width: 0.8em;
 }
 
-#kiwiki
-  #dokuwiki__site
-  #dokuwiki__content__wrapper
-  #dokuwiki__aside
-  #dw__toc
-  > div::-webkit-scrollbar-thumb,
-#kiwiki .kiwiki-main-menu .menu-content::-webkit-scrollbar-thumb {
+#kiwiki .kiwiki-sidebar .sidebar-content::-webkit-scrollbar-thumb, #kiwiki .kiwiki_aside  .dokuwiki__aside_wrapper > div.dw__toc > div::-webkit-scrollbar-thumb {
   background-color: var(--kiwiki-ui-200);
   outline: 1px solid var(--kiwiki-ui-200);
   width: 1em;
   border-radius: 1em;
 }
 
-#kiwiki
-  #dokuwiki__site
-  #dokuwiki__content__wrapper
-  #dokuwiki__aside
-  #dw__toc
-  > div::-webkit-scrollbar-track,
-#kiwiki .kiwiki-main-menu .menu-content::-webkit-scrollbar-track {
+#kiwiki .kiwiki-sidebar .sidebar-content::-webkit-scrollbar-track, #kiwiki .kiwiki_aside  .dokuwiki__aside_wrapper > div.dw__toc > div::-webkit-scrollbar-track {
   background-color: var(--kiwiki-main);
   border-style: solid;
   border-radius: 1em;
   border-width: 1px;
   border-color: var(--kiwiki-ui-200);
 }
+
+
 /* EDIT THIS BUTTON */
 #kiwiki .kiwiki-edit {
   position: absolute;
@@ -988,10 +1054,21 @@ div.dokuwiki .hentry{
 }
 
 /*CONFIG PANEL*/
+#kiwiki #config__manager tr:hover{
+  transition: all 0.2s ease-in-out;
+}
+#kiwiki #config__manager tr:hover{
+  background-color: var(--kiwiki-body-bg);
+}
 #kiwiki #config__manager td.label span.outkey {
   background-color: var(--kiwiki-body-bg);
   color: var(--kiwiki-text-color);
   padding: 0 4px 3px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+#kiwiki #config__manager tr:hover td.label span.outkey {
+  opacity: .8;
 }
 #kiwiki form#dw__configform {
   position: relative;
@@ -1307,12 +1384,17 @@ div.dokuwiki .hentry{
   margin: 0;
   background: none;
   border: none;
+  color:var(--kiwiki-text-color);
 }
 
 #kiwiki #mediamanager__page .panel.filelist {
   padding: 0 20px;
   display: block;
   width: 60%;
+}
+#mediamanager__page .filelist .thumbs li{
+  color:var(--kiwiki-text-color);
+
 }
 
 #kiwiki #mediamanager__page .panel.file .panelHeader {

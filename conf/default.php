@@ -5,10 +5,12 @@
  */
 
 $conf['MainMenu'] = 'mainmenu';
-$conf['MenuMaxHeight'] = '300';
+$conf['SidebarMaxHeight'] = '300';
+$conf['SidebarRight'] = 0;
 $conf['TocMaxHeight'] = '300';
+$conf['TocRight'] = 0;
 $conf['GoBottomBtn']    = 0;
-$conf['ContentMaxWidth']    = '1300px';
+$conf['ContentMaxWidth']    = '1600px';
 $conf['FullScreenBtn']    = 1;
 $conf['ShowUserFooter']    = 0;
 $conf['ShowACLFooter']    = 0;

@@ -1,52 +1,24 @@
-<div id="dokuwiki__content__wrapper">
-    <!-- ********** ASIDE ********** -->
-    
-    <?php 
+<?php
+if (!empty($sidebar)) {
+    $sidebar = $INFO['namespace'] ? $INFO['namespace'] . ':' . $sidebar : $sidebar;
+}
+?>
 
-    /* disable sidemenu on login and some pages */
-    $toc = tpl_toc(true);
+<div id="dokuwiki__content__wrapper">
+
+    <!-- ********** ASIDE LEFT ********** -->
+
+    <?php
+    
     if(($ACT!="login") && ($ACT!="denied")){
-        if (($ACT == 'show')||(isset($_REQUEST['page']) && $ACT=='admin' && $toc!="")){
-    ?>
-    
-    
-    <div id="dokuwiki__aside">
-        <div class="dokuwiki__aside_wrapper">
-        <?php
-            /*mainmenu*/
-            if ($ACT=='show'){
-                $mainmenu = tpl_getConf('MainMenu');
-               $translation = plugin_load('helper','translation');
-                $currentlng = "";
-                if ($translation){
-                    $currentlng = (explode(":",$INFO['namespace']))[0] . ":";
-                }
-                $mainmenu = $currentlng . $mainmenu;      
-                    ?>
-                    <div class="kiwiki-main-menu dokuwiki__aside__block">
-                        <h3><?php echo tpl_getLang('Menu'); ?></h3>
-                        <div class="menu-content">
-                        <?php tpl_include_page($mainmenu); 
-                        echo Kiwiki_Functions::_edit_icon($mainmenu);
-                        ?>
-                        </div>
-                    </div>
-            
-                <?php
-            }    
-            /*toc*/
-            if ($toc!=""){
-                echo tpl_toc() ;
-            }
-            ?>
-        </div>
-    </div>
-    <?php 
+        if( $sidebar_right == 0 || $toc_right  == 0 ){
+            $right = 0;
+            include('partial/sidebar_toc.php');
         }
-    } 
-    ?>
-    <!-- ********** CONTENT ********** -->
-    
+    }
+    ?>  
+
+    <!-- ********** CONTENT ********** -->    
     <main id="dokuwiki__content">
         
         <div class="group">
@@ -71,4 +43,33 @@
             } ?>
         </div>
     </main><!-- /content -->
+
+    <!-- ********** ASIDE RIGHT ********** -->
+    <?php
+    
+    if(($ACT!="login") && ($ACT!="denied")){
+        if( $sidebar_right == 1 || $toc_right  == 1 ){
+            $right = 1;
+             include('partial/sidebar_toc.php');
+        }
+    }
+    ?>  
+
 </div><!-- /wrapper -->
+<?php
+/* mobile sidebar */
+if (($ACT == 'show') && page_exists($sidebar)) {
+    
+        ?>
+        <div class="kiwiki-sidebar-mobile">
+            <div class="sidebar-content">
+            <?php
+            tpl_include_page($sidebar, true, true);
+            echo Kiwiki_Functions::_edit_icon($sidebar);
+            ?>
+            </div>
+        </div>
+
+    <?php
+}
+?>
