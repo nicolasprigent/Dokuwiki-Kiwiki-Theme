@@ -20,6 +20,7 @@ Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
 <details>
   <summary>Changelog</summary>
+
 ### 2025-07-08
 This new version of Kiwiki is a major refactoring of the layout to get Sidebars default functionnality from Dokuwiki working (see https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/42).
 
