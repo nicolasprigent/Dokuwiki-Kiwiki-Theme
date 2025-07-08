@@ -24,7 +24,12 @@ if(($ACT!="login") && ($ACT!="denied")){
         }
         // PAGE TOOLS
         ?>
-            <div id="dokuwiki__pagetools">
+            
+        </div>
+        <?php
+        // PAGE TOOLS
+        if($ACT == 'show'){?>
+        <div id="dokuwiki__pagetools">
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'preferences.svg') ?></strong>
                 <ul>
                 <!-- SITE TOOLS -->
@@ -42,7 +47,7 @@ if(($ACT!="login") && ($ACT!="denied")){
                 <!-- PAGE TOOLS -->
                 <?php echo (new \dokuwiki\Menu\KiwikiPageMenu())->getListItems('action ', false); ?>
                 </ul>
-            </div>
         </div>
+        <?php } ?>
     </div>
 <?php } ?>

@@ -90,7 +90,6 @@
                     <span class="icon"><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'close.svg') ?></span>
                     <span class="a11y"><?php echo tpl_getLang('Close') ?></span>
                 </button>
-                <h3><?php echo tpl_getLang('Menu'); ?></h3>
                 <div class="menu-content">
                 <?php tpl_include_page($mainmenu);
                 echo Kiwiki_Functions::_edit_icon($mainmenu);

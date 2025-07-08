@@ -289,9 +289,15 @@ div.dokuwiki .hentry{
 #kiwiki nav.tools > div > strong, #dokuwiki__pagetools > strong {
   pointer-events: none;
 }
-#kiwiki nav.tools > div,#dokuwiki__pagetools {
+#kiwiki nav.tools > div{
   position: relative;
   cursor: pointer;
+}
+#dokuwiki__pagetools {
+  position: absolute;
+  cursor: pointer;
+  right:0;
+  top:-3px;
 }
 #kiwiki nav.tools > div > strong svg, #dokuwiki__pagetools > strong svg {
   width: 32px;
@@ -314,6 +320,7 @@ div.dokuwiki .hentry{
   gap: 20px;
   align-items: center;
   justify-content: end;
+  padding-right: 50px;
 }
 
 #kiwiki nav.tools > div > ul, #dokuwiki__pagetools > ul {
@@ -332,6 +339,10 @@ div.dokuwiki .hentry{
 #dokuwiki__pagetools > ul {
   top: 16px;
   right: 0;
+}
+
+#dokuwiki__right_before .translation-switcher ul > li > a{
+  color:var(--kiwiki-text-color);
 }
 
 #kiwiki nav.tools > div.active > ul,   #dokuwiki__pagetools.active > ul{
@@ -510,9 +521,10 @@ div.dokuwiki .hentry{
   z-index: 10;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: var(--kiwiki-content-max-width);
-  margin: 0 auto 10px;
+  margin: 10px auto;
   font-size: 12px;
   text-align: center;
 }
