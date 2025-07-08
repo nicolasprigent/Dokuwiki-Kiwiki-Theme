@@ -4,19 +4,19 @@ Flex theme with lots of css fix and some ease of use features. You can change al
 Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
 ## Screenshots
-
-Basic colors
-
-![kiwiki_screenshot](./screenshots/kiwiki_screenshot_2023_06_19_00.jpg)
-
-Dark colors example
-
-![kiwiki_screenshot01](./screenshots/kiwiki_screenshot_2023_06_19_01.jpg)
-
-Theme colors editor
-
-![kiwiki_screenshot02](./screenshots/kiwiki_screenshot_2023_06_19_02.jpg)
-
+### General layout
+![General layout](./screenshots/01-screenshot-kiwiki.jpg)
+### Main menu
+![Main menu](./screenshots/02-screenshot-kiwiki-menu.jpg)
+### Sticky sidebar
+![Sticky sidebar](./screenshots/03-screenshot-kiwiki-sticky.jpg)
+### Full width reading
+![Full width reading](./screenshots/04-screenshot-kiwiki-full-width.jpg)
+### Template settings
+![Template settings](./screenshots/05-screenshot-configuration-settings-kiwiki.jpg)
+### Dark mode
+![General layout](./screenshots/06-screenshot-kiwiki-dark.jpg)
+![General layout](./screenshots/07-screenshot-kiwiki-dark.jpg)
 
 <details>
   <summary>Changelog</summary>
