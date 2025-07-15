@@ -15,7 +15,13 @@ $lang['Back to homepage']   = '返回主页';
 $lang['Visible to'] = "页面对这些用户组可见: " ;
 $lang['Hidden to'] = "页面对这些用户组隐藏: " ;
 $lang['User is in group'] = "你属于这些用户组:" ;
-$lang['btn_bottom'] = "Go to bottom" ; 
+$lang['btn_bottom'] = "转到底部" ;
+$lang['full-screen'] = "全屏" ;
+$lang['theme-mode'] = "日/夜模式" ;
+$lang['user-tools'] = "用户工具" ;
+$lang['page-tools'] = "页面工具" ;
+$lang['main-menu'] = "主菜单" ;
+$lang['close'] = "关闭" ;
 
 $lang['__kiwiki_body_bg_color__'] = "背景颜色";
 $lang['__kiwiki_header_bg_color__'] = "首栏背景颜色";

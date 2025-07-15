@@ -4,7 +4,7 @@ if (!empty($sidebar)) {
 }
 ?>
 
-<div id="dokuwiki__content__wrapper">
+<div id="dokuwiki__content__wrapper" role="main">
 
     <!-- ********** ASIDE LEFT ********** -->
 

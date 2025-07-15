@@ -13,9 +13,9 @@ class Kiwiki_Functions {
         if ($ACT == 'show'){
             $editicon = (new \dokuwiki\Menu\KiwikiEdit())->getListItems('kiwiki-',true);
             if (!empty($what)){
-                $editicon = preg_replace('/<a(.*)href="([^"]*)"(.*)>/','<a$1href="'.DOKU_BASE.'doku.php?id='.$what.'&do=edit"$3>',$editicon);
+                $editicon = preg_replace('/<a(.*)href="([^"]*)"(.*)>/','<a$1href="'.DOKU_BASE.'doku.php?id='.$what.'&do=edit"$3 role="button">',$editicon);
             }else{
-                $editicon = preg_replace('/<a(.*)href="([^"]*)"(.*)>/','<a$1href="'.DOKU_BASE.'doku.php?id='.$INFO['id'].'&do=edit'.$rev.'"$3>',$editicon);
+                $editicon = preg_replace('/<a(.*)href="([^"]*)"(.*)>/','<a$1href="'.DOKU_BASE.'doku.php?id='.$INFO['id'].'&do=edit'.$rev.'"$3 role="button">',$editicon);
             }
             return $editicon;
         }
@@ -29,7 +29,7 @@ class Kiwiki_Functions {
     public static function html_bottombtn() {
         global $lang;
 
-        return '<a class="nolink" href="#dokuwiki__bottom">'
+        return '<a class="nolink" href="#dokuwiki__bottom" role="button" aria-label="' . $lang['btn_bottom'] . '" title="' . $lang['btn_bottom'] . '">'
             .'<button class="button" onclick="window.scrollTo(0, 0)" title="'. $lang['btn_bottom'] .'">'
             . $lang['btn_bottom']
             .'</button></a>';

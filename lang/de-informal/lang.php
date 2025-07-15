@@ -15,7 +15,13 @@ $lang['Back to homepage']   = 'Zurück zur Homepage';
 $lang['Visible to'] = "Seite sichtbar für: " ; 
 $lang['Hidden to'] = "Seite ausgeblendet bis: " ; 
 $lang['User is in group'] = "Du bist Mitglied der folgenden Gruppen: " ; 
-$lang['btn_bottom'] = "Zum Seitenende gehen" ; 
+$lang['btn_bottom'] = "Zum Seitenende gehen" ;
+$lang['full-screen'] = "Vollbild" ; 
+$lang['theme-mode'] = "Tag/Nacht-Modus" ; 
+$lang['user-tools'] = "Benutzerwerkzeuge" ; 
+$lang['page-tools'] = "Seitenwerkzeuge" ; 
+$lang['main-menu'] = "Hauptmenü" ; 
+$lang['close'] = "Schließen" ; 
 
 $lang['__kiwiki_body_bg_color__'] = "Hintergrundfarbe";
 $lang['__kiwiki_header_bg_color__'] = "Kopfzeile Hintergrundfarbe";
