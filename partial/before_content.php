@@ -29,7 +29,7 @@ if(($ACT!="login") && ($ACT!="denied")){
         <?php
         // PAGE TOOLS
         if($ACT == 'show'){?>
-        <div id="dokuwiki__pagetools">
+        <div id="dokuwiki__pagetools" role="button" aria-label="<?php echo tpl_getLang('page-tools') ?>">
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'preferences.svg') ?></strong>
                 <ul>
                 <!-- SITE TOOLS -->

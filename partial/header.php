@@ -7,7 +7,7 @@
     if(($ACT!="login") && ($ACT!="denied")){
     ?>
     
-    <div class="dokuwiki__header__wrapper">
+    <div class="dokuwiki__header__wrapper" role="banner">
         <div class="group">
 
             <a href="<?php echo wl(); ?>" class="wikilogo">
@@ -32,17 +32,17 @@
 
         ?> 
         <nav class="tools" aria-label="<?php echo $lang['tools'] ?>">
-            <div id="open-search">
+            <div id="open-search" role="button" aria-label="<?php echo tpl_getLang('search') ?>">
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'search.svg') ?></strong>
             </div>
             <?php if (tpl_getConf('FullScreenBtn')){?>
-            <div id="full-screen">
+            <div id="full-screen" role="button" aria-label="<?php echo tpl_getLang('full-screen') ?>">
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'full_screen.svg') ?></strong>
             </div>
             <?php } ?>
             
             <?php if (!tpl_getConf('ForceTheme')){?>
-            <div id="theme-mode">
+            <div id="theme-mode" role="button" aria-label="<?php echo tpl_getLang('theme-mode') ?>">
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'theme_mode.svg') ?></strong>
             </div>
             <?php } ?>
@@ -50,7 +50,7 @@
             
             <!-- USER TOOLS -->
             <?php if ($conf['useacl']){ ?>
-            <div id="dokuwiki__usertools">
+            <div id="dokuwiki__usertools" role="button" aria-label="<?php echo tpl_getLang('user-tools') ?>">
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'user_icon.svg') ?></strong>
                 
                 <ul>
@@ -67,7 +67,7 @@
             <?php }
             
             if (!empty($mainmenu)) {?>
-            <div id="kiwiki-main-menu__open">
+            <div id="kiwiki-main-menu__open" role="button" aria-label="<?php echo tpl_getLang('main-menu') ?>">
                 <strong><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'burger.svg') ?></strong>
             </div>
             <?php } ?>
@@ -88,7 +88,7 @@
             <div class="kiwiki-main-menu">
                 <button id="kiwiki-main-menu__close">
                     <span class="icon"><?php echo inlineSVG(KIWIKI_IMAGES_PATH . 'close.svg') ?></span>
-                    <span class="a11y"><?php echo tpl_getLang('Close') ?></span>
+                    <span class="a11y"><?php echo tpl_getLang('close') ?></span>
                 </button>
                 <div class="menu-content">
                 <?php tpl_include_page($mainmenu);

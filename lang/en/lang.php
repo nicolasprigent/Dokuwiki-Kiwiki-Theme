@@ -16,6 +16,12 @@ $lang['Visible to'] = "Page visible to: " ;
 $lang['Hidden to'] = "Page hidden to : " ; 
 $lang['User is in group'] = "You belong to the following groups:" ; 
 $lang['btn_bottom'] = "Go to bottom" ; 
+$lang['full-screen'] = "Full screen" ; 
+$lang['theme-mode'] = "Day/Night mode" ; 
+$lang['user-tools'] = "User tools" ; 
+$lang['page-tools'] = "Page tools" ; 
+$lang['main-menu'] = "Main menu" ; 
+$lang['close'] = "Close" ; 
 
 $lang['__kiwiki_body_bg_color__'] = "Background color";
 $lang['__kiwiki_header_bg_color__'] = "Header background color";

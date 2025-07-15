@@ -4,26 +4,41 @@ Flex theme with lots of css fix and some ease of use features. You can change al
 Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
 ## Screenshots
-
-Basic colors
-
-![kiwiki_screenshot](./screenshots/kiwiki_screenshot_2023_06_19_00.jpg)
-
-Dark colors example
-
-![kiwiki_screenshot01](./screenshots/kiwiki_screenshot_2023_06_19_01.jpg)
-
-Theme colors editor
-
-![kiwiki_screenshot02](./screenshots/kiwiki_screenshot_2023_06_19_02.jpg)
-
+### General layout
+![General layout](./screenshots/01-screenshot-kiwiki.jpg)
+### Main menu
+![Main menu](./screenshots/02-screenshot-kiwiki-menu.jpg)
+### Sticky sidebar
+![Sticky sidebar](./screenshots/03-screenshot-kiwiki-sticky.jpg)
+### Full width reading
+![Full width reading](./screenshots/04-screenshot-kiwiki-full-width.jpg)
+### Template settings
+![Template settings](./screenshots/05-screenshot-configuration-settings-kiwiki.jpg)
+### Dark mode
+![General layout dark](./screenshots/06-screenshot-kiwiki-dark.jpg)
+![Menu dark](./screenshots/07-screenshot-kiwiki-dark.jpg)
 
 <details>
   <summary>Changelog</summary>
+  
+### 2025-07-15
+Added accessibility hints on buttons for keyboard navigation (https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/46)
 
-### 2025-04-30
+### 2025-07-08
+This new version of Kiwiki is a major refactoring of the layout to get Sidebars default functionnality from Dokuwiki working (see https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/42).
+
+For UI reasons, I've decided to add my previous menu functionnality in a burger menu : this menu functionnality was intended at first to be accessible accross all website, so now that sidebars are available, it makes more sense to put the menu like this. It also solve this issue : https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/26
+Other fixes : 
+
+- Added two options to get the sidebar, table of content or both on the right side of the website https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/37
+- CSS fixes and new functionnalities to get menu and new content layout working
+- Better TOC sticky on mobile
+- Sidebar is now on the bottom of the page on mobile
+- Default content max width is now 1600px to get a better experience when using left and right sidebars together.
+  
+### 2025-07-07
 - Fix:Cross site scripting vulnerability (https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/43)
-- 
+
 ### 2025-04-30
 - Fix:table of content not showing on some admin pages
 

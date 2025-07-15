@@ -4,7 +4,7 @@
     //var_dump($ACT);
     if ((page_exists($sidebar) && $ACT == 'show' && $sidebar_right == $right) || ($toc!="" && $toc_right == $right)){
     ?>
-    <div class="kiwiki_aside <?php echo ($right == 1) ? 'right' : 'left'; ?>">
+    <div class="kiwiki_aside <?php echo ($right == 1) ? 'right' : 'left'; ?>" role="navigation">
             <div class="dokuwiki__aside_wrapper">
             <?php
             /* sidebar */
