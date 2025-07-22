@@ -1,0 +1,1 @@
+Để thay đổi favicon, chỉ cần sử dụng Trình quản lý đa phương tiện để tải tệp ''favicon.ico'' vào trong mục ''wiki'' hoặc thư mục gốc namespace, hệ thống tự động nhận diện file mới này. If you use a closed wiki it is recommended to make the ''wiki'' (or root) namespace world readable in the ACL settings or your favicon will not be shown to logged-out users.
