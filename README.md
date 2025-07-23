@@ -20,6 +20,7 @@ Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 
 <details>
   <summary>Changelog</summary>
+
 ### 2025-07-23
 Added Vietnamese language
   
