@@ -857,7 +857,7 @@ div.dokuwiki .hentry{
 
 #kiwiki input.edit:focus,
 #kiwiki select.edit:focus {
-  color: var(--kiwiki-ui-500);
+  color: var(--kiwiki-ui-400);
   background-color: #fff;
   border-color: #90b5e2;
   outline: 0;
@@ -1013,8 +1013,8 @@ div.dokuwiki .hentry{
 }
 
 #kiwiki form.search div.ajax_qsearch::-webkit-scrollbar-thumb {
-  background-color: var(--kiwiki-ui-700);
-  outline: 1px solid var(--kiwiki-ui-700);
+  background-color: var(--kiwiki-ui-800);
+  outline: 1px solid var(--kiwiki-ui-800);
   width: 1em;
   border-radius: 1em;
 }
@@ -1142,7 +1142,7 @@ div.dokuwiki .hentry{
   width: 10%;
   text-align: center;
   order: 3;
-  color: var(--kiwiki-ui-500);
+  color: var(--kiwiki-ui-600);
 }
 #kiwiki .changes ul > li > div.li *:nth-child(3) {
   width: 4%;
