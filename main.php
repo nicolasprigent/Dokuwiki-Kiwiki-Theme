@@ -71,6 +71,19 @@ $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png')
         --kiwiki-logo-url:url(<?php echo $logo; ?>);
         --kiwiki-logo-light-url:url(<?php echo $logolight ? $logolight : $logo; ?>);
         --kiwiki-logo-dark-url:url(<?php echo $logodark ? $logodark : $logo; ?>);
+        
+    }
+    
+    label[for="tpl____KIWIKI_DARK__"], label[for="tpl____KIWIKI_LIGHT__"] {
+    font-weight: 700;
+    padding: 20px 0 10px;
+        display: block;
+        font-size: 30px;
+    }
+
+    #tpl____KIWIKI_LIGHT__,
+    #tpl____KIWIKI_DARK__ {
+    display: none !important;
     }
     </style>
 </head>
