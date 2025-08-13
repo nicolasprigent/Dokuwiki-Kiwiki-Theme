@@ -4,7 +4,7 @@
     //var_dump($ACT);
     if ((page_exists($sidebar) && $ACT == 'show' && $sidebar_right == $right) || ($toc!="" && $toc_right == $right)){
     ?>
-    <div class="kiwiki_aside <?php echo ($right == 1) ? 'right' : 'left'; ?>" role="navigation">
+    <div class="kiwiki_aside <?php echo ($right == 1) ? 'right' : 'left'; ?>">
             <div class="dokuwiki__aside_wrapper">
             <?php
             /* sidebar */
@@ -24,7 +24,15 @@
             }
             /*toc*/
             if ($toc!="" && $toc_right == $right){
-                echo tpl_toc() ;
+                // Capture the TOC output
+                ob_start();
+                echo tpl_toc();
+                $toc_html = ob_get_clean();
+
+                // Add role="button" to the first <h3> tag
+                $toc_html = preg_replace('/<h3([^>]*)>/', '<h3$1 role="button">', $toc_html, 1);
+
+                echo $toc_html;
             }
             ?>
             </div>
