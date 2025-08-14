@@ -1,4 +1,11 @@
 <?php
+/**
+ * Before content template for Dokuwiki Kiwiki Theme
+ */
+
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
+
 /* disable breadcrumb on login and denied pages */
 if(($ACT!="login") && ($ACT!="denied")){
     ?><div class="before-content"><?php

@@ -4,6 +4,9 @@
  *
  */
 
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
+
 $conf['MainMenu'] = 'mainmenu';
 $conf['SidebarMaxHeight'] = '300';
 $conf['SidebarRight'] = 0;

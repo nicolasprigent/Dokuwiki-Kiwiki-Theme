@@ -3,6 +3,8 @@
  * Chinese language file for config
  *
  */
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
 
 $lang['MainMenu'] = '主菜单的页面名称';
 $lang['SidebarMaxHeight'] = '侧边栏最大高度';

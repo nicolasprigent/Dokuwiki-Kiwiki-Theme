@@ -4,6 +4,9 @@
  *
  */
 
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
+
 $meta['MainMenu']     = array('string');
 $meta['SidebarMaxHeight'] = array('numeric');
 $meta['SidebarRight'] = array('onoff');

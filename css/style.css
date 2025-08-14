@@ -35,7 +35,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
 }
 
 #kiwiki #dokuwiki__top.mode_login {
@@ -155,7 +155,7 @@ div.dokuwiki .hentry{
   position: relative;
   display: block;
   background-color: var(--kiwiki-ui-100);
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
   margin: 0;
   box-sizing: border-box;
   text-align: center;
@@ -228,7 +228,7 @@ div.dokuwiki .hentry{
   font-size: 25px;
   font-weight: 400;
   letter-spacing: 0.1rem;
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
 }
 #kiwiki
   #dokuwiki__header
@@ -260,14 +260,14 @@ div.dokuwiki .hentry{
 
 #kiwiki form.search .no button[type="submit"] {
   background-color: transparent;
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
   border: 1px solid var(--kiwiki-ui-100);
 }
 
 #kiwiki form.search .no button[type="submit"]:hover {
-  background-color: var(--kiwiki-btn-hover-bg);
+  background-color: var(--kiwiki-link-btn);
   color: var(--kiwiki-main);
-  border: 1px solid var(--kiwiki-btn-hover-bg);
+  border: 1px solid var(--kiwiki-link-btn);
 }
 
 #dokuwiki__site > .group {
@@ -302,7 +302,7 @@ div.dokuwiki .hentry{
 #kiwiki nav.tools > div > strong svg, #dokuwiki__pagetools > strong svg {
   width: 32px;
   height: 32px;
-  fill: var(--kiwiki-text-color);
+  fill: var(--kiwiki-text);
   transition: all 0.2s ease-in-out;
 }
 #dokuwiki__pagetools > strong svg {
@@ -311,7 +311,7 @@ div.dokuwiki .hentry{
 }
 
 #kiwiki nav.tools > div:hover > strong svg, #dokuwiki__pagetools:hover > strong svg {
-  fill: var(--kiwiki-btn-hover-bg);
+  fill: var(--kiwiki-link-btn);
   transform: scale(1.1);
 }
 
@@ -342,7 +342,7 @@ div.dokuwiki .hentry{
 }
 
 #dokuwiki__right_before .translation-switcher ul > li > a{
-  color:var(--kiwiki-text-color);
+  color:var(--kiwiki-text);
 }
 
 #kiwiki nav.tools > div.active > ul,   #dokuwiki__pagetools.active > ul{
@@ -356,8 +356,8 @@ div.dokuwiki .hentry{
 }
 
 #kiwiki nav.tools > div > ul > li a:hover, #dokuwiki__pagetools > ul > li a:hover {
-  background-color: var(--kiwiki-ui-500);
-  color: var(--kiwiki-btn-text);
+  background-color: var(--kiwiki-ui-100);
+  color: var(--kiwiki-link-btn-hover);
 }
 
 #dokuwiki__pagetools ul > li#sitemenu {
@@ -376,13 +376,13 @@ div.dokuwiki .hentry{
 }
 
 #dokuwiki__pagetools #sitemenu a:hover .icon {
-  fill: var(--kiwiki-btn-hover-bg);
+  fill: var(--kiwiki-link-btn);
 }
 
 #kiwiki #dokuwiki__usertools .user {
   padding: 10px 20px;
   background-color: var(--kiwiki-ui-400);
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
   font-size: 0.8rem;
 }
 
@@ -539,11 +539,11 @@ div.dokuwiki .hentry{
 
 #kiwiki .dokuwiki div.plugin_translation ul li:hover {
   background-color: var(--kiwiki-ui-200);
-  border: 2px solid var(--kiwiki-btn-bg);
+  border: 2px solid var(--kiwiki-link-btn);
 }
 
 #kiwiki .dokuwiki div.plugin_translation ul li.span {
-  background-color: var(--kiwiki-btn-bg);
+  background-color: var(--kiwiki-link-btn);
 }
 
 #kiwiki .dokuwiki div.plugin_translation ul li.span span {
@@ -667,12 +667,12 @@ div.dokuwiki .hentry{
 #kiwiki .kiwiki_aside ul li a,
 #kiwiki .kiwiki_aside ul li a:visited {
   text-decoration: none;
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
 }
 
 #kiwiki .kiwiki_aside ul li a:hover {
   text-decoration: underline;
-  color: var(--kiwiki-btn-hover-bg);
+  color: var(--kiwiki-link-btn-hover);
 }
 
 #kiwiki .kiwiki-sidebar .sidebar-content {
@@ -722,7 +722,7 @@ div.dokuwiki .hentry{
 #kiwiki .kiwiki-edit svg {
   width: 16px;
   height: 16px;
-  fill: var(--kiwiki-text-color);
+  fill: var(--kiwiki-text);
 }
 
 /*BUTTONS*/
@@ -734,8 +734,8 @@ div.dokuwiki .hentry{
   justify-content: center;
   white-space: nowrap;
   color: var(--kiwiki-btn-text);
-  background-color: var(--kiwiki-btn-bg);
-  border: 1px solid var(--kiwiki-btn-bg);
+  background-color: var(--kiwiki-link-btn);
+  border: 1px solid var(--kiwiki-link-btn);
   padding: 5px 10px;
   transition: all 0.2s ease-in-out;
   margin: 0 4px;
@@ -746,6 +746,15 @@ div.dokuwiki .hentry{
   font-weight: 400;
   font-size: 14px;
 }
+
+#kiwiki button:hover, #kiwiki .ui-dialog .ui-dialog-buttonpane button:hover,#kiwiki #comment_wrapper .button:hover {
+  
+  color: var(--kiwiki-btn-text-hover);
+  background-color: var(--kiwiki-link-btn-hover);
+  border: 1px solid var(--kiwiki-link-btn-hover);
+  
+}
+
 /*EDITOR*/
 #kiwiki .secedit button,
 #kiwiki .editBox #tool__bar button,
@@ -764,7 +773,7 @@ div.dokuwiki .hentry{
 #kiwiki .editBox #tool__bar button:hover,
 #kiwiki button.toolbutton:hover,
 #kiwiki button.pickerbutton:hover,#kiwiki #comment_wrapper .button:hover {
-  background-color: var(--kiwiki-btn-hover-bg);
+  background-color: var(--kiwiki-link-btn-hover);
 }
 
 #kiwiki div:not(.picker) button.toolbutton img {
@@ -791,13 +800,13 @@ div.dokuwiki .hentry{
 
 /*popup*/
 #kiwiki .ui-widget-overlay {
-  background: var(--kiwiki-ui-800);
+  background: var(--kiwiki-text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
 }
 #kiwiki .ui-widget-header {
-  background: var(--kiwiki-btn-bg);
+  background: var(--kiwiki-link-btn);
   border: none;
   color: var(--kiwiki-main);
   display: flex;
@@ -848,7 +857,7 @@ div.dokuwiki .hentry{
 
 #kiwiki input.edit:focus,
 #kiwiki select.edit:focus {
-  color: var(--kiwiki-ui-500);
+  color: var(--kiwiki-ui-400);
   background-color: #fff;
   border-color: #90b5e2;
   outline: 0;
@@ -877,7 +886,7 @@ div.dokuwiki .hentry{
   -webkit-font-smoothing: auto;
   transition: all 0.2s ease-in-out;
   background: var(--kiwiki-ui-100);
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
 }
 
 #kiwiki code {
@@ -992,7 +1001,7 @@ div.dokuwiki .hentry{
   padding: 15px 0 15px 15px;
   border: 1px solid var(--kiwiki-ui-100);
   background-color: var(--kiwiki-body-bg);
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
   outline: 0;
   box-shadow: 0 0 15px var(--kiwiki-ui-100);
   border-radius: 5px;
@@ -1004,8 +1013,8 @@ div.dokuwiki .hentry{
 }
 
 #kiwiki form.search div.ajax_qsearch::-webkit-scrollbar-thumb {
-  background-color: var(--kiwiki-ui-700);
-  outline: 1px solid var(--kiwiki-ui-700);
+  background-color: var(--kiwiki-ui-800);
+  outline: 1px solid var(--kiwiki-ui-800);
   width: 1em;
   border-radius: 1em;
 }
@@ -1033,7 +1042,7 @@ div.dokuwiki .hentry{
   border-radius: 50px;
   width: 25px;
   height: 25px;
-  background-color: var(--kiwiki-btn-bg);
+  background-color: var(--kiwiki-link-btn);
   transition: all 0.2s ease-in-out;
 }
 #kiwiki #go svg {
@@ -1043,7 +1052,7 @@ div.dokuwiki .hentry{
   transition: all 0.25s ease-in-out;
 }
 #kiwiki #go .icon:hover {
-  background-color: var(--kiwiki-btn-hover-bg);
+  background-color: var(--kiwiki-link-btn-hover);
 }
 #kiwiki #go .icon:hover svg {
   top: -6px;
@@ -1062,7 +1071,7 @@ div.dokuwiki .hentry{
 }
 #kiwiki #config__manager td.label span.outkey {
   background-color: var(--kiwiki-body-bg);
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
   padding: 0 4px 3px;
   opacity: 0;
   transition: all 0.2s ease-in-out;
@@ -1080,7 +1089,7 @@ div.dokuwiki .hentry{
   position: relative;
   display: block;
   background-color: var(--kiwiki-main);
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
   margin: 0;
   box-sizing: border-box;
 }
@@ -1133,7 +1142,7 @@ div.dokuwiki .hentry{
   width: 10%;
   text-align: center;
   order: 3;
-  color: var(--kiwiki-ui-500);
+  color: var(--kiwiki-ui-600);
 }
 #kiwiki .changes ul > li > div.li *:nth-child(3) {
   width: 4%;
@@ -1299,7 +1308,7 @@ div.dokuwiki .hentry{
   order: 3;
   width: 95%;
   background-color: transparent;
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
   border: 1px solid var(--kiwiki-ui-100);
 }
 
@@ -1333,7 +1342,7 @@ div.dokuwiki .hentry{
 #kiwiki ul.tabs li strong,
 #kiwiki ul.tabs li.active a {
   background-color: var(--kiwiki-body-bg);
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
 }
 #kiwiki .tabs > ul:after,
 #kiwiki ul.tabs:after {
@@ -1384,7 +1393,7 @@ div.dokuwiki .hentry{
   margin: 0;
   background: none;
   border: none;
-  color:var(--kiwiki-text-color);
+  color:var(--kiwiki-text);
 }
 
 #kiwiki #mediamanager__page .panel.filelist {
@@ -1393,7 +1402,7 @@ div.dokuwiki .hentry{
   width: 60%;
 }
 #mediamanager__page .filelist .thumbs li{
-  color:var(--kiwiki-text-color);
+  color:var(--kiwiki-text);
 
 }
 
@@ -1484,7 +1493,7 @@ div.dokuwiki .hentry{
 
 #kiwiki #dokuwiki__content div.ui-admin ul li a span.icon svg,
 #kiwiki #dokuwiki__content div.ui-admin ul li a span.icon svg path {
-  fill: var(--kiwiki-btn-bg);
+  fill: var(--kiwiki-link-btn);
 }
 
 /*EXTENSIONS MANAGER*/
@@ -1536,7 +1545,7 @@ div.dokuwiki .hentry{
   border-color: var(--kiwiki-ui-300);
 }
 #extension__list .legend div.popularity div {
-  background-color: var(--kiwiki-btn-bg);
+  background-color: var(--kiwiki-link-btn);
 }
 #kiwiki #extension__list .legend dl.details {
   grid-column-start: 1;
@@ -1558,7 +1567,7 @@ div.dokuwiki .hentry{
   grid-column-end: 3;
 }
 #kiwiki #extension__list ul.extensionList li {
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
   border-color: var(--kiwiki-ui-300);
 }
 
@@ -1591,8 +1600,8 @@ div.dokuwiki .hentry{
 
 #kiwiki #dokuwiki__site #extension__manager form div.no button[type="submit"] {
   color: var(--kiwiki-btn-text);
-  background-color: var(--kiwiki-btn-bg);
-  border: 1px solid var(--kiwiki-btn-bg);
+  background-color: var(--kiwiki-link-btn);
+  border: 1px solid var(--kiwiki-link-btn);
 }
 
 #kiwiki #dokuwiki__site #extension__list .legend h2 strong {
@@ -1605,8 +1614,8 @@ div.dokuwiki .hentry{
   form
   div.no
   button[type="submit"]:hover {
-  color: var(--kiwiki-btn-hover-text);
-  background-color: var(--kiwiki-btn-hover-bg);
+  color: var(--kiwiki-btn-text-hover);
+  background-color: var(--kiwiki-link-btn-hover);
 }
 
 /*FOOTER*/
@@ -1619,7 +1628,7 @@ div.dokuwiki .hentry{
   margin: 20px auto;
   text-align: center;
   font-size: 0.75rem;
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
 }
 #kiwiki #dokuwiki__footer .meta {
   display: flex;
@@ -1643,7 +1652,7 @@ div.dokuwiki .hentry{
 
 #kiwiki div.dokuwiki .comment_head{
   background-color: var(--kiwiki-ui-300);
-  color: var(--kiwiki-ui-900);
+  color: var(--kiwiki-ui-text);
   padding: .5em;
   border-radius: 5px 5px 0 0;
 }
@@ -1696,5 +1705,5 @@ div.dokuwiki .hentry{
 }
 
 #kiwiki .ProseMirror li p {
-  color: var(--kiwiki-text-color);
+  color: var(--kiwiki-text);
 }
