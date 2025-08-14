@@ -297,7 +297,7 @@ div.dokuwiki .hentry{
   position: absolute;
   cursor: pointer;
   right:0;
-  top:-3px;
+  top:3px;
 }
 #kiwiki nav.tools > div > strong svg, #dokuwiki__pagetools > strong svg {
   width: 32px;
@@ -637,7 +637,7 @@ div.dokuwiki .hentry{
   width: initial;
   margin: 0;
   border-radius: 4px;
-  box-shadow: #0000000a 0 2px 4px 0;
+  box-shadow: #0101010a 0 2px 4px 0;
   border: 1px solid var(--kiwiki-ui-100);
   background: var(--kiwiki-main, #fff);
 }
@@ -858,10 +858,10 @@ div.dokuwiki .hentry{
 #kiwiki input.edit:focus,
 #kiwiki select.edit:focus {
   color: var(--kiwiki-ui-400);
-  background-color: #fff;
+  background-color: var(--kiwiki-body-bg);
   border-color: var(--kiwiki-ui-400);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem #0000000a;
+  box-shadow: 0 0 0 0.25rem #0101010a;
 }
 
 /*CODE*/

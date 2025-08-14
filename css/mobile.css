@@ -270,4 +270,8 @@
   #kiwiki #go {
     flex-direction: column;
   }
+
+  #kiwiki .kiwiki_aside  .dokuwiki__aside_wrapper > div, #kiwiki .kiwiki-sidebar-mobile{
+    border: none;
+  }
 } /* /@media */
