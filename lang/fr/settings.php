@@ -3,6 +3,8 @@
  * Fichier de langue française pour la config.
  *
  */
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
 
 $lang['MainMenu'] = 'Identifiant du menu';
 $lang['SidebarMaxHeight'] = 'Hauteur max. de la barre latérale';

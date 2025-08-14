@@ -3,6 +3,8 @@
  * 템플릿을 위한 한국어 파일
  *
  */
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
 
 $lang['__existing__']      = '페이지가 존재하는 링크 색상';
 $lang['__missing__']       = '페이지가 존재하지 않는 링크 색상';

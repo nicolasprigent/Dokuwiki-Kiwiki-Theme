@@ -3,6 +3,8 @@
  * German (informal) language file for template
  *
  */
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
 
 $lang['__existing__']      = 'Farbe des Links zu einer bestehenden Seite';
 $lang['__missing__']       = 'Farbe des Links zu einer fehlenden Seite';

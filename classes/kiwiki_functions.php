@@ -1,5 +1,8 @@
 <?php
 
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
+
 class Kiwiki_Functions {
 
     

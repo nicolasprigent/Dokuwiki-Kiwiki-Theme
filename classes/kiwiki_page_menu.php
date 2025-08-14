@@ -2,6 +2,9 @@
 
 namespace dokuwiki\Menu;
 
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
+
 /**
  * Class KiwikiPageMenu
  *

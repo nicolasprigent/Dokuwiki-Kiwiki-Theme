@@ -3,6 +3,8 @@
  * French language file for template
  *
  */
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
 
 $lang['__existing__']      = 'La couleur des liens vers les pages qui existent';
 $lang['__missing__']       = 'La couleur des liens vers les pages qui n\'existent pas';

@@ -3,6 +3,8 @@
  * 환경 설정을 위한 한국어 파일
  *
  */
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
 
 $lang['MainMenu'] = '메뉴 식별 문서';
 $lang['SidebarMaxHeight'] = '최대 사이드바 높이';

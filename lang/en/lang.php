@@ -3,6 +3,8 @@
  * English language file for template
  *
  */
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
 
 $lang['__existing__']      = 'Existing page link color';
 $lang['__missing__']       = 'Non-existing page link color';

@@ -1,3 +1,12 @@
+<?php
+/**
+ * Header template for Dokuwiki Kiwiki Theme
+ */
+
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
+
+?>
 <header id="dokuwiki__header">
     <?php
     

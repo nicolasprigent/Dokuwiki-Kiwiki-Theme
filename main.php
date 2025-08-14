@@ -11,6 +11,7 @@
 if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
 @require_once(dirname(__FILE__).'/tpl_functions.php'); /* include hook for template functions */
 
+/*Get all template configurations*/
 $showTools = !tpl_getConf('hideTools') || ( tpl_getConf('hideTools') && !empty($_SERVER['REMOTE_USER']) );
 $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
 $sidebar = $conf['sidebar'];
@@ -50,6 +51,7 @@ $logodark = tpl_getMediaFile(array(':wiki:logo-dark.png', ':logo-dark.png', 'ima
 $logolight = tpl_getMediaFile(array(':wiki:logo-light.png', ':logo-light.png', 'images/logo-light.png'), true, $logoSize, false);
 $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png'), true, $logoSize);
 
+/*Main html template*/
 
 ?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $conf['lang'] ?>"
@@ -62,30 +64,7 @@ $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png')
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <?php echo tpl_favicon(array('favicon', 'mobile')) ?>
     <?php tpl_includeFile('meta.html')?>
-    <style>body{
-        --kiwiki-sidebar-max-height:<?php echo $sidebarMaxHeight; ?>px;
-        --kiwiki-toc-max-height:<?php echo $tocMaxHeight; ?>px;
-        --kiwiki-content-max-width:<?php echo $contentMaxWidth; ?>;
-        --kiwiki-content-width:<?php echo $contentWidth; ?>;
-        --kiwiki-aside-width:<?php echo $asideWidth; ?>;
-        --kiwiki-logo-url:url(<?php echo $logo; ?>);
-        --kiwiki-logo-light-url:url(<?php echo $logolight ? $logolight : $logo; ?>);
-        --kiwiki-logo-dark-url:url(<?php echo $logodark ? $logodark : $logo; ?>);
-        
-    }
-    
-    label[for="tpl____KIWIKI_DARK__"], label[for="tpl____KIWIKI_LIGHT__"] {
-    font-weight: 700;
-    padding: 20px 0 10px;
-        display: block;
-        font-size: 30px;
-    }
-
-    #tpl____KIWIKI_LIGHT__,
-    #tpl____KIWIKI_DARK__ {
-    display: none !important;
-    }
-    </style>
+    <?php include('css/inline-css.php');?>
 </head>
 
 

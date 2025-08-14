@@ -1,3 +1,12 @@
+<?php
+/**
+ * Footer template for Dokuwiki Kiwiki Theme
+ */
+
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
+
+?>
 <footer id="dokuwiki__footer">
     <div class="meta">
         

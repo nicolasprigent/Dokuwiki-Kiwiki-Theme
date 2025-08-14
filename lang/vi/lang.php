@@ -3,6 +3,8 @@
  * Vietnamese language file for template
  *
  */
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
 
 $lang['__existing__']      = 'Màu liên kết trang tồn tại';
 $lang['__missing__']       = 'Màu liên kết trang không tồn tại';

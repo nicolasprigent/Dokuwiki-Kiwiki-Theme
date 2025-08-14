@@ -3,6 +3,8 @@
  * Chinese language file for template
  *
  */
+// must be run from within DokuWiki
+if (!defined('DOKU_INC')) die();
 
 $lang['__existing__']      = '页面链接颜色';
 $lang['__missing__']       = '不存在的页面链接颜色';
