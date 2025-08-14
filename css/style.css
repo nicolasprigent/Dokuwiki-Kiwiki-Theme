@@ -387,7 +387,7 @@ div.dokuwiki .hentry{
 }
 
 #kiwiki nav.tools > div > ul > li.action.logout a {
-  color: #f00;
+  color: __missing__;
 }
 
 #kiwiki.fullscreen #dokuwiki__site #dokuwiki__top #dokuwiki__content__wrapper {
@@ -637,7 +637,7 @@ div.dokuwiki .hentry{
   width: initial;
   margin: 0;
   border-radius: 4px;
-  box-shadow: #1e293b0a 0 2px 4px 0;
+  box-shadow: #0000000a 0 2px 4px 0;
   border: 1px solid var(--kiwiki-ui-100);
   background: var(--kiwiki-main, #fff);
 }
@@ -859,9 +859,9 @@ div.dokuwiki .hentry{
 #kiwiki select.edit:focus {
   color: var(--kiwiki-ui-400);
   background-color: #fff;
-  border-color: #90b5e2;
+  border-color: var(--kiwiki-ui-400);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem #206bc440;
+  box-shadow: 0 0 0 0.25rem #0000000a;
 }
 
 /*CODE*/
