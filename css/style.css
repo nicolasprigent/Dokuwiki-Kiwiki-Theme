@@ -1707,3 +1707,7 @@ div.dokuwiki .hentry{
 #kiwiki .ProseMirror li p {
   color: var(--kiwiki-text);
 }
+
+ol ol {
+  list-style-type: lower-alpha;
+}

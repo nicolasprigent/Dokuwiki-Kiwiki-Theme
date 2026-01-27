@@ -21,6 +21,9 @@ Templage page on Dokuwiki : https://www.dokuwiki.org/template:kiwiki
 <details>
   <summary>Changelog</summary>
 
+### 2026-01-28
+Added css to get Nested Ordered Lists : https://github.com/nicolasprigent/Dokuwiki-Kiwiki-Theme/issues/57
+
 ### 2025-08-14
 Reworked styling color options with less colors and deleted unused colors
 
